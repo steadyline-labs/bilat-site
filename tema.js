@@ -7,13 +7,6 @@
     else if (pref === 'saat') root.setAttribute('data-theme', byHour());
     else root.removeAttribute('data-theme');
     root.setAttribute('data-tema-tercih', pref || 'sistem');
-    // iOS Safari tints the status bar with theme-color: keep it in step with a manually chosen sky
-    var sky = { a: '#3B2F63', b: '#62B0E6', c: '#070D26' }[root.getAttribute('data-theme')];
-    document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
-      if (!m.hasAttribute('data-media')) m.setAttribute('data-media', m.getAttribute('media') || '');
-      if (sky) { m.setAttribute('content', sky); m.removeAttribute('media'); }
-      else { m.setAttribute('content', m.getAttribute('data-media').indexOf('dark') > -1 ? '#070D26' : '#62B0E6'); m.setAttribute('media', m.getAttribute('data-media')); }
-    });
   }
   var q = new URLSearchParams(location.search).get('tema'), saved = null;
   try { saved = localStorage.getItem(KEY); } catch (e) {}

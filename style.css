@@ -1,4 +1,4 @@
-/* BilAt · bilat.app: tema token'ları oyundaki ekranlarla aynı değerleri kullanır */
+/* BilAt · bilat.app — tema token'ları oyundaki ekranlarla aynı değerleri kullanır */
 :root,[data-theme="b"]{
   --sky1:#62B0E6;--sky2:#A6D9F4;--sky3:#FFF2D9;--hill:#9FD1A8;--hill2:#86C193;--ground:#F3D9A4;
   --sun-bg:#FFE39A;--sun-sh:none;--stars:none;
@@ -86,8 +86,9 @@ img{display:block;max-width:100%;height:auto}
 .hero-note{font-size:14px;font-weight:700}
 .phone{position:relative;width:250px;aspect-ratio:360/780;border-radius:34px;overflow:hidden;box-shadow:0 0 0 7px #1c1a22,0 30px 60px rgba(10,20,40,.35);background:#1c1a22;margin-bottom:-120px}
 .phone img{width:100%;height:100%;object-fit:cover}
-.shot-c{display:none}
-[data-theme="c"] .shot-b{display:none}
+.shot-a,.shot-c{display:none}
+[data-theme="a"] .shot-b,[data-theme="c"] .shot-b{display:none}
+[data-theme="a"] .shot-a{display:block}
 [data-theme="c"] .shot-c{display:block}
 @media (prefers-color-scheme:dark){:root:not([data-theme]) .shot-b{display:none}:root:not([data-theme]) .shot-c{display:block}}
 .sun{position:absolute;right:-30px;top:52%;width:150px;height:150px;border-radius:50%;background:var(--sun-bg);box-shadow:var(--sun-sh);z-index:1}
@@ -115,13 +116,13 @@ section h2{font-size:34px}
 .arrows span{width:5px;height:30px;border-radius:3px;background:var(--ink)}
 .arrows span.used{opacity:.3}
 
-.feats{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.feats{display:grid;gap:16px}
 .feat{padding:22px;border-radius:24px;background:var(--card);box-shadow:0 0 0 1px var(--line) inset;display:grid;gap:10px;align-content:start}
 .feat h3{font-size:22px}
 .feat p{color:var(--muted);font-size:16px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:4px 0 0;padding:0}
 .chips li{padding:6px 12px;border-radius:12px;background:var(--soft);font-size:14px;font-weight:700}
-.swatches{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.swatches{display:flex;gap:10px;margin-top:4px}
 .swatches figure{margin:0;display:grid;gap:6px;justify-items:center;font-size:13px;font-weight:700;color:var(--muted)}
 .swatches span{width:64px;height:44px;border-radius:12px;box-shadow:0 0 0 1px var(--line)}
 .lb{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:6px}
@@ -129,8 +130,7 @@ section h2{font-size:34px}
 .lb li.me{background:var(--primary);color:var(--primary-ink)}
 .lb b{font-family:'Baloo 2',sans-serif}
 
-.strip:focus-visible{outline:3px solid var(--ink);outline-offset:4px;border-radius:12px}
-.strip{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 20px 40px;margin:0 -20px;scroll-padding:0 20px;list-style:none;scrollbar-width:thin}
+.strip{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 20px 22px;margin:0 -20px;list-style:none;scrollbar-width:thin}
 .strip li{flex:none;scroll-snap-align:center;display:grid;gap:10px;justify-items:center}
 .strip figure{margin:0;display:grid;gap:10px;justify-items:center}
 .strip .frame{width:220px;aspect-ratio:360/780;border-radius:30px;overflow:hidden;box-shadow:0 0 0 6px #1c1a22,0 16px 32px rgba(10,20,40,.2)}
@@ -141,7 +141,6 @@ section h2{font-size:34px}
 footer{padding:40px 0 48px;border-top:1px solid var(--line)}
 .foot{display:grid;gap:22px}
 .foot .logo{color:var(--ink);font-size:28px}
-[data-theme="a"] .foot .logo b{color:#B4471F}
 .foot ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 18px}
 .foot ul a{display:inline-flex;align-items:center;min-height:48px;font-weight:700}
 .copy{font-size:14px;color:var(--muted)}
@@ -151,10 +150,6 @@ footer{padding:40px 0 48px;border-top:1px solid var(--line)}
 .themes button[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
 
 /* Metin sayfası (gizlilik) */
-.faq{display:grid;gap:12px;max-width:760px}
-.faq details{padding:16px 20px;border-radius:18px;background:var(--card);box-shadow:0 0 0 1px var(--line) inset}
-.faq summary{cursor:pointer;font-weight:800;font-size:18px;list-style-position:outside}
-.faq details p{margin-top:10px;color:var(--muted);font-size:16px}
 .doc-top{background:var(--stars),linear-gradient(180deg,var(--sky1),var(--sky2));padding:18px 0 22px}
 .doc-top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .back{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 16px;border-radius:24px;background:var(--chip);color:var(--chip-ink);font-weight:800;text-decoration:none}
@@ -163,8 +158,7 @@ footer{padding:40px 0 48px;border-top:1px solid var(--line)}
 .doc h1{font-size:40px;margin-bottom:8px}
 .doc .meta{color:var(--muted);font-size:15px;font-weight:700;margin-bottom:28px}
 .doc h2{font-size:26px;margin:36px 0 10px}
-.doc p,.doc li{font-size:17px;line-height:1.65;overflow-wrap:break-word}
-.doc a{overflow-wrap:anywhere}
+.doc p,.doc li{font-size:17px;line-height:1.65}
 .doc p+p{margin-top:12px}
 .doc ul{padding-left:22px;margin:10px 0}
 .doc li+li{margin-top:6px}
@@ -195,12 +189,10 @@ mark{background:var(--soft);color:var(--ink);padding:0 4px;border-radius:4px;box
   section{padding:80px 0}
   section h2{font-size:42px}
   .feats{grid-template-columns:repeat(4,minmax(0,1fr))}
-  .strip{justify-content:flex-start;margin:0 calc(50% - 50vw);padding:8px calc(50vw - 50%) 40px;scroll-padding:0 calc(50vw - 50%)}
-  #ekranlar{overflow-x:clip}
+  .strip{justify-content:flex-start;margin:0;padding:6px 0 22px}
   .strip .frame{width:240px}
   .foot{grid-template-columns:auto 1fr auto}
   .themes{grid-column:auto}
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 .copy a{color:inherit;font-weight:700}
-.soon-note{margin:10px 0 0;font-size:14px;font-weight:600;color:var(--muted)}
