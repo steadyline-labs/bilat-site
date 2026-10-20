@@ -2,10 +2,265 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0; url=gizlilik/">
-<title>BilAt</title>
-<link rel="canonical" href="https://bilat.app/gizlilik/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bil At! Oku At, Soruyu Bil · Türkçe bilgi yarışması</title>
+<meta name="description" content="Bil At! dönen hedef tahtasına ok attığın ücretsiz Türkçe bilgi yarışması. Vurduğun sayı sorunun zorluğunu seçer: 8 alanda 1.200 soru, haftalık sıralama.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#62B0E6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#070D26" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://bilat.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bil At!">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:url" content="https://bilat.app/">
+<meta property="og:title" content="Bil At! Oku At, Soruyu Bil">
+<meta property="og:description" content="Dönen tahtaya nişan al, vurduğun sayı sorunun zorluğunu seçsin. Ücretsiz Türkçe bilgi yarışması.">
+<meta property="og:image" content="https://bilat.app/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bil At! logosu ve renkli hedef tahtası: Oku at, soruyu bil!">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bil At! Oku At, Soruyu Bil">
+<meta name="twitter:description" content="Dönen tahtaya nişan al, vurduğun sayı sorunun zorluğunu seçsin. Ücretsiz Türkçe bilgi yarışması.">
+<meta name="twitter:image" content="https://bilat.app/img/og.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/img/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://bilat.app/#website",
+      "url": "https://bilat.app/",
+      "name": "Bil At!",
+      "alternateName": ["BilAt", "Bil At"],
+      "inLanguage": "tr",
+      "publisher": {"@id": "https://steadylinelabs.com/#organization"}
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://steadylinelabs.com/#organization",
+      "name": "Steadyline Labs",
+      "url": "https://steadylinelabs.com",
+      "email": "destek@bilat.app"
+    },
+    {
+      "@type": ["VideoGame", "MobileApplication"],
+      "@id": "https://bilat.app/#app",
+      "name": "Bil At! Oku At, Soruyu Bil",
+      "alternateName": "BilAt",
+      "url": "https://bilat.app/",
+      "description": "Bil At! dönen hedef tahtasına ok attığın ücretsiz Türkçe bilgi yarışması. Vurduğun sayı sorunun zorluğunu seçer: 8 alanda 1.200 soru, haftalık sıralama.",
+      "inLanguage": "tr",
+      "operatingSystem": "Android",
+      "applicationCategory": "GameApplication",
+      "applicationSubCategory": "Bilgi yarışması",
+      "genre": ["Bilgi yarışması", "Nişan alma", "Gündelik"],
+      "gamePlatform": "Android",
+      "playMode": "SinglePlayer",
+      "image": "https://bilat.app/img/og.jpg",
+      "screenshot": ["https://bilat.app/img/aim-b.webp", "https://bilat.app/img/question-b.webp", "https://bilat.app/img/category-b.webp", "https://bilat.app/img/leaderboard-b.webp"],
+      "installUrl": "https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat",
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat"],
+      "author": {"@id": "https://steadylinelabs.com/#organization"},
+      "publisher": {"@id": "https://steadylinelabs.com/#organization"},
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "TRY"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Bil At! ücretsiz mi?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Oyun ücretsizdir ve reklamlarla desteklenir. Uygulama içi satın alma yoktur. Reklamı yalnızca sen seçince izlersin: oyun bitince Devam et ya da %50 Joker için."}},
+        {"@type": "Question", "name": "İnternet olmadan oynanır mı?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Oyunla gelen sorular ve indirdiğin sorular cihazında kalır. Çevrimdışıyken aldığın skor, bağlantı gelince sıralamaya gönderilir."}},
+        {"@type": "Question", "name": "Hesap açmam gerekiyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Sıralamaya katılmak istersen sadece bir takma ad seçersin."}},
+        {"@type": "Question", "name": "iPhone için var mı?", "acceptedAnswer": {"@type": "Answer", "text": "iPhone sürümü yakında App Store'da. Şimdilik Google Play'den Android için indirebilirsin."}},
+        {"@type": "Question", "name": "Bir soruda hata buldum, ne yapayım?", "acceptedAnswer": {"@type": "Answer", "text": "destek@bilat.app adresine soruyu ve doğru cevabı yaz, düzeltelim."}}
+      ]
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Figtree:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="tema.js"></script>
 </head>
-<body><a href="gizlilik/">Gizlilik politikası</a></body>
+<body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
+
+<header class="hero">
+  <div class="sun" aria-hidden="true"></div>
+  <div class="wrap hero-top">
+    <a class="logo" href="./" aria-label="Bil At! ana sayfa">
+      <svg class="mark" viewBox="-30 -30 60 60" width="44" height="44" aria-hidden="true">
+        <g class="spin">
+          <circle r="28" fill="var(--ring)"/>
+          <path d="M0 0L-11 -19.05A22 22 0 0 1 11 -19.05Z" fill="var(--g)"/>
+          <path d="M0 0L11 -19.05A22 22 0 0 1 22 0Z" fill="var(--o)"/>
+          <path d="M0 0L22 0A22 22 0 0 1 11 19.05Z" fill="var(--r)"/>
+          <path d="M0 0L11 19.05A22 22 0 0 1 -11 19.05Z" fill="var(--g)"/>
+          <path d="M0 0L-11 19.05A22 22 0 0 1 -22 0Z" fill="var(--o)"/>
+          <path d="M0 0L-22 0A22 22 0 0 1 -11 -19.05Z" fill="var(--r)"/>
+          <circle r="5" fill="var(--ring)"/>
+        </g>
+        <g class="shaft"><path d="M4 -4L22 -22" stroke="#8B5A2B" stroke-width="3.2" stroke-linecap="round"/><path d="M18 -18L20 -28L24 -24ZM18 -18L28 -20L24 -24Z" fill="var(--primary)"/></g>
+      </svg>
+      <span>Bil<b>At</b></span>
+    </a>
+    <nav aria-label="Sayfa içi">
+      <a href="#nasil">Nasıl oynanır</a>
+      <a href="#ozellikler">Özellikler</a>
+      <a href="#ekranlar">Ekranlar</a>
+      <a href="#sss">SSS</a>
+    </nav>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1>Oku at, dilimi vur, soruyu bil.</h1>
+      <p class="lead">Dönen hedef tahtasına nişan al. Vurduğun sayı sorunun zorluğunu, doğru cevap puanını belirler.</p>
+      <div class="badges">
+        <a class="badge" href="https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat&amp;referrer=utm_source%3Dbilat.app%26utm_medium%3Dsite%26utm_campaign%3Dhome" aria-label="Google Play'den indir">
+          <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M6 3.5v17l14-8.5z" fill="#fff"/></svg>
+          <span><small>Hemen indir</small><strong>Google Play</strong></span>
+        </a>
+        <span class="badge soon" aria-label="App Store: yakında">
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span><small>Yakında</small><strong>App Store</strong></span>
+        </span>
+      </div>
+      <p class="hero-note">Ücretsiz · Hesap gerekmez · İnternetsiz de oynanır</p>
+    </div>
+    <div class="phone">
+      <img class="shot-b" src="img/aim-b.webp" width="540" height="1170" fetchpriority="high" alt="Bil At! oyun ekranı: okçu dönen hedef tahtasına nişan alıyor, gündüz teması">
+      <img class="shot-c" src="img/aim-c.webp" width="540" height="1170" alt="Bil At! gece teması: yıldızlı gökyüzünde hedef tahtasına nişan alma">
+    </div>
+  </div>
+  <div class="hills" aria-hidden="true"><i></i><i></i><i></i></div>
+</header>
+
+<main id="icerik">
+  <section id="nasil">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Nasıl oynanır</span>
+        <h2>Üç adımda bir tur</h2>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="15" r="11" fill="var(--ring)" stroke="var(--line)" stroke-width="1.5"/><circle cx="24" cy="15" r="7" fill="var(--o)"/><circle cx="24" cy="15" r="2.5" fill="var(--ring)"/><path d="M24 45L25 28" stroke="var(--ink)" stroke-width="3" stroke-dasharray="1 5" stroke-linecap="round"/></svg></div>
+          <div><h3>1. Nişan al</h3><p>Yay gibi parmağını geriye çek ve bırak, ok tahtaya uçar. Tahta döner ve sallanır, biraz önden nişan al.</p></div>
+        </li>
+        <li class="step">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><rect x="8" y="9" width="32" height="8" rx="4" fill="var(--g)"/><rect x="8" y="20" width="32" height="8" rx="4" fill="var(--o)"/><rect x="8" y="31" width="32" height="8" rx="4" fill="var(--r)"/></svg></div>
+          <div><h3>2. Dilimi vur</h3><p>1-4 kolay, 5-8 orta, 9-12 zor. Vurduğun sayı sorunun zorluğunu seçer.</p></div>
+        </li>
+        <li class="step">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><rect x="8" y="8" width="32" height="6" rx="3" fill="var(--muted)"/><rect x="8" y="18" width="32" height="6" rx="3" fill="var(--line)"/><rect x="8" y="27" width="32" height="6" rx="3" fill="var(--g)"/><rect x="8" y="36" width="32" height="6" rx="3" fill="var(--line)"/></svg></div>
+          <div><h3>3. Soruyu bil</h3><p>20 saniyede dört şıktan doğrusunu seç. Doğru cevap, sayı × 10 puan getirir. Yanlış cevap ya da biten süre üç canından birini götürür.</p></div>
+        </li>
+      </ol>
+      <div class="quiver">
+        <div class="arrows" aria-hidden="true"><span></span><span></span><span></span><span></span><span class="used"></span><span class="used"></span></div>
+        <p><strong>Sadağında 6 ok var.</strong> Iskalarsan bir ok gider; oklar biterse bir can gider ve sadak yeniden dolar. Zor dilimdeki (9-12) soruyu bilirsen sadağına 1 ok eklenir. Her 3 doğruda seviye atlarsın: sadak dolar, tahta hızlanır.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ozellikler">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Özellikler</span>
+        <h2>Kısa turlar, bol soru</h2>
+      </div>
+      <div class="feats">
+        <article class="feat">
+          <h3>8 alanla başla</h3>
+          <p>Kolaydan zora 1.200 Türkçe soru. İstersen tek alan seç, istersen Karışık oyna. Yeni alanlar yolda.</p>
+          <ul class="chips"><li>Genel Kültür</li><li>Tarih</li><li>Coğrafya</li><li>Bilim</li><li>Sinema ve Dizi</li><li>Dil ve Deyimler</li><li>Spor</li><li>Yemek ve Mutfak</li></ul>
+          <p class="soon-note">Yakında: Edebiyat, Doğa ve Hayvanlar, Müzik, Teknoloji ve daha fazlası.</p>
+        </article>
+        <article class="feat">
+          <h3>Saate göre tema</h3>
+          <p>Gökyüzü günün saatine uyar: gündüz mavi, akşamüstü gün batımı, gece yıldızlı.</p>
+          <div class="swatches">
+            <figure><span style="background:linear-gradient(180deg,#62B0E6,#FFF2D9)"></span><figcaption>Gündüz</figcaption></figure>
+            <figure><span style="background:linear-gradient(180deg,#3B2F63,#F4A97C)"></span><figcaption>Gün batımı</figcaption></figure>
+            <figure><span style="background:linear-gradient(180deg,#070D26,#2E3F78)"></span><figcaption>Gece</figcaption></figure>
+          </div>
+        </article>
+        <article class="feat">
+          <h3>Sıralama</h3>
+          <p>Haftalık ve tüm zamanlar listesi. Hesap yok, sadece takma ad.</p>
+          <ol class="lb" aria-label="Örnek sıralama">
+            <li><span>1.</span><span>Anadolu Kartalı</span><b>4.820</b></li>
+            <li><span>2.</span><span>Bozkurt</span><b>4.742</b></li>
+            <li class="me"><span>7.</span><span>Sen</span><b>4.421</b></li>
+          </ol>
+        </article>
+        <article class="feat">
+          <h3>İnternetsiz oyna</h3>
+          <p>İndirdiğin sorular cihazında kalır. Çevrimdışıyken aldığın skor, bağlantı gelince sıralamaya gönderilir.</p>
+        </article>
+        <article class="feat">
+          <h3>Takılınca yardım</h3>
+          <p>Zor bir soru mu geldi? %50 Joker iki yanlış şıkkı siler. Canların bitince Devam et ile bir can alıp kaldığın yerden sürdürürsün. İkisi de istersen kısa bir reklamla açılır.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="ekranlar">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Ekranlar</span>
+        <h2>Gündüz de gece de</h2>
+      </div>
+      <ul class="strip" tabindex="0" aria-label="Oyun ekranları, yana kaydır">
+        <li><figure><div class="frame"><img src="img/category-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Alan seçme ekranı: 8 açık alan, 1.200 soru, Yakında yazan yeni alanlar"></div><figcaption>Alanını seç<span>Gündüz</span></figcaption></figure></li>
+        <li><figure><div class="frame"><img src="img/aim-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Nişan alma ekranı: okçu dönen hedef tahtasına nişan alıyor"></div><figcaption>Nişan al<span>Gündüz</span></figcaption></figure></li>
+        <li><figure><div class="frame"><img src="img/question-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Soru kartı, zor dilim 90 puan: Artık yıl olmayan bir yıl kaç saattir?"></div><figcaption>Soruyu bil<span>Gündüz</span></figcaption></figure></li>
+        <li><figure><div class="frame"><img src="img/correct-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Doğru cevap ekranı: Yen işaretlendi, Doğru! +70"></div><figcaption>Puanı kap<span>Gündüz</span></figcaption></figure></li>
+        <li><figure><div class="frame"><img src="img/aim-c.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Gece teması: yıldızlı gökyüzünde ay ışığında nişan alma"></div><figcaption>Gece de oyna<span>Gece</span></figcaption></figure></li>
+        <li><figure><div class="frame"><img src="img/leaderboard-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Haftalık sıralama ekranı: podyum ve liste, pazartesi sıfırlanır"></div><figcaption>Sıralama<span>Gündüz</span></figcaption></figure></li>
+      </ul>
+    </div>
+  </section>
+  <section id="sss">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">SSS</span>
+        <h2>Merak edilenler</h2>
+      </div>
+      <div class="faq">
+        <details><summary>Bil At! ücretsiz mi?</summary><p>Evet. Oyun ücretsizdir ve reklamlarla desteklenir. Uygulama içi satın alma yoktur. Reklamı yalnızca sen seçince izlersin: oyun bitince Devam et ya da %50 Joker için.</p></details>
+        <details><summary>İnternet olmadan oynanır mı?</summary><p>Evet. Oyunla gelen sorular ve indirdiğin sorular cihazında kalır. Çevrimdışıyken aldığın skor, bağlantı gelince sıralamaya gönderilir.</p></details>
+        <details><summary>Hesap açmam gerekiyor mu?</summary><p>Hayır. Sıralamaya katılmak istersen sadece bir takma ad seçersin.</p></details>
+        <details><summary>iPhone için var mı?</summary><p>iPhone sürümü yakında App Store'da. Şimdilik Google Play'den Android için indirebilirsin.</p></details>
+        <details><summary>Bir soruda hata buldum, ne yapayım?</summary><p><a href="mailto:destek@bilat.app">destek@bilat.app</a> adresine soruyu ve doğru cevabı yaz, düzeltelim.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="logo" href="./" aria-label="Bil At! ana sayfa"><span>Bil<b>At</b></span></a>
+    <ul>
+      <li><a href="gizlilik/">Gizlilik politikası</a></li>
+      <li>Destek: <a href="mailto:destek@bilat.app">destek@bilat.app</a></li>
+    </ul>
+    <div class="themes" role="group" aria-label="Site teması">
+      <span>Tema</span>
+      <button type="button" data-tema="sistem">Sistem</button>
+      <button type="button" data-tema="saat">Saate göre</button>
+      <button type="button" data-tema="b">Gündüz</button>
+      <button type="button" data-tema="a">Gün batımı</button>
+      <button type="button" data-tema="c">Gece</button>
+    </div>
+    <p class="copy">© 2026 BilAt · by <a href="https://steadylinelabs.com">Steadyline Labs</a></p>
+  </div>
+</footer>
+</body>
 </html>

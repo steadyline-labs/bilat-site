@@ -1,0 +1,30 @@
+# Bil At! (BilAt)
+
+> Bil At! Oku At, Soruyu Bil: dönen hedef tahtasına ok attığın ücretsiz, Türkçe bir mobil bilgi yarışması oyunu. Vurduğun sayı (1-12) sorunun zorluğunu seçer. Steadyline Labs yapımı.
+
+## Nasıl oynanır
+- Parmağını yay gibi geri çekip bırakırsın, ok dönen ve sallanan tahtaya uçar.
+- Tahtada 1-12 arası dilimler var: 1-4 kolay, 5-8 orta, 9-12 zor soru getirir.
+- Her soruda 20 saniye ve dört şık var; doğru cevap sayı × 10 puan getirir.
+- 3 can: yanlış cevap ya da biten süre bir can götürür. Sadakta 6 ok: ıska bir ok götürür, oklar bitince bir can gider.
+- Her 3 doğruda seviye atlanır, sadak dolar ve tahta hızlanır.
+- İsteğe bağlı ödüllü reklamla %50 Joker (iki yanlış şık gider) ve oyun sonunda Devam et (+1 can).
+
+## Temel bilgiler
+- Dil: sadece Türkçe.
+- İçerik: 8 açık alan (Genel Kültür, Tarih, Coğrafya, Bilim, Sinema ve Dizi, Dil ve Deyimler, Spor, Yemek ve Mutfak), alan başına yaklaşık 150, toplam 1.200 soru. Yeni alanlar sonraki sürümlerde açılacak.
+- Sıralama: haftalık (pazartesi 00:00 TSİ sıfırlanır) ve tüm zamanlar; hesap yok, sadece takma ad.
+- Gökyüzü teması cihaz saatine göre değişir: gündüz, gün batımı, gece.
+- Çevrimdışı oynanır; çevrimdışı skor bağlantı gelince sıralamaya gönderilir.
+- Fiyat: ücretsiz, uygulama içi satın alma yok, reklamla desteklenir. Bkz. https://bilat.app/pricing.md
+- Platform: Android (Google Play). iPhone sürümü yakında.
+- Gizlilik: Google AdMob (Android'de reklam kimliği ve gerekli bölgelerde Google onay penceresi; iOS'ta izleme yok, kişiselleştirilmemiş reklam), Firebase Analytics, Crashlytics, anonim Firebase kimliği ve sıralama için takma ad + skor. Ayrıntılar gizlilik sayfasında.
+
+## Sayfalar
+- https://bilat.app/ : Bil At! Oku At, Soruyu Bil · Türkçe bilgi yarışması
+- https://bilat.app/gizlilik/ : Gizlilik politikası · Bil At!
+- https://bilat.app/pricing.md : fiyatlandırma özeti
+- Google Play: https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat
+
+## İletişim
+destek@bilat.app
