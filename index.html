@@ -87,7 +87,7 @@
 <link rel="stylesheet" href="style.css">
 <script src="tema.js"></script>
 </head>
-<body>
+<body class="has-band">
 <a class="skip" href="#icerik">İçeriğe geç</a>
 
 <header class="hero">
@@ -271,17 +271,15 @@
   </a>
 </div>
 <script>
-  // Hero geçilince alttan küçük bir Play şeridi çıkar; footer görününce, linklerini kapatmasın diye gizlenir.
+  // Hero geçilince alttan küçük bir Play şeridi çıkar ve sayfa sonuna kadar kalır; footer'ın alt boşluğu şeridin altında kalan linkleri açıkta tutar.
   (function () {
     var bar = document.getElementById('stickyCta');
     var hero = document.querySelector('.hero');
-    var foot = document.querySelector('footer');
-    if (!bar || !hero || !foot) return;
+    if (!bar || !hero) return;
     var shown = false;
     function update() {
       var pastHero = window.scrollY > hero.offsetTop + hero.offsetHeight;
-      var nearBottom = foot.getBoundingClientRect().top < window.innerHeight;
-      var show = pastHero && !nearBottom;
+      var show = pastHero;
       if (show === shown) return;
       shown = show;
       bar.classList.toggle('is-visible', show);
