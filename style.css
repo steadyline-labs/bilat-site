@@ -68,8 +68,8 @@ img{display:block;max-width:100%;height:auto}
 
 /* Hero */
 .hero{position:relative;overflow:hidden;color:var(--on-sky);background:var(--stars),linear-gradient(180deg,var(--sky1) 0%,var(--sky2) 50%,var(--sky3) 86%)}
-.hero-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:20px;padding-bottom:8px;position:relative;z-index:2}
-.hero-top nav{display:none;gap:4px}
+.hero-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:20px;padding-bottom:8px;position:relative;z-index:5}
+.hero-top nav{display:none;gap:4px;margin-left:auto}
 .hero-top nav a{display:inline-flex;align-items:center;min-height:48px;padding:0 14px;border-radius:24px;color:var(--on-sky);font-weight:700;text-decoration:none}
 .hero-top nav a:hover{background:var(--chip);color:var(--chip-ink)}
 .hero-grid{position:relative;z-index:2;display:grid;gap:36px;padding-top:28px;padding-bottom:0;text-align:center;justify-items:center}
@@ -122,8 +122,12 @@ section h2{font-size:34px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:4px 0 0;padding:0}
 .chips li{padding:6px 12px;border-radius:12px;background:var(--soft);font-size:14px;font-weight:700}
 .swatches{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
-.swatches figure{margin:0;display:grid;gap:6px;justify-items:center;font-size:13px;font-weight:700;color:var(--muted)}
-.swatches span{width:64px;height:44px;border-radius:12px;box-shadow:0 0 0 1px var(--line)}
+.swatches button{display:grid;gap:6px;justify-items:center;min-width:44px;min-height:44px;margin:0;padding:4px;border:0;border-radius:14px;background:transparent;color:var(--muted);font:700 13px 'Figtree',sans-serif;cursor:pointer}
+.swatches .sw-big{width:64px;height:44px;border-radius:12px;box-shadow:0 0 0 1px var(--line);transition:box-shadow .15s}
+.swatches button:hover .sw-big{box-shadow:0 0 0 2px var(--muted)}
+.swatches button[aria-pressed="true"]{color:var(--ink)}
+.swatches button[aria-pressed="true"] .sw-big{box-shadow:0 0 0 3px var(--primary)}
+.feat .sw-hint{font-size:14px;font-weight:700;color:var(--muted)}
 .lb{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:6px}
 .lb li{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:10px;align-items:center;min-height:40px;padding:0 12px;border-radius:12px;background:var(--soft);font-weight:700;font-size:15px}
 .lb li.me{background:var(--primary);color:var(--primary-ink)}
@@ -145,10 +149,30 @@ footer{padding:40px 0 48px;border-top:1px solid var(--line)}
 .foot ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 18px}
 .foot ul a{display:inline-flex;align-items:center;min-height:48px;font-weight:700}
 .copy{font-size:14px;color:var(--muted)}
-.themes{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
-.themes span{font-size:14px;font-weight:700;color:var(--muted);margin-right:4px}
-.themes button{min-height:48px;padding:0 14px;border-radius:24px;border:2px solid var(--line);background:var(--card);color:var(--ink);font:700 14px 'Figtree',sans-serif;cursor:pointer}
-.themes button[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
+
+/* Gökyüzü (tema) seçici: header'ın sağında küçük düğme, açılınca 4 seçenek */
+.sw-b{background:linear-gradient(180deg,#62B0E6,#FFF2D9)}
+.sw-a{background:linear-gradient(180deg,#3B2F63,#F4A97C)}
+.sw-c{background:linear-gradient(180deg,#070D26,#2E3F78)}
+.sw-auto{background:linear-gradient(135deg,#F4A97C 0 50%,#15224F 50% 100%)}
+.sky-pick{position:relative;flex:none}
+.sky-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:48px;min-height:48px;padding:0;border:0;border-radius:24px;background:var(--chip);color:var(--chip-ink);font:700 15px 'Figtree',sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(10,20,40,.12)}
+.sky-btn:hover{filter:brightness(1.05)}
+.sky-dot{width:28px;height:28px;border-radius:50%;background:var(--stars),linear-gradient(180deg,var(--sky1),var(--sky2) 55%,var(--sky3));box-shadow:0 0 0 2px var(--chip-ink) inset,0 0 0 1px rgba(0,0,0,.08)}
+.sky-name,.sky-chev{display:none}
+.sky-menu{position:absolute;right:0;top:calc(100% + 8px);z-index:30;width:min(300px,calc(100vw - 32px));padding:10px;border-radius:18px;background:var(--card);color:var(--ink);box-shadow:0 0 0 1px var(--line),0 18px 40px -12px rgba(10,20,40,.35);text-align:left}
+.sky-menu[hidden]{display:none}
+.sky-title{margin:4px 8px 6px;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.sky-menu hr{border:0;border-top:1px solid var(--line);margin:6px 8px}
+.sky-menu button{position:relative;display:flex;align-items:center;gap:12px;width:100%;min-height:48px;padding:6px 36px 6px 8px;border:0;border-radius:12px;background:transparent;color:var(--ink);font:700 16px/1.2 'Figtree',sans-serif;text-align:left;cursor:pointer}
+.sky-menu button:hover{background:var(--soft)}
+.sky-menu button[aria-pressed="true"]{background:var(--soft)}
+.sky-menu button[aria-pressed="true"]::after{content:"";position:absolute;right:12px;top:50%;width:12px;height:7px;margin-top:-6px;border-left:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink);transform:rotate(-45deg)}
+.sky-menu .sw{flex:none;width:34px;height:26px;border-radius:7px;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+.sky-opt{display:grid;gap:2px}
+.sky-opt small{font-size:13px;font-weight:600;color:var(--muted);white-space:nowrap}
+.doc-top{position:relative;z-index:5}
+.doc-top .sky-btn{background:var(--chip);color:var(--chip-ink)}
 
 /* Metin sayfası (gizlilik) */
 .faq{display:grid;gap:12px;max-width:760px}
@@ -181,11 +205,15 @@ mark{background:var(--soft);color:var(--ink);padding:0 4px;border-radius:4px;box
   .feats{grid-template-columns:repeat(2,minmax(0,1fr))}
   .foot{grid-template-columns:auto 1fr;align-items:center}
   .foot ul{justify-content:flex-end}
-  .themes{grid-column:1/-1}
 }
 @media (min-width:960px){
   .wrap{padding:0 32px}
   .hero-top nav{display:flex}
+  .hero-top .sky-pick{padding-left:16px;margin-left:4px;border-left:1px solid color-mix(in srgb,var(--on-sky) 30%,transparent)}
+  .sky-btn{padding:0 14px 0 8px}
+  .sky-name,.sky-chev{display:inline-block}
+  .sky-dot{width:30px;height:30px}
+  .sky-btn[aria-expanded="true"] .sky-chev{transform:rotate(180deg)}
   .hero-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);text-align:left;justify-items:start;align-items:center;padding-top:40px}
   .hero-copy{justify-items:start;padding-bottom:140px}
   .badges{justify-content:flex-start}

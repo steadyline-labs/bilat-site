@@ -115,6 +115,20 @@
       <a href="#ekranlar">Ekranlar</a>
       <a href="#sss">SSS</a>
     </nav>
+    <div class="sky-pick">
+      <button type="button" class="sky-btn" aria-expanded="false" aria-controls="gokyuzu" aria-label="Gökyüzü teması">
+        <span class="sky-dot" aria-hidden="true"></span><span class="sky-name">Otomatik</span>
+        <svg class="sky-chev" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="sky-menu" id="gokyuzu" role="group" aria-label="Gökyüzü teması" hidden>
+        <p class="sky-title" aria-hidden="true">Gökyüzü</p>
+        <button type="button" data-tema="saat"><span class="sw sw-auto" aria-hidden="true"></span><span class="sky-opt"><b>Otomatik</b><small>Saate göre · şu an <span class="sky-now">Gündüz</span></small></span></button>
+        <hr>
+        <button type="button" data-tema="b"><span class="sw sw-b" aria-hidden="true"></span><b>Gündüz</b></button>
+        <button type="button" data-tema="a"><span class="sw sw-a" aria-hidden="true"></span><b>Gün batımı</b></button>
+        <button type="button" data-tema="c"><span class="sw sw-c" aria-hidden="true"></span><b>Gece</b></button>
+      </div>
+    </div>
   </div>
   <div class="wrap hero-grid">
     <div class="hero-copy">
@@ -184,11 +198,12 @@
         <article class="feat">
           <h3>Saate göre tema</h3>
           <p>Gökyüzü günün saatine uyar: gündüz mavi, akşamüstü gün batımı, gece yıldızlı.</p>
-          <div class="swatches">
-            <figure><span style="background:linear-gradient(180deg,#62B0E6,#FFF2D9)"></span><figcaption>Gündüz</figcaption></figure>
-            <figure><span style="background:linear-gradient(180deg,#3B2F63,#F4A97C)"></span><figcaption>Gün batımı</figcaption></figure>
-            <figure><span style="background:linear-gradient(180deg,#070D26,#2E3F78)"></span><figcaption>Gece</figcaption></figure>
+          <div class="swatches" role="group" aria-label="Gökyüzünü dene">
+            <button type="button" data-tema="b"><span class="sw-big sw-b" aria-hidden="true"></span>Gündüz</button>
+            <button type="button" data-tema="a"><span class="sw-big sw-a" aria-hidden="true"></span>Gün batımı</button>
+            <button type="button" data-tema="c"><span class="sw-big sw-c" aria-hidden="true"></span>Gece</button>
           </div>
+          <p class="sw-hint">Bir gökyüzüne dokun, site de değişsin.</p>
         </article>
         <article class="feat">
           <h3>Sıralama</h3>
@@ -266,14 +281,6 @@
       <li><a href="gizlilik/">Gizlilik politikası</a></li>
       <li>Destek: <a href="mailto:destek@bilat.app">destek@bilat.app</a></li>
     </ul>
-    <div class="themes" role="group" aria-label="Site teması">
-      <span>Tema</span>
-      <button type="button" data-tema="sistem">Sistem</button>
-      <button type="button" data-tema="saat">Saate göre</button>
-      <button type="button" data-tema="b">Gündüz</button>
-      <button type="button" data-tema="a">Gün batımı</button>
-      <button type="button" data-tema="c">Gece</button>
-    </div>
     <p class="copy">© 2026 Bil At! · by <a href="https://steadylinelabs.com">Steadyline Labs</a></p>
   </div>
 </footer>
