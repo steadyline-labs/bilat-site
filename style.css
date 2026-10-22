@@ -202,14 +202,19 @@ mark{background:var(--soft);color:var(--ink);padding:0 4px;border-radius:4px;box
   .foot{grid-template-columns:auto 1fr auto}
   .themes{grid-column:auto}
 }
+/* Kapanış CTA: TLU closing ile aynı yapı, BilAt gökyüzü renkleri */
+.closing{padding-top:0;padding-bottom:clamp(48px,7vw,80px)}
+.closing-card{display:flex;align-items:center;justify-content:space-between;gap:24px 40px;flex-wrap:wrap;background:var(--stars),linear-gradient(120deg,var(--sky1) 0%,var(--sky2) 100%);color:var(--on-sky);border-radius:24px;padding:clamp(28px,4vw,44px) clamp(24px,4vw,52px);box-shadow:0 20px 40px -20px rgba(10,20,40,.35)}
+.closing-text{min-width:0;flex:1 1 320px}
+.closing h2{font-size:clamp(28px,3.2vw,38px);margin-bottom:8px}
+.closing p{font-size:17px;font-weight:600}
+@media (max-width:640px){.closing-card .badge{width:100%;justify-content:center}}
 /* Alt Play şeridi: TLU sticky CTA ile aynı, renkler BilAt'ın */
 .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;justify-content:center;gap:14px;padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));background:var(--card);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--line);box-shadow:0 -8px 24px -12px rgba(10,20,40,.18);transform:translateY(100%);transition:transform .25s ease}
 .sticky-cta.is-visible{transform:translateY(0)}
 .sticky-cta span{font-size:14px;color:var(--muted)}
-.sticky-cta .badge{min-height:48px;padding:6px 16px 6px 12px;border-radius:12px}
-.sticky-cta .badge span{color:inherit}
-.sticky-cta .badge small{font-size:10px}
-.sticky-cta .badge strong{font-size:18px}
+.sticky-cta .btn-play{display:inline-flex;align-items:center;min-height:44px;padding:10px 18px;border-radius:12px;background:var(--primary);color:var(--primary-ink);font:700 15px/1.2 'Figtree',sans-serif;text-decoration:none}
+.sticky-cta .btn-play:hover{color:var(--primary-ink);filter:brightness(1.08)}
 @media (max-width:560px){.sticky-cta > span{display:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 .copy a{color:inherit;font-weight:700}
