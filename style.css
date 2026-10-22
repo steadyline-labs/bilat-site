@@ -140,7 +140,7 @@ section h2{font-size:34px}
 
 footer{padding:40px 0 48px;border-top:1px solid var(--line)}
 .foot{display:grid;gap:22px}
-.foot .logo{color:var(--ink);font-size:28px}
+.foot .logo{color:var(--ink);font-size:28px;min-height:48px}
 [data-theme="a"] .foot .logo b{color:#B4471F}
 .foot ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 18px}
 .foot ul a{display:inline-flex;align-items:center;min-height:48px;font-weight:700}
@@ -152,11 +152,12 @@ footer{padding:40px 0 48px;border-top:1px solid var(--line)}
 
 /* Metin sayfası (gizlilik) */
 .faq{display:grid;gap:12px;max-width:760px}
-.faq details{padding:16px 20px;border-radius:18px;background:var(--card);box-shadow:0 0 0 1px var(--line) inset}
-.faq summary{cursor:pointer;font-weight:800;font-size:18px;list-style-position:outside}
-.faq details p{margin-top:10px;color:var(--muted);font-size:16px}
+.faq details{border-radius:18px;background:var(--card);box-shadow:0 0 0 1px var(--line) inset}
+.faq summary{cursor:pointer;font-weight:800;font-size:18px;list-style-position:inside;padding:16px 20px;border-radius:18px}
+.faq details p{margin:-6px 20px 0;padding-bottom:16px;color:var(--muted);font-size:16px}
 .doc-top{background:var(--stars),linear-gradient(180deg,var(--sky1),var(--sky2));padding:18px 0 22px}
 .doc-top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.doc-top .logo{min-height:48px}
 .back{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 16px;border-radius:24px;background:var(--chip);color:var(--chip-ink);font-weight:800;text-decoration:none}
 .back:hover{color:var(--chip-ink);opacity:.9}
 .doc{max-width:720px;margin:0 auto;padding:44px 20px 64px}
@@ -201,6 +202,15 @@ mark{background:var(--soft);color:var(--ink);padding:0 4px;border-radius:4px;box
   .foot{grid-template-columns:auto 1fr auto}
   .themes{grid-column:auto}
 }
+/* Alt Play şeridi (hero geçilince) */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;justify-content:center;gap:16px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--card);border-top:1px solid var(--line);box-shadow:0 -8px 24px -12px rgba(10,20,40,.25);transform:translateY(100%);visibility:hidden;transition:transform .25s ease,visibility 0s linear .25s}
+.sticky-cta.is-visible{transform:none;visibility:visible;transition:transform .25s ease}
+.sticky-cta p{font:700 20px/1.1 'Baloo 2',sans-serif;color:var(--ink)}
+.sticky-cta .badge{min-height:48px;padding:6px 16px 6px 12px;border-radius:12px}
+.sticky-cta .badge small{font-size:10px}
+.sticky-cta .badge strong{font-size:18px}
+@media (max-width:380px){.sticky-cta{gap:10px}.sticky-cta p{font-size:17px}}
+@media (max-width:300px){.sticky-cta p{display:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 .copy a{color:inherit;font-weight:700}
 .soon-note{margin:10px 0 0;font-size:14px;font-weight:600;color:var(--muted)}

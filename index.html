@@ -262,5 +262,36 @@
     <p class="copy">© 2026 Bil At! · by <a href="https://steadylinelabs.com">Steadyline Labs</a></p>
   </div>
 </footer>
+
+<div class="sticky-cta" id="stickyCta" aria-hidden="true" inert>
+  <p>Bil At! Google Play'de</p>
+  <a class="badge" href="https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat&amp;referrer=utm_source%3Dbilat.app%26utm_medium%3Dsite%26utm_campaign%3Dsticky_band" aria-label="Bil At! oyununu Google Play'den indir">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 3.5v17l14-8.5z" fill="#fff"/></svg>
+    <span><small>Google Play</small><strong>İndir</strong></span>
+  </a>
+</div>
+<script>
+  // Hero geçilince alttan küçük bir Play şeridi çıkar; footer görününce, linklerini kapatmasın diye gizlenir.
+  (function () {
+    var bar = document.getElementById('stickyCta');
+    var hero = document.querySelector('.hero');
+    var foot = document.querySelector('footer');
+    if (!bar || !hero || !foot) return;
+    var shown = false;
+    function update() {
+      var pastHero = window.scrollY > hero.offsetTop + hero.offsetHeight;
+      var nearBottom = foot.getBoundingClientRect().top < window.innerHeight;
+      var show = pastHero && !nearBottom;
+      if (show === shown) return;
+      shown = show;
+      bar.classList.toggle('is-visible', show);
+      bar.setAttribute('aria-hidden', String(!show));
+      bar.inert = !show;
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  }());
+</script>
 </body>
 </html>
