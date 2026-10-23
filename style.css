@@ -72,6 +72,19 @@ img{display:block;max-width:100%;height:auto}
 .hero-top nav{display:none;gap:4px;margin-left:auto}
 .hero-top nav a{display:inline-flex;align-items:center;min-height:48px;padding:0 14px;border-radius:24px;color:var(--on-sky);font-weight:700;text-decoration:none}
 .hero-top nav a:hover{background:var(--chip);color:var(--chip-ink)}
+/* Mobil menü: 960px altında nav, sağdaki hamburger düğmesiyle açılan kart olur */
+.menu-btn{display:inline-flex;align-items:center;justify-content:center;flex:none;width:48px;height:48px;padding:0;border:0;border-radius:24px;background:var(--chip);color:var(--chip-ink);cursor:pointer;box-shadow:0 2px 8px rgba(10,20,40,.12)}
+.menu-btn:hover{filter:brightness(1.05)}
+.menu-btn svg path{stroke:currentColor;stroke-width:2.4;stroke-linecap:round;transition:transform .2s,opacity .2s;transform-origin:12px 12px}
+.menu-btn[aria-expanded="true"] .mb-top{transform:translateY(5px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] .mb-mid{opacity:0}
+.menu-btn[aria-expanded="true"] .mb-bot{transform:translateY(-5px) rotate(-45deg)}
+.hero-top .sky-pick{margin-left:auto}
+@media (max-width:959.98px){
+  .hero-top nav.is-open{display:flex;flex-direction:column;position:absolute;right:16px;top:calc(100% - 4px);z-index:30;width:min(260px,calc(100vw - 32px));padding:8px;gap:2px;border-radius:18px;background:var(--card);box-shadow:0 0 0 1px var(--line),0 18px 40px -12px rgba(10,20,40,.35)}
+  .hero-top nav.is-open a{color:var(--ink);border-radius:12px}
+  .hero-top nav.is-open a:hover{background:var(--soft);color:var(--ink)}
+}
 .hero-grid{position:relative;z-index:2;display:grid;gap:36px;padding-top:28px;padding-bottom:0;text-align:center;justify-items:center}
 .hero h1{font-size:44px;letter-spacing:-.01em}
 .hero .lead{font-size:18px;max-width:30ch;font-weight:600}
@@ -209,6 +222,8 @@ mark{background:var(--soft);color:var(--ink);padding:0 4px;border-radius:4px;box
 @media (min-width:960px){
   .wrap{padding:0 32px}
   .hero-top nav{display:flex}
+  .menu-btn{display:none}
+  .hero-top .sky-pick{margin-left:4px}
   .hero-top .sky-pick{padding-left:16px;margin-left:4px;border-left:1px solid color-mix(in srgb,var(--on-sky) 30%,transparent)}
   .sky-btn{padding:0 14px 0 8px}
   .sky-name,.sky-chev{display:inline-block}

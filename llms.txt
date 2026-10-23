@@ -13,12 +13,12 @@
 ## Temel bilgiler
 - Dil: sadece Türkçe.
 - İçerik: 8 açık alan (Genel Kültür, Tarih, Coğrafya, Bilim, Sinema ve Dizi, Dil ve Deyimler, Spor, Yemek ve Mutfak), alan başına yaklaşık 150, toplam 1.200 soru. Yeni alanlar sonraki sürümlerde açılacak.
-- Sıralama: haftalık (pazartesi 00:00 TSİ sıfırlanır) ve tüm zamanlar; hesap yok, sadece takma ad.
+- Sıralama: haftalık (pazartesi 00:00 TSİ sıfırlanır) ve tüm zamanlar; ayrı hesap açmak gerekmez, takma ad yeter; Android'de Google Play Oyunlar açıksa takma ad ve skorlar ona bağlanır, telefon değişse de kalır.
 - Gökyüzü teması cihaz saatine göre değişir: gündüz, gün batımı, gece.
 - Çevrimdışı oynanır; çevrimdışı skor bağlantı gelince sıralamaya gönderilir.
 - Fiyat: ücretsiz, uygulama içi satın alma yok, reklamla desteklenir. Bkz. https://bilat.app/pricing.md
 - Platform: Android (Google Play). iPhone sürümü yakında.
-- Gizlilik: Google AdMob (Android'de reklam kimliği ve gerekli bölgelerde Google onay penceresi; iOS'ta izleme yok, kişiselleştirilmemiş reklam), Firebase Analytics, Crashlytics, anonim Firebase kimliği ve sıralama için takma ad + skor. Ayrıntılar gizlilik sayfasında.
+- Gizlilik: Google AdMob (Android'de reklam kimliği ve gerekli bölgelerde Google onay penceresi; iOS'ta izleme yok, kişiselleştirilmemiş reklam), Firebase Analytics, Crashlytics, anonim Firebase kimliği, Android'de Google Play Oyunlar açıksa Play Oyunlar oyuncu kimliği (ad ve skorları cihazlar arasında korumak için) ve sıralama için takma ad + skor. Ayrıntılar gizlilik sayfasında.
 
 ## Sayfalar
 - https://bilat.app/ : Bil At! Oku At, Soruyu Bil · Türkçe bilgi yarışması

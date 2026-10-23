@@ -73,7 +73,7 @@
       "mainEntity": [
         {"@type": "Question", "name": "Bil At! ücretsiz mi?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Oyun ücretsizdir ve reklamlarla desteklenir. Uygulama içi satın alma yoktur. Reklamı yalnızca sen seçince izlersin: oyun bitince Devam et ya da %50 Joker için."}},
         {"@type": "Question", "name": "İnternet olmadan oynanır mı?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Oyunla gelen sorular ve indirdiğin sorular cihazında kalır. Çevrimdışıyken aldığın skor, bağlantı gelince sıralamaya gönderilir."}},
-        {"@type": "Question", "name": "Hesap açmam gerekiyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Sıralamaya katılmak istersen sadece bir takma ad seçersin."}},
+        {"@type": "Question", "name": "Hesap açmam gerekiyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır, ayrı hesap açmazsın. Sıralama için bir takma ad seçmen yeter. Telefonunda Google Play Oyunlar açıksa takma adın ve skorların ona bağlanır; telefon değişse de seninle kalır."}},
         {"@type": "Question", "name": "iPhone için var mı?", "acceptedAnswer": {"@type": "Answer", "text": "iPhone sürümü yakında App Store'da. Şimdilik Google Play'den Android için indirebilirsin."}},
         {"@type": "Question", "name": "Bir soruda hata buldum, ne yapayım?", "acceptedAnswer": {"@type": "Answer", "text": "destek@bilat.app adresine soruyu ve doğru cevabı yaz, düzeltelim."}}
       ]
@@ -109,7 +109,7 @@
       </svg>
       <span>Bil<b>At</b></span>
     </a>
-    <nav aria-label="Sayfa içi">
+    <nav id="menu" aria-label="Sayfa içi">
       <a href="#nasil">Nasıl oynanır</a>
       <a href="#ozellikler">Özellikler</a>
       <a href="#ekranlar">Ekranlar</a>
@@ -129,6 +129,9 @@
         <button type="button" data-tema="c"><span class="sw sw-c" aria-hidden="true"></span><b>Gece</b></button>
       </div>
     </div>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Menüyü aç">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path class="mb-top" d="M4 7h16"/><path class="mb-mid" d="M4 12h16"/><path class="mb-bot" d="M4 17h16"/></svg>
+    </button>
   </div>
   <div class="wrap hero-grid">
     <div class="hero-copy">
@@ -207,7 +210,7 @@
         </article>
         <article class="feat">
           <h3>Sıralama</h3>
-          <p>Haftalık ve tüm zamanlar listesi. Hesap yok, sadece takma ad.</p>
+          <p>Haftalık ve tüm zamanlar listesi. Takma adını seç, yarışa gir. Google Play Oyunlar açıksa skorların telefon değişse de seninle kalır.</p>
           <ol class="lb" aria-label="Örnek sıralama">
             <li><span>1.</span><span>Anadolu Kartalı</span><b>4.820</b></li>
             <li><span>2.</span><span>Bozkurt</span><b>4.742</b></li>
@@ -251,7 +254,7 @@
       <div class="faq">
         <details><summary>Bil At! ücretsiz mi?</summary><p>Evet. Oyun ücretsizdir ve reklamlarla desteklenir. Uygulama içi satın alma yoktur. Reklamı yalnızca sen seçince izlersin: oyun bitince Devam et ya da %50 Joker için.</p></details>
         <details><summary>İnternet olmadan oynanır mı?</summary><p>Evet. Oyunla gelen sorular ve indirdiğin sorular cihazında kalır. Çevrimdışıyken aldığın skor, bağlantı gelince sıralamaya gönderilir.</p></details>
-        <details><summary>Hesap açmam gerekiyor mu?</summary><p>Hayır. Sıralamaya katılmak istersen sadece bir takma ad seçersin.</p></details>
+        <details><summary>Hesap açmam gerekiyor mu?</summary><p>Hayır, ayrı hesap açmazsın. Sıralama için bir takma ad seçmen yeter. Telefonunda Google Play Oyunlar açıksa takma adın ve skorların ona bağlanır; telefon değişse de seninle kalır.</p></details>
         <details><summary>iPhone için var mı?</summary><p>iPhone sürümü yakında App Store'da. Şimdilik Google Play'den Android için indirebilirsin.</p></details>
         <details><summary>Bir soruda hata buldum, ne yapayım?</summary><p><a href="mailto:destek@bilat.app">destek@bilat.app</a> adresine soruyu ve doğru cevabı yaz, düzeltelim.</p></details>
       </div>
@@ -290,6 +293,25 @@
   <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat&amp;referrer=utm_source%3Dbilat.app%26utm_medium%3Dsite%26utm_campaign%3Dsticky_band">Google Play'den indir</a>
 </div>
 <script>
+  (function () {
+    // Mobile menu: the hamburger toggles the in-page nav; closes on link tap, Escape and outside tap.
+    var btn = document.querySelector('.menu-btn');
+    var nav = document.getElementById('menu');
+    if (!btn || !nav) return;
+    function setOpen(open) {
+      nav.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
+    }
+    btn.addEventListener('click', function () { setOpen(btn.getAttribute('aria-expanded') !== 'true'); });
+    nav.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') { setOpen(false); btn.focus(); }
+    });
+    document.addEventListener('click', function (e) {
+      if (btn.getAttribute('aria-expanded') === 'true' && !nav.contains(e.target) && !btn.contains(e.target)) setOpen(false);
+    });
+  }());
   (function () {
     // Shows a compact install CTA once the user has scrolled past the hero, and hides
     // it again near the very bottom so it doesn't sit on top of the footer.
