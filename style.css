@@ -155,6 +155,17 @@ section h2{font-size:34px}
 .strip figcaption{font-size:14px;font-weight:700;text-align:center}
 .strip figcaption span{display:block;font-weight:600;color:var(--muted)}
 
+/* Tanıtım videosu: tıklayınca yüklenen dikey YouTube çerçevesi */
+.video-sec .sec-head{justify-items:center;text-align:center}
+.yt{position:relative;width:min(100%,360px);margin:0 auto;aspect-ratio:9/16;border-radius:30px;overflow:hidden;background:#000;box-shadow:0 0 0 6px #1c1a22,0 16px 32px rgba(10,20,40,.2)}
+.yt-play,.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.yt img{width:100%;height:100%;object-fit:cover}
+.yt-btn{position:absolute;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;display:grid;place-items:center;background:var(--primary);color:var(--primary-ink);box-shadow:0 0 0 4px rgba(255,255,255,.55),0 10px 24px rgba(10,20,40,.35);transition:transform .15s}
+.yt-btn svg{margin-left:4px}
+.yt-play:hover .yt-btn,.yt-play:focus-visible .yt-btn{transform:scale(1.08)}
+.yt-play:focus-visible{outline:3px solid var(--primary);outline-offset:-6px;border-radius:30px}
+.yt-note{margin-top:18px;text-align:center;font-size:14px;font-weight:600;color:var(--muted)}
+
 footer{padding:40px 0 48px;border-top:1px solid var(--line)}
 .foot{display:grid;gap:22px}
 .foot .logo{color:var(--ink);font-size:28px;padding:10px 0;margin:-10px 0}

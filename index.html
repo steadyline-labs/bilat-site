@@ -66,7 +66,22 @@
       "sameAs": ["https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat"],
       "author": {"@id": "https://steadylinelabs.com/#organization"},
       "publisher": {"@id": "https://steadylinelabs.com/#organization"},
-      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "TRY"}
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "TRY"},
+      "trailer": {"@id": "https://bilat.app/#video"}
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://bilat.app/#video",
+      "name": "Bil At! | Bozkırda bir okçunun hikâyesi",
+      "description": "Bozkırda bir okçu, dönen hedef tahtası ve sorular: Bil At! tanıtım videosu. Oku at, dilimi vur, soruyu bil.",
+      "thumbnailUrl": ["https://bilat.app/img/video-poster.webp", "https://i.ytimg.com/vi/9iJxf5ObJpw/hqdefault.jpg"],
+      "uploadDate": "2026-10-24T05:06:05+03:00",
+      "duration": "PT41S",
+      "inLanguage": "tr",
+      "contentUrl": "https://www.youtube.com/shorts/9iJxf5ObJpw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/9iJxf5ObJpw",
+      "about": {"@id": "https://bilat.app/#app"},
+      "publisher": {"@id": "https://steadylinelabs.com/#organization"}
     },
     {
       "@type": "FAQPage",
@@ -110,6 +125,7 @@
       <span>Bil<b>At</b></span>
     </a>
     <nav id="menu" aria-label="Sayfa içi">
+      <a href="#video">Video</a>
       <a href="#nasil">Nasıl oynanır</a>
       <a href="#ozellikler">Özellikler</a>
       <a href="#ekranlar">Ekranlar</a>
@@ -158,6 +174,22 @@
 </header>
 
 <main id="icerik">
+  <section id="video" class="video-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Tanıtım videosu</span>
+        <h2>Bozkırda bir okçunun hikâyesi</h2>
+      </div>
+      <div class="yt" data-yt="9iJxf5ObJpw" data-title="Bil At! | Bozkırda bir okçunun hikâyesi">
+        <a class="yt-play" href="https://www.youtube.com/shorts/9iJxf5ObJpw" aria-label="Tanıtım videosunu oynat, 41 saniye">
+          <img src="img/video-poster.webp" width="720" height="1280" loading="lazy" decoding="async" alt="Tanıtım videosundan bir kare: bozkırda yayını geren okçu ve yanında oturan kurt yavrusu">
+          <span class="yt-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>
+        </a>
+      </div>
+      <p class="yt-note">41 saniye · Video, oynatınca YouTube'dan yüklenir.</p>
+    </div>
+  </section>
+
   <section id="nasil">
     <div class="wrap">
       <div class="sec-head">
@@ -293,6 +325,24 @@
   <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat&amp;referrer=utm_source%3Dbilat.app%26utm_medium%3Dsite%26utm_campaign%3Dsticky_band">Google Play'den indir</a>
 </div>
 <script>
+  (function () {
+    // Click-to-play video: nothing loads from YouTube until the visitor presses play.
+    document.querySelectorAll('.yt').forEach(function (box) {
+      var link = box.querySelector('.yt-play');
+      if (!link) return;
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var f = document.createElement('iframe');
+        f.src = 'https://www.youtube-nocookie.com/embed/' + box.dataset.yt + '?autoplay=1&playsinline=1&rel=0';
+        f.title = box.dataset.title;
+        f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        f.allowFullscreen = true;
+        f.referrerPolicy = 'strict-origin-when-cross-origin';
+        box.replaceChildren(f);
+        f.focus();
+      });
+    });
+  }());
   (function () {
     // Mobile menu: the hamburger toggles the in-page nav; closes on link tap, Escape and outside tap.
     var btn = document.querySelector('.menu-btn');
