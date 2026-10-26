@@ -8,6 +8,7 @@
 - Her soruda 20 saniye ve dört şık var; doğru cevap sayı × 10 puan getirir.
 - 3 can: yanlış cevap ya da biten süre bir can götürür. Sadakta 6 ok: ıska bir ok götürür, oklar bitince bir can gider.
 - Her 3 doğruda seviye atlanır, sadak dolar ve tahta hızlanır.
+- Bonus hedefler: sorular arasında tahta ile okçu arasından ara sıra bir hedef süzülür; vurulursa ok harcanmaz. Balon +1 ok, fener sıradaki soruya x2 puan; testi (+3 üzerlik) ve uçurtma (%50 Joker) yakında. Iska ek ceza getirmez, bonus puanları sıralamada sayılır.
 - İsteğe bağlı ödüllü reklamla %50 Joker (iki yanlış şık gider) ve oyun sonunda Devam et (+1 can).
 
 ## Temel bilgiler

@@ -260,3 +260,24 @@ mark{background:var(--soft);color:var(--ink);padding:0 4px;border-radius:4px;box
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 .copy a{color:inherit;font-weight:700}
 .soon-note{margin:10px 0 0;font-size:14px;font-weight:600;color:var(--muted)}
+/* Bonus hedefler: oyundaki nesneler gökyüzü karosunda; "Yakında" olanlar soluk gri */
+.bonus{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;margin:0;padding:0}
+.bonus-card{display:grid;gap:8px;align-content:start;padding:12px 12px 16px;border-radius:24px;background:var(--card);box-shadow:0 0 0 1px var(--line) inset}
+.bonus-sky{position:relative;aspect-ratio:1;border-radius:18px;background:var(--stars),linear-gradient(180deg,var(--sky1) 0%,var(--sky2) 70%,var(--sky3) 100%);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.bonus-sky img{width:78%;height:auto}
+.bonus-card:not(.is-soon) .bonus-sky img{animation:float 3.2s ease-in-out infinite}
+.bonus-card:nth-child(2) .bonus-sky img{animation-delay:-1.6s}
+@keyframes float{50%{transform:translateY(-6px) rotate(-3deg)}}
+.bonus-card > div:nth-child(2){display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px}
+.bonus-card h3{font-size:22px}
+.bonus-tag{padding:3px 10px;border-radius:10px;background:var(--soft);font-size:14px;font-weight:800;white-space:nowrap}
+.bonus-card p{color:var(--muted);font-size:15px}
+.is-soon .bonus-sky::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--page) 45%,transparent)}
+.is-soon .bonus-sky img{filter:grayscale(1);opacity:.55}
+.is-soon h3,.is-soon .bonus-tag{opacity:.6}
+.bonus-soon{position:absolute;top:8px;right:8px;z-index:1;padding:3px 9px;border-radius:10px;background:var(--card);color:var(--ink);font-size:12px;font-weight:800;letter-spacing:.02em;box-shadow:0 1px 4px rgba(10,20,40,.15)}
+.bonus-note{margin-top:16px;padding:14px 18px;border-radius:20px;background:var(--soft);font-size:16px}
+@media (min-width:960px){
+  .bonus{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+  .bonus-card{padding:14px 14px 20px}
+}
