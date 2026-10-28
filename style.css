@@ -67,10 +67,11 @@ img{display:block;max-width:100%;height:auto}
 @keyframes thunk{from{transform:translate(34px,-34px);opacity:0}to{transform:none;opacity:1}}
 
 /* Hero */
-.hero{position:relative;overflow:hidden;color:var(--on-sky);background:var(--stars),linear-gradient(180deg,var(--sky1) 0%,var(--sky2) 50%,var(--sky3) 86%)}
+.hero{position:relative;isolation:isolate;overflow:hidden;--hill-h:clamp(88px,14vw,180px);padding-bottom:calc(var(--hill-h) * .55);color:var(--on-sky);background:var(--stars),linear-gradient(180deg,var(--sky1) 0%,var(--sky2) 50%,var(--sky3) 86%)}
 .hero-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:20px;padding-bottom:8px;position:relative;z-index:5}
 .hero-top nav{display:none;gap:4px;margin-left:auto}
-.hero-top nav a{display:inline-flex;align-items:center;min-height:48px;padding:0 14px;border-radius:24px;color:var(--on-sky);font-weight:700;text-decoration:none}
+.hero-top nav a{display:inline-flex;align-items:center;min-height:48px;padding:0 14px;border-radius:24px;color:var(--on-sky);font-size:15px;font-weight:600;text-decoration:none}
+.hero-top nav a.is-active{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px;text-decoration-color:var(--logo-accent)}
 .hero-top nav a:hover{background:var(--chip);color:var(--chip-ink)}
 /* Mobil menü: 960px altında nav, sağdaki hamburger düğmesiyle açılan kart olur */
 .menu-btn{display:inline-flex;align-items:center;justify-content:center;flex:none;width:48px;height:48px;padding:0;border:0;border-radius:24px;background:var(--chip);color:var(--chip-ink);cursor:pointer;box-shadow:0 2px 8px rgba(10,20,40,.12)}
@@ -85,34 +86,43 @@ img{display:block;max-width:100%;height:auto}
   .hero-top nav.is-open a{color:var(--ink);border-radius:12px}
   .hero-top nav.is-open a:hover{background:var(--soft);color:var(--ink)}
 }
-.hero-grid{position:relative;z-index:2;display:grid;gap:36px;padding-top:28px;padding-bottom:0;text-align:center;justify-items:center}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr);gap:28px;padding-top:28px;padding-bottom:0;text-align:center;justify-items:center}
 .hero h1{font-size:44px;letter-spacing:-.01em}
 .hero .lead{font-size:18px;max-width:30ch;font-weight:600}
-.badges{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:16px;margin-top:4px}
+.badges{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 12px;margin-top:6px}
 /* Resmi Google Play rozeti: değiştirilmeden, görünür yükseklik ≥40px, çevresinde rozet yüksekliğinin 1/4'ü boşluk (PNG üst/alt şeffaf payı + gap) */
 .gp-badge{display:inline-block;line-height:0;border-radius:12px;flex:none}
-.gp-badge img{display:block;width:auto;height:72px}
-.gp-badge.gp-sm img{height:54px}
-.badge{display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:8px 18px 8px 14px;border-radius:14px;background:#000;color:#fff;text-decoration:none;border:1px solid #A6A6A6;line-height:1.1;text-align:left}
+.gp-badge{--gp-h:60px}
+.gp-badge img{display:block;width:auto;height:var(--gp-h)}
+.sticky-cta .gp-badge{--gp-h:48px}
+@media (min-width:900px){.gp-badge{--gp-h:66px}.sticky-cta .gp-badge{--gp-h:54px}}
+.badge{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px 0 10px;border-radius:10px;background:#000;color:#fff;text-decoration:none;border:1px solid #A6A6A6;line-height:1.1;text-align:left}
 .badge:hover{color:#fff;background:#1d1d1f}
-.badge small{display:block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
-.badge strong{display:block;font:700 20px/1 'Baloo 2',sans-serif}
+.badge small{display:block;font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.badge strong{display:block;font:700 17px/1 'Baloo 2',sans-serif}
+@media (min-width:900px){.badge{height:44px}}
 .badge.soon{background:transparent;color:var(--on-sky);border:2px dashed var(--on-sky);cursor:default}
 .badge.soon:hover{background:transparent;color:var(--on-sky)}
-.hero-copy{display:grid;gap:18px;justify-items:center}
+.hero-copy{display:grid;gap:16px;justify-items:center}
 .hero-note{font-size:14px;font-weight:700}
-.phone{position:relative;width:250px;aspect-ratio:360/780;border-radius:34px;overflow:hidden;box-shadow:0 0 0 7px #1c1a22,0 30px 60px rgba(10,20,40,.35);background:#1c1a22;margin-bottom:-120px}
+.phones{position:relative;z-index:3;display:flex;justify-content:center;gap:0;width:100%;margin-bottom:calc(var(--hill-h) * -.35)}
+.phone{position:relative;flex:1 1 0;min-width:0;max-width:min(46vw,240px);aspect-ratio:360/780;border-radius:28px;overflow:hidden;box-shadow:0 0 0 6px #1c1a22,0 18px 28px rgba(7,13,38,.28);background:#1c1a22;margin:6px}
 .phone img{width:100%;height:100%;object-fit:cover}
+.phone-okm img{object-position:30% 50%}
+.phone-okm .shot-c{object-position:45% 50%}
+[data-theme="c"] .phone{box-shadow:0 0 0 6px #1c1a22,0 18px 28px rgba(0,0,0,.45)}
+@media (prefers-color-scheme:dark){:root:not([data-theme]) .phone{box-shadow:0 0 0 6px #1c1a22,0 18px 28px rgba(0,0,0,.45)}}
 .shot-c{display:none}
 [data-theme="c"] .shot-b{display:none}
 [data-theme="c"] .shot-c{display:block}
 @media (prefers-color-scheme:dark){:root:not([data-theme]) .shot-b{display:none}:root:not([data-theme]) .shot-c{display:block}}
-.sun{position:absolute;right:-30px;top:52%;width:150px;height:150px;border-radius:50%;background:var(--sun-bg);box-shadow:var(--sun-sh);z-index:1}
-.hills{position:relative;height:150px;margin-top:-10px;z-index:3}
-.hills i{position:absolute;display:block;border-radius:50% 50% 0 0}
-.hills i:nth-child(1){left:-20%;width:75%;height:190px;bottom:-40px;background:var(--hill)}
-.hills i:nth-child(2){right:-20%;width:80%;height:170px;bottom:-40px;background:var(--hill2)}
-.hills i:nth-child(3){left:-10%;right:-10%;height:90px;bottom:-30px;background:var(--page)}
+.sun{position:absolute;right:-30px;top:52%;width:150px;height:150px;border-radius:50%;background:var(--sun-bg);box-shadow:var(--sun-sh);z-index:0}
+/* Tepeler: en altta arka plan katmanı (z 1); metin ve rozet tepenin üstünde biter, telefonlar (z 3) tepeye basar */
+.hills{position:absolute;left:0;right:0;bottom:0;height:var(--hill-h);z-index:1;pointer-events:none}
+.hills i{position:absolute;display:block;bottom:0;border-radius:50% 50% 0 0}
+.hills i:nth-child(1){left:-20%;width:100%;height:100%;background:var(--hill)}
+.hills i:nth-child(2){left:35%;width:80%;height:62%;background:var(--hill2)}
+.hills i:nth-child(3){left:-10%;right:-10%;height:22%;bottom:-2px;border-radius:50% 50% 0 0/100% 100% 0 0;background:var(--page)}
 
 /* Sections */
 section{padding:56px 0}
@@ -121,16 +131,6 @@ section{padding:56px 0}
 section h2{font-size:34px}
 .sec-head p{color:var(--muted);max-width:52ch}
 
-.steps{display:grid;gap:16px;list-style:none;margin:0;padding:0;counter-reset:s}
-.step{display:grid;grid-template-columns:76px minmax(0,1fr);gap:16px;align-items:start;padding:18px;border-radius:24px;background:var(--card);box-shadow:0 1px 0 var(--line),0 0 0 1px var(--line) inset}
-.step .ico{width:76px;height:76px;border-radius:18px;background:var(--soft);display:flex;align-items:center;justify-content:center}
-.step h3{font-size:22px;margin-bottom:4px}
-.step p{color:var(--muted);font-size:16px}
-.quiver{margin-top:16px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;padding:16px 18px;border-radius:20px;background:var(--soft)}
-.quiver p{font-size:16px}
-.arrows{display:flex;gap:3px}
-.arrows span{width:5px;height:30px;border-radius:3px;background:var(--ink)}
-.arrows span.used{opacity:.3}
 
 .feats{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
 .feat{padding:22px;border-radius:24px;background:var(--card);box-shadow:0 0 0 1px var(--line) inset;display:grid;gap:10px;align-content:start}
@@ -209,8 +209,6 @@ mark{background:var(--soft);color:var(--ink);padding:0 4px;border-radius:4px;box
 
 @media (min-width:640px){
   .hero h1{font-size:54px}
-  .steps{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .step{grid-template-columns:1fr}
   .feats{grid-template-columns:repeat(2,minmax(0,1fr))}
   .foot{grid-template-columns:auto 1fr;align-items:center}
   .foot ul{justify-content:flex-end}
@@ -225,12 +223,11 @@ mark{background:var(--soft);color:var(--ink);padding:0 4px;border-radius:4px;box
   .sky-name,.sky-chev{display:inline-block}
   .sky-dot{width:30px;height:30px}
   .sky-btn[aria-expanded="true"] .sky-chev{transform:rotate(180deg)}
-  .hero-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);text-align:left;justify-items:start;align-items:center;padding-top:40px}
-  .hero-copy{justify-items:start;padding-bottom:140px}
+  .hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:56px;text-align:left;justify-items:start;align-items:center;padding-top:40px}
+  .hero-copy{justify-items:start}
   .badges{justify-content:flex-start}
   .hero h1{font-size:68px}
   .hero .lead{font-size:21px}
-  .phone{width:300px;justify-self:center;margin-bottom:-150px}
   .sun{right:6%;top:30%;width:180px;height:180px}
   section{padding:80px 0}
   section h2{font-size:42px}
@@ -244,31 +241,32 @@ mark{background:var(--soft);color:var(--ink);padding:0 4px;border-radius:4px;box
 .closing p{font-size:17px;font-weight:600}
 @media (max-width:640px){.closing-card .gp-badge{margin:0 auto}}
 /* Alt Play şeridi: TLU sticky CTA ile aynı, renkler BilAt'ın */
-.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;justify-content:center;gap:14px;padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));background:var(--card);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--line);transform:translateY(100%);transition:transform .25s ease}
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;justify-content:center;gap:14px;min-height:64px;padding:8px 16px calc(8px + env(safe-area-inset-bottom,0px));background:var(--card);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--line);transform:translateY(100%);transition:transform .25s ease}
 .sticky-cta.is-visible{transform:translateY(0);box-shadow:0 -8px 24px -12px rgba(10,20,40,.18)}
-.sticky-cta span{font-size:14px;color:var(--muted)}
+.sticky-cta span{font-size:15px;font-weight:700;color:var(--ink)}
+@media (min-width:900px){.sticky-cta{min-height:72px}}
 @media (max-width:560px){.sticky-cta > span{display:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 .copy a{color:inherit;font-weight:700}
 .soon-note{margin:10px 0 0;font-size:14px;font-weight:600;color:var(--muted)}
 /* Bonus hedefler: oyundaki nesneler gökyüzü karosunda; "Yakında" olanlar soluk gri */
-.bonus{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;margin:0;padding:0}
+.bonus{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;margin:16px 0 0;padding:0}
 .bonus-card{display:grid;gap:8px;align-content:start;padding:12px 12px 16px;border-radius:24px;background:var(--card);box-shadow:0 0 0 1px var(--line) inset}
-.bonus-sky{position:relative;aspect-ratio:1;border-radius:18px;background:var(--stars),linear-gradient(180deg,var(--sky1) 0%,var(--sky2) 70%,var(--sky3) 100%);display:flex;align-items:center;justify-content:center;overflow:hidden}
-.bonus-sky img{width:78%;height:auto}
+.bonus-sky{position:relative;height:96px;border-radius:18px;background:var(--stars),linear-gradient(180deg,var(--sky1) 0%,var(--sky2) 70%,var(--sky3) 100%);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.bonus-sky img{width:72px;height:72px}
 .bonus-card:not(.is-soon) .bonus-sky img{animation:float 3.2s ease-in-out infinite}
 .bonus-card:nth-child(2) .bonus-sky img{animation-delay:-1.6s}
 @keyframes float{50%{transform:translateY(-6px) rotate(-3deg)}}
 .bonus-card > div:nth-child(2){display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px}
-.bonus-card h3{font-size:22px}
+.bonus-card h4{font:700 22px/1.1 'Baloo 2',sans-serif;margin:0}
 .bonus-tag{padding:3px 10px;border-radius:10px;background:var(--soft);font-size:14px;font-weight:800;white-space:nowrap}
 .bonus-card p{color:var(--muted);font-size:15px}
 .is-soon .bonus-sky::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--page) 45%,transparent)}
 .is-soon .bonus-sky img{filter:grayscale(1);opacity:.55}
-.is-soon h3,.is-soon .bonus-tag{opacity:.6}
+.is-soon h4,.is-soon .bonus-tag{opacity:.6}
 .bonus-soon{position:absolute;top:8px;right:8px;z-index:1;padding:3px 9px;border-radius:10px;background:var(--card);color:var(--ink);font-size:12px;font-weight:800;letter-spacing:.02em;box-shadow:0 1px 4px rgba(10,20,40,.15)}
 .bonus-note{margin-top:16px;padding:14px 18px;border-radius:20px;background:var(--soft);font-size:16px}
-@media (min-width:960px){
+@media (min-width:900px){
   .bonus{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
   .bonus-card{padding:14px 14px 20px}
 }
@@ -276,21 +274,6 @@ mark{background:var(--soft);color:var(--ink);padding:0 4px;border-radius:4px;box
 .new-pill{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:4px 14px 4px 4px;border-radius:20px;background:var(--chip);color:var(--chip-ink);font-size:15px;font-weight:700;text-decoration:none;box-shadow:0 2px 8px rgba(10,20,40,.12)}
 .new-pill b{padding:4px 10px;border-radius:16px;background:var(--primary);color:var(--primary-ink);font-size:13px;letter-spacing:.04em;text-transform:uppercase}
 .new-pill:hover{color:var(--chip-ink);filter:brightness(1.05)}
-/* Ok Meydanı tur kartları ve özellik listesi (Claude Design, 1.3.0 incelemesi) */
-.okm-cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:6px}
-.okm-trailer{display:inline-flex;align-items:center;min-height:48px;font-weight:700}
-.okm-rounds{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;list-style:none;margin:0;padding:0}
-.round-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:12px 12px 20px}
-.round-card img{aspect-ratio:1270/665;object-fit:cover;border-radius:14px;width:100%}
-.round-no{display:block;margin:14px 8px 0;font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--accent)}
-.round-card h3{font:800 22px/1.2 "Baloo 2",sans-serif;margin:2px 8px 4px}
-.round-card p{font-size:16px;line-height:1.5;color:var(--muted);margin:0 8px}
-.features{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:32px 0 0;padding:0;list-style:none}
-.features>li{border-top:1px solid var(--line);padding-top:14px;background:none}
-.features h3{font-size:17px;margin-bottom:4px}
-.features p{color:var(--muted);font-size:15px}
-@media (max-width:640px){.features{grid-template-columns:1fr 1fr;gap:20px 16px}}
-@media (min-width:960px){.okm-rounds{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 /* Ekranlar: kaydırmalı satırlar, kenar solması, masaüstünde 44 px oklar, Gündüz/Gece seçici */
 .seg{display:inline-flex;gap:4px;padding:4px;border-radius:24px;background:var(--soft);width:fit-content;margin-top:4px}
@@ -323,4 +306,67 @@ mark{background:var(--soft);color:var(--ink);padding:0 4px;border-radius:4px;box
   .wrap{padding:0 24px}
   section h2{font-size:36px}
   .sec-head p{font-size:17px}
+}
+
+/* İki mod (Claude Design, iki mod spec): eşit iki kart, sonra tek "Nasıl oynanır" ve mod anahtarı */
+section[id]{scroll-margin-top:12px}
+.mode-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;list-style:none;margin:0;padding:0}
+.mode-chip{display:inline-flex;align-items:center;height:36px;padding:0 14px;border-radius:18px;background:var(--chip);color:var(--chip-ink);font:700 14px/1 'Figtree',sans-serif;text-decoration:none;box-shadow:0 2px 8px rgba(10,20,40,.12)}
+.mode-chip:hover{color:var(--chip-ink);filter:brightness(1.05)}
+.mode-chip.is-bilat::before,.mode-chip.is-okm::before{content:"";width:8px;height:8px;margin-right:8px;border-radius:50%;background:#FFC247}
+.mode-chip.is-okm::before{background:#FB8C00}
+.modes{display:grid;gap:16px;grid-template-columns:1fr}
+@media (min-width:760px){.modes{grid-template-columns:1fr 1fr;gap:24px}}
+.mode{position:relative;display:flex;flex-direction:column;gap:12px;padding:12px;background:var(--card);border:1px solid var(--line);border-radius:24px}
+.mode .anchor{position:absolute;top:0}
+.mode-media{aspect-ratio:16/10;border-radius:16px;overflow:hidden;background:var(--soft)}
+.mode-media img{width:100%;height:100%;object-fit:cover}
+.mode-media-bilat img{object-position:50% 35%}
+.mode-chip-tag{font:700 12px/1 'Figtree',sans-serif;letter-spacing:.08em;padding:5px 9px 4px;border-radius:8px;align-self:flex-start;margin:4px 6px 0;color:var(--ink)}
+.mode-chip-tag.is-bilat{background:color-mix(in srgb,#FFC247 30%,var(--card))}
+.mode-chip-tag.is-okm{background:color-mix(in srgb,#FB8C00 22%,var(--card))}
+.mode h3{font:800 28px/1.1 'Baloo 2',sans-serif;margin:4px 6px 0}
+.mode > p{color:var(--muted);font-size:16px;margin:0 6px}
+.mode-list{margin:0;padding:0 6px;list-style:none;display:grid;gap:6px;font-size:15px;font-weight:600}
+.mode-list li::before{content:"•";margin-right:8px;color:var(--muted)}
+.mode-actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:auto;padding:4px 6px 6px}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:22px;background:var(--primary);color:var(--primary-ink);font-weight:700;font-size:16px;text-decoration:none}
+.btn:hover{color:var(--primary-ink);filter:brightness(1.08)}
+.okm-trailer{display:inline-flex;align-items:center;min-height:44px;font-weight:600;font-size:16px}
+.modes-note{margin-top:16px;color:var(--muted);font-size:15px;font-weight:600}
+@media (min-width:760px){.mode h3{font-size:32px}}
+
+.mode-seg{position:sticky;top:8px;z-index:5;display:flex;gap:4px;padding:4px;border-radius:16px;background:var(--soft);max-width:420px;margin:0 0 24px;box-shadow:0 0 0 1px var(--line) inset}
+.mode-seg button{flex:1;min-height:44px;border:0;border-radius:12px;background:none;color:var(--muted);font:700 16px 'Figtree',sans-serif;cursor:pointer}
+.mode-seg [aria-selected="true"]{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(27,35,80,.15)}
+.panel[hidden]{display:none}
+.panel:focus{outline:none}
+.steps{display:grid;gap:12px;list-style:none;margin:0;padding:0}
+@media (min-width:900px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.step-wide{grid-column:1/-1}}
+.step{display:grid;grid-template-columns:32px minmax(0,1fr);gap:12px;align-items:start;padding:14px 16px;border-radius:18px;background:var(--card);border:1px solid var(--line)}
+.step-no{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:10px;background:color-mix(in srgb,var(--o) 18%,var(--card));color:var(--accent);font:800 16px/1 'Baloo 2',sans-serif}
+.step h3{font:800 20px/1.15 'Baloo 2',sans-serif;margin:4px 0}
+.step p,.step li{font-size:15px;line-height:1.5;color:var(--muted)}
+.step ul{margin:6px 0 0;padding-left:18px;display:grid;gap:4px}
+.diff{display:flex!important;flex-wrap:wrap;gap:6px!important;list-style:none;padding:0!important;margin-top:8px!important}
+.diff li{padding:3px 8px;border-radius:8px;font-size:13px;font-weight:700;color:#22324F}
+.diff .d-easy{background:#5AD1A0}.diff .d-mid{background:#FFD15C}.diff .d-hard{background:#FF8FA3}
+.rounds{list-style:none;padding:0!important;margin:10px 0 6px!important;display:grid;gap:10px!important}
+.round{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;align-items:center;padding:8px;border-radius:14px;background:var(--soft)}
+.round img{width:96px;aspect-ratio:1270/665;object-fit:cover;border-radius:10px}
+.round-tag{display:block;font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--accent)}
+.round h4{font:800 18px/1.2 'Baloo 2',sans-serif;margin:2px 0;color:var(--ink)}
+.round p{font-size:14px}
+@media (min-width:900px){.rounds{grid-template-columns:repeat(3,minmax(0,1fr))}.round{grid-template-columns:1fr;align-items:start}.round img{width:100%}}
+.panel-sub{font-size:22px;margin:28px 0 6px}
+.panel-lead{color:var(--muted);font-size:16px;max-width:60ch}
+.panel-foot{margin-top:16px}
+.panel-foot .okm-trailer{font-size:16px;font-weight:600}
+@media (min-width:900px){
+  .hero{padding-bottom:calc(var(--hill-h) * .6)}
+  .hero-copy{padding-bottom:calc(var(--hill-h) * .25)}
+  .mode-chips{justify-content:flex-start}
+  .phones{justify-content:center}
+  .phone{flex:none;width:280px;max-width:none}
+  .phone-okm{transform:translateY(40px) rotate(4deg)}
 }

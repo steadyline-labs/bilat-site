@@ -13,15 +13,15 @@
 
 ## Ok Meydanı (1.3.0 ile gelen ikinci mod)
 - Ana menüde iki mod var: Bilgi yarışı (soru cevaplı Bil At) ve 3D Okçuluk (Ok Meydanı).
-- Ok Meydanı: bozkırda 3D okçuluk meydanı, soru yok, 3 tur. 1. tur Sabit hedefler (testi kulesi, kabak, puta; rüzgâr yok), 2. tur Sallanan hedefler (asılı testiler, kayan kızak, fenerler, uzak puta; sert rüzgâr), 3. tur Uçan tabaklar (tabaklar ve testiler oklar bitene kadar uçar; hafif rüzgâr). Gündüz ve gece.
+- Ok Meydanı: bozkırda 3D okçuluk meydanı, soru yok, 3 tur, her turda 10 ok. 1. tur Sabit hedefler (testi kulesi, kabak, puta; rüzgâr yok), 2. tur Sallanan hedefler (asılı testiler, kayan kızak, fenerler, uzak puta; sert rüzgâr), 3. tur Uçan tabaklar (tabaklar ve testiler oklar bitene kadar uçar; hafif rüzgâr). Gündüz ve gece.
 - Kamera okçunun arkasında, yay gerilince yakınlaşır; nişan ok ucuyla alınır; rüzgâr yaydaki püskülden okunur.
 - Nefes: yay tam gerilince zaman kısa bir an yavaşlar, uzun tutulursa kol yorulur.
 - Vurulan testiler devrilir, kırılır ve puan getirir. İnternetsiz oynanır.
-- Fragman: https://youtu.be/zOD5yfGOJXc
+- Fragman: https://youtu.be/DlsMeCCp97Y
 
 ## Temel bilgiler
 - Dil: sadece Türkçe.
-- İçerik: 8 açık alan (Genel Kültür, Tarih, Coğrafya, Bilim, Sinema ve Dizi, Dil ve Deyimler, Spor, Yemek ve Mutfak), alan başına yaklaşık 150, toplam 1.200 soru. Yeni alanlar sonraki sürümlerde açılacak.
+- İçerik: 8 açık alan (Genel Kültür, Tarih, Coğrafya, Bilim, Sinema ve Dizi, Dil ve Deyimler, Spor, Yemek ve Mutfak), toplam 1.400'den fazla soru. Yeni alanlar sonraki sürümlerde açılacak.
 - Sıralama: haftalık (pazartesi 00:00 TSİ sıfırlanır) ve tüm zamanlar; ayrı hesap açmak gerekmez, takma ad yeter; Android'de Google Play Oyunlar açıksa takma ad ve skorlar ona bağlanır, telefon değişse de kalır.
 - Gökyüzü teması cihaz saatine göre değişir: gündüz, gün batımı, gece.
 - Çevrimdışı oynanır; çevrimdışı skor bağlantı gelince sıralamaya gönderilir.
@@ -30,7 +30,7 @@
 - Gizlilik: Google AdMob (Android'de reklam kimliği ve gerekli bölgelerde Google onay penceresi; iOS'ta izleme yok, kişiselleştirilmemiş reklam), Firebase Analytics, Crashlytics, anonim Firebase kimliği, Android'de Google Play Oyunlar açıksa Play Oyunlar oyuncu kimliği (ad ve skorları cihazlar arasında korumak için) ve sıralama için takma ad + skor. Ayrıntılar gizlilik sayfasında.
 
 ## Sayfalar
-- https://bilat.app/ : Bil At! Oku At, Soruyu Bil · Türkçe bilgi yarışması (Ok Meydanı bölümü: https://bilat.app/#ok-meydani)
+- https://bilat.app/ : Bil At! Bilgi yarışması ve 3D okçuluk · Ücretsiz (iki mod: https://bilat.app/#modlar, nasıl oynanır: https://bilat.app/#nasil-bilat ve https://bilat.app/#nasil-ok-meydani)
 - https://bilat.app/gizlilik/ : Gizlilik politikası · Bil At!
 - https://bilat.app/pricing.md : fiyatlandırma özeti
 - Google Play: https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat
