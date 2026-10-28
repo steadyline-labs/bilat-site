@@ -11,6 +11,13 @@
 - Bonus hedefler: sorular arasında tahta ile okçu arasından ara sıra bir hedef süzülür; vurulursa ok harcanmaz. Balon +1 ok, fener sıradaki soruya x2 puan; testi (+3 üzerlik) ve uçurtma (%50 Joker) yakında. Iska ek ceza getirmez, bonus puanları sıralamada sayılır.
 - İsteğe bağlı ödüllü reklamla %50 Joker (iki yanlış şık gider) ve oyun sonunda Devam et (+1 can).
 
+## Ok Meydanı (1.3.0 ile gelen ikinci mod)
+- Ana menüde iki mod var: soru cevaplı Bil At ve Ok Meydanı.
+- Ok Meydanı: bozkırda 3D okçuluk meydanı, soru yok, 3 tur. 1. tur Sabit hedefler (testi kulesi, halkalı tahtalar), 2. tur puta ve uzak hedefler, 3. tur uçan kil tabaklar ve uçurtma. Gündüz ve gece.
+- Kamera okçunun arkasında, yay gerilince yakınlaşır; nişan ok ucuyla alınır; rüzgâr yaydaki püskülden okunur.
+- Nefes: yay tam gerilince zaman kısa bir an yavaşlar, uzun tutulursa kol yorulur.
+- Vurulan testiler devrilir, kırılır ve puan getirir. İnternetsiz oynanır.
+
 ## Temel bilgiler
 - Dil: sadece Türkçe.
 - İçerik: 8 açık alan (Genel Kültür, Tarih, Coğrafya, Bilim, Sinema ve Dizi, Dil ve Deyimler, Spor, Yemek ve Mutfak), alan başına yaklaşık 150, toplam 1.200 soru. Yeni alanlar sonraki sürümlerde açılacak.
@@ -22,7 +29,7 @@
 - Gizlilik: Google AdMob (Android'de reklam kimliği ve gerekli bölgelerde Google onay penceresi; iOS'ta izleme yok, kişiselleştirilmemiş reklam), Firebase Analytics, Crashlytics, anonim Firebase kimliği, Android'de Google Play Oyunlar açıksa Play Oyunlar oyuncu kimliği (ad ve skorları cihazlar arasında korumak için) ve sıralama için takma ad + skor. Ayrıntılar gizlilik sayfasında.
 
 ## Sayfalar
-- https://bilat.app/ : Bil At! Oku At, Soruyu Bil · Türkçe bilgi yarışması
+- https://bilat.app/ : Bil At! Oku At, Soruyu Bil · Türkçe bilgi yarışması (Ok Meydanı bölümü: https://bilat.app/#ok-meydani)
 - https://bilat.app/gizlilik/ : Gizlilik politikası · Bil At!
 - https://bilat.app/pricing.md : fiyatlandırma özeti
 - Google Play: https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat

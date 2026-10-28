@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bil At! Oku At, Soruyu Bil · Türkçe bilgi yarışması</title>
-<meta name="description" content="Bil At! dönen hedef tahtasına ok attığın ücretsiz Türkçe bilgi yarışması. Vurduğun sayı sorunun zorluğunu seçer: 8 alanda 1.200 soru, haftalık sıralama.">
+<meta name="description" content="Bil At! dönen hedef tahtasına ok attığın ücretsiz Türkçe bilgi yarışması. Vurduğun sayı sorunun zorluğunu seçer: 8 alanda 1.200 soru, haftalık sıralama. Yeni mod Ok Meydanı: bozkırda 3D okçuluk.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#62B0E6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#070D26" media="(prefers-color-scheme: dark)">
@@ -52,16 +52,16 @@
       "name": "Bil At! Oku At, Soruyu Bil",
       "alternateName": "BilAt",
       "url": "https://bilat.app/",
-      "description": "Bil At! dönen hedef tahtasına ok attığın ücretsiz Türkçe bilgi yarışması. Vurduğun sayı sorunun zorluğunu seçer: 8 alanda 1.200 soru, haftalık sıralama.",
+      "description": "Bil At! dönen hedef tahtasına ok attığın ücretsiz Türkçe bilgi yarışması. Vurduğun sayı sorunun zorluğunu seçer: 8 alanda 1.200 soru, haftalık sıralama. Yeni mod Ok Meydanı: bozkırda 3D okçuluk.",
       "inLanguage": "tr",
       "operatingSystem": "Android",
       "applicationCategory": "GameApplication",
       "applicationSubCategory": "Bilgi yarışması",
-      "genre": ["Bilgi yarışması", "Nişan alma", "Gündelik"],
+      "genre": ["Bilgi yarışması", "Nişan alma", "Okçuluk", "Gündelik"],
       "gamePlatform": "Android",
       "playMode": "SinglePlayer",
       "image": "https://bilat.app/img/og.jpg",
-      "screenshot": ["https://bilat.app/img/aim-b.webp", "https://bilat.app/img/question-b.webp", "https://bilat.app/img/category-b.webp", "https://bilat.app/img/leaderboard-b.webp"],
+      "screenshot": ["https://bilat.app/img/ok-meydani/okm-1-sabit-hedefler.webp", "https://bilat.app/img/aim-b.webp", "https://bilat.app/img/question-b.webp", "https://bilat.app/img/category-b.webp", "https://bilat.app/img/leaderboard-b.webp"],
       "installUrl": "https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat",
       "sameAs": ["https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat"],
       "author": {"@id": "https://steadylinelabs.com/#organization"},
@@ -110,6 +110,7 @@
       <span>Bil<b>At</b></span>
     </a>
     <nav id="menu" aria-label="Sayfa içi">
+      <a href="#ok-meydani">Ok Meydanı</a>
       <a href="#nasil">Nasıl oynanır</a>
       <a href="#ozellikler">Özellikler</a>
       <a href="#ekranlar">Ekranlar</a>
@@ -135,6 +136,7 @@
   </div>
   <div class="wrap hero-grid">
     <div class="hero-copy">
+      <a class="new-pill" href="#ok-meydani"><b>Yeni</b> Ok Meydanı modu</a>
       <h1>Oku at, dilimi vur, soruyu bil.</h1>
       <p class="lead">Dönen hedef tahtasına nişan al. Vurduğun sayı sorunun zorluğunu, doğru cevap puanını belirler.</p>
       <div class="badges">
@@ -158,6 +160,29 @@
 </header>
 
 <main id="icerik">
+  <section id="ok-meydani" class="okm">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Yeni mod</span>
+        <h2>Ok Meydanı</h2>
+        <p>Bozkırda bir atış meydanı, üç tur. Yayını ger, nişanı ok ucuyla al, rüzgârı yaydaki püskülden oku.</p>
+      </div>
+      <!-- Görseller: brand-kit/ok-meydani-1.3.0/ hazır olunca img/ok-meydani/ altına aynı adlarla kopyalanır -->
+      <ul class="okm-rounds">
+        <li><figure><div class="okm-shot"><img src="img/ok-meydani/okm-1-sabit-hedefler.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ok Meydanı 1. tur: üst üste dizili testiler ve halkalı tahtalar, okçunun arkasından görünüm"></div><figcaption><b>1. tur: Sabit hedefler</b><span>Testi kulesi ve halkalı tahtalar. Vurduğun testi devrilir, kırılır, puanı yazılır.</span></figcaption></figure></li>
+        <li><figure><div class="okm-shot"><img src="img/ok-meydani/okm-2-puta.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ok Meydanı 2. tur: bozkırda puta ve uzaktaki hedefler"></div><figcaption><b>2. tur: Puta ve uzak hedefler</b><span>Hedef uzaklaşır, ok ucunu üstüne koy, yayı tam ger.</span></figcaption></figure></li>
+        <li><figure><div class="okm-shot"><img src="img/ok-meydani/okm-3-ucan-tabaklar.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ok Meydanı 3. tur: havada uçan kil tabaklar ve uçurtma"></div><figcaption><b>3. tur: Uçan hedefler</b><span>Kil tabaklar havaya fırlar, arada bir uçurtma geçer.</span></figcaption></figure></li>
+      </ul>
+      <ul class="okm-feats">
+        <li><h3>Okçunun arkasından</h3><p>Kamera okçunun arkasında. Yayı gerince hedefe yaklaşır, nişanı ok ucuyla alırsın.</p></li>
+        <li><h3>Rüzgârı oku</h3><p>Yaydaki püskül rüzgârın yönünü gösterir. Ok o yana kayar, biraz pay bırak.</p></li>
+        <li><h3>Nefes</h3><p>Yay tam gerilince zaman bir an yavaşlar. Fazla bekletirsen kol yorulur.</p></li>
+        <li><h3>Gündüz de gece de</h3><p>Bozkırda gün ışığında da ay ışığında da atış var. İnternetsiz de oynanır.</p></li>
+      </ul>
+      <p class="bonus-note"><strong>Ana menüde artık iki mod var:</strong> soru cevaplı Bil At ve Ok Meydanı.</p>
+    </div>
+  </section>
+
   <section id="nasil">
     <div class="wrap">
       <div class="sec-head">
