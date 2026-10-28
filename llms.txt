@@ -12,7 +12,7 @@
 - İsteğe bağlı ödüllü reklamla %50 Joker (iki yanlış şık gider) ve oyun sonunda Devam et (+1 can).
 
 ## Ok Meydanı (1.3.0 ile gelen ikinci mod)
-- Ana menüde iki mod var: soru cevaplı Bil At ve Ok Meydanı.
+- Ana menüde iki mod var: Bilgi yarışı (soru cevaplı Bil At) ve 3D Okçuluk (Ok Meydanı).
 - Ok Meydanı: bozkırda 3D okçuluk meydanı, soru yok, 3 tur. 1. tur Sabit hedefler (testi kulesi, halkalı tahtalar), 2. tur puta ve uzak hedefler, 3. tur uçan kil tabaklar ve uçurtma. Gündüz ve gece.
 - Kamera okçunun arkasında, yay gerilince yakınlaşır; nişan ok ucuyla alınır; rüzgâr yaydaki püskülden okunur.
 - Nefes: yay tam gerilince zaman kısa bir an yavaşlar, uzun tutulursa kol yorulur.
