@@ -84,8 +84,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Figtree:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="tema.js"></script>
+<link rel="stylesheet" href="style.css?v=20261028b">
+<script src="tema.js?v=20261028b"></script>
 </head>
 <body>
 <a class="skip" href="#icerik">İçeriğe geç</a>
@@ -165,20 +165,23 @@
       <div class="sec-head">
         <span class="eyebrow">Yeni mod</span>
         <h2>Ok Meydanı</h2>
-        <p>Bozkırda bir atış meydanı, üç tur. Yayını ger, nişanı ok ucuyla al, rüzgârı yaydaki püskülden oku.</p>
+        <p>Bozkırda bir atış meydanı, üç tur. Yayını ger, nişanı ok ucuyla al, rüzgârı yaydaki püskülden oku. Ana menüde, Bil At’ın yanında.</p>
+        <div class="okm-cta">
+          <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat&amp;referrer=utm_source%3Dbilat.app%26utm_medium%3Dsite%26utm_campaign%3Dok_meydani">Google Play’den indir</a>
+          <a class="okm-trailer" href="https://youtu.be/zOD5yfGOJXc" target="_blank" rel="noopener">Fragmanı izle ↗</a>
+        </div>
       </div>
       <ul class="okm-rounds">
-        <li><figure><div class="okm-shot"><img src="img/ok-meydani/okm-1-sabit-hedefler.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ok Meydanı 1. tur: testi kulesi, kabak ve puta, okçunun arkasından görünüm"></div><figcaption><b>1. tur: Sabit hedefler</b><span>Testi kulesi, kabak ve puta. Rüzgâr yok, nişanını rahat al.</span></figcaption></figure></li>
-        <li><figure><div class="okm-shot"><img src="img/ok-meydani/okm-2-puta.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ok Meydanı 2. tur: asılı testiler, kayan kızak, fenerler ve uzak puta"></div><figcaption><b>2. tur: Sallanan hedefler</b><span>Asılı testiler, kayan kızak, fenerler ve uzak puta. Rüzgâr sert, püskülü oku.</span></figcaption></figure></li>
-        <li><figure><div class="okm-shot"><img src="img/ok-meydani/okm-3-ucan-tabaklar.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ok Meydanı 3. tur: havada uçan tabaklar ve testiler"></div><figcaption><b>3. tur: Uçan tabaklar</b><span>Tabaklar ve testiler havaya fırlar, oklar bitene kadar sürer. Hafif rüzgâr.</span></figcaption></figure></li>
+        <li class="round-card"><img src="img/ok-meydani/tur1-sabit.webp" width="1270" height="665" loading="lazy" decoding="async" alt="Ok Meydanı 1. tur: testi kulesi, kabak ve puta, okçunun arkasından görünüm"><span class="round-no">1. TUR</span><h3>Sabit hedefler</h3><p>Testi kulesi, kabak ve puta. Rüzgâr yok, nişanını rahat al.</p></li>
+        <li class="round-card"><img src="img/ok-meydani/tur2-sallanan.webp" width="1270" height="665" loading="lazy" decoding="async" alt="Ok Meydanı 2. tur: puta isabeti, +30 puan"><span class="round-no">2. TUR</span><h3>Sallanan hedefler</h3><p>Asılı testiler, kayan kızak, fenerler ve uzak puta. Rüzgâr sert, püskülü oku.</p></li>
+        <li class="round-card"><img src="img/ok-meydani/tur3-ucan.webp" width="1270" height="665" loading="lazy" decoding="async" alt="Ok Meydanı 3. tur: gece, ay ışığında uçan tabağa nişan"><span class="round-no">3. TUR</span><h3>Uçan tabaklar</h3><p>Tabaklar ve testiler havaya fırlar, oklar bitene kadar sürer. Hafif rüzgâr.</p></li>
       </ul>
-      <ul class="okm-feats">
+      <ul class="features">
         <li><h3>Okçunun arkasından</h3><p>Kamera okçunun arkasında. Yayı gerince hedefe yaklaşır, nişanı ok ucuyla alırsın.</p></li>
         <li><h3>Rüzgârı oku</h3><p>Yaydaki püskül rüzgârın yönünü gösterir. Ok o yana kayar, biraz pay bırak.</p></li>
         <li><h3>Nefes</h3><p>Yay tam gerilince zaman bir an yavaşlar. Fazla bekletirsen kol yorulur.</p></li>
         <li><h3>Gündüz de gece de</h3><p>Bozkırda gün ışığında da ay ışığında da atış var. İnternetsiz de oynanır.</p></li>
       </ul>
-      <p class="bonus-note"><strong>Ana menüde artık iki mod var:</strong> Bilgi yarışı (soru cevaplı Bil At) ve 3D Okçuluk (Ok Meydanı).</p>
     </div>
   </section>
 
@@ -291,19 +294,37 @@
       <div class="sec-head">
         <span class="eyebrow">Ekranlar</span>
         <h2>Gündüz de gece de</h2>
+        <div class="seg" role="group" aria-label="Ekran görüntüleri">
+          <button type="button" data-set="gunduz" aria-pressed="true">Gündüz</button>
+          <button type="button" data-set="gece" aria-pressed="false">Gece</button>
+        </div>
       </div>
-      <ul class="strip" tabindex="0" aria-label="Oyun ekranları, yana kaydır">
-        <li><figure><div class="frame"><img src="img/menu-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Ana menü: iki mod kartı, Bilgi yarışı (Bil At) ve 3D Okçuluk (Ok Meydanı)"></div><figcaption>İki mod<span>Ana menü</span></figcaption></figure></li>
-        <li><figure><div class="frame"><img src="img/category-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Alan seçme ekranı: 8 açık alan, 1.200 soru, Yakında yazan yeni alanlar"></div><figcaption>Alanını seç<span>Gündüz</span></figcaption></figure></li>
-        <li><figure><div class="frame"><img src="img/aim-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Nişan alma ekranı: okçu dönen hedef tahtasına nişan alıyor"></div><figcaption>Nişan al<span>Gündüz</span></figcaption></figure></li>
-        <li><figure><div class="frame"><img src="img/question-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Soru kartı, zor dilim 90 puan: Artık yıl olmayan bir yıl kaç saattir?"></div><figcaption>Soruyu bil<span>Gündüz</span></figcaption></figure></li>
-        <li><figure><div class="frame"><img src="img/correct-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Doğru cevap ekranı: Yen işaretlendi, Doğru! +70"></div><figcaption>Puanı kap<span>Gündüz</span></figcaption></figure></li>
-        <li><figure><div class="frame"><img src="img/aim-c.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Gece teması: yıldızlı gökyüzünde ay ışığında nişan alma"></div><figcaption>Gece de oyna<span>Gece</span></figcaption></figure></li>
-        <li><figure><div class="frame"><img src="img/leaderboard-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Haftalık sıralama ekranı: podyum ve liste, pazartesi sıfırlanır"></div><figcaption>Sıralama<span>Gündüz</span></figcaption></figure></li>
-        <li class="wide"><figure><div class="frame"><img src="img/ok-meydani/okm-nisan.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ok Meydanı: yay gerili, testi kulesine nişan alınıyor"></div><figcaption>Nişanı ok ucuyla al<span>Ok Meydanı</span></figcaption></figure></li>
-        <li class="wide"><figure><div class="frame"><img src="img/ok-meydani/okm-kirilan-testiler.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ok Meydanı: vurulan testiler kırılıp masadan düşüyor, +10 puanlar"></div><figcaption>Testiler kırılır<span>Ok Meydanı</span></figcaption></figure></li>
-        <li class="wide"><figure><div class="frame"><img src="img/ok-meydani/okm-tur-sonu.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ok Meydanı sonuç kartı: 420 puan, 24 hedef vuruldu, yeni rekor"></div><figcaption>Meydanın sonu<span>Ok Meydanı</span></figcaption></figure></li>
-      </ul>
+    </div>
+    <div class="shots-row">
+      <div class="shots" id="shots-gunduz" data-set="gunduz" tabindex="0" role="region" aria-label="Gündüz ekranları, yana kaydır">
+        <figure><div class="frame"><img src="img/menu-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Ana menü: iki mod kartı, Bilgi yarışı (Bil At) ve 3D Okçuluk (Ok Meydanı)"></div><figcaption>İki mod</figcaption></figure>
+        <figure><div class="frame"><img src="img/category-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Alan seçme ekranı: 8 açık alan, 1.200 soru, Yakında yazan yeni alanlar"></div><figcaption>Alanını seç</figcaption></figure>
+        <figure><div class="frame"><img src="img/aim-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Nişan alma ekranı: okçu dönen hedef tahtasına nişan alıyor"></div><figcaption>Nişan al</figcaption></figure>
+        <figure><div class="frame"><img src="img/question-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Soru kartı, zor dilim 90 puan: Artık yıl olmayan bir yıl kaç saattir?"></div><figcaption>Soruyu bil</figcaption></figure>
+        <figure><div class="frame"><img src="img/correct-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Doğru cevap ekranı: Yen işaretlendi, Doğru! +70"></div><figcaption>Puanı kap</figcaption></figure>
+        <figure><div class="frame"><img src="img/leaderboard-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Haftalık sıralama ekranı: podyum ve liste, pazartesi sıfırlanır"></div><figcaption>Sıralama</figcaption></figure>
+      </div>
+      <div class="shots" id="shots-gece" data-set="gece" tabindex="0" role="region" aria-label="Gece ekranları, yana kaydır" hidden>
+        <figure><div class="frame"><img src="img/aim-c.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Gece teması: yıldızlı gökyüzünde ay ışığında nişan alma"></div><figcaption>Gece de nişan al</figcaption></figure>
+        <figure class="wide"><div class="frame landscape"><img src="img/ok-meydani/okm-3-ucan-tabaklar.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ok Meydanı gece turu: ay ışığında uçan tabağa nişan"></div><figcaption>Ok Meydanı, ay ışığında</figcaption></figure>
+      </div>
+      <button type="button" class="shots-nav prev" aria-label="Önceki ekranlar" data-dir="-1"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="shots-nav next" aria-label="Sonraki ekranlar" data-dir="1"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <div class="wrap"><h3 class="shots-title">Ok Meydanı</h3></div>
+    <div class="shots-row">
+      <div class="shots" tabindex="0" role="region" aria-label="Ok Meydanı ekranları, yana kaydır">
+        <figure class="wide"><div class="frame landscape"><img src="img/ok-meydani/okm-1-sabit-hedefler.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ok Meydanı 1. tur: testi kulesi, kabak ve puta, okçunun arkasından görünüm"></div><figcaption>Sabit hedefler</figcaption></figure>
+        <figure class="wide"><div class="frame landscape"><img src="img/ok-meydani/okm-2-puta.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ok Meydanı 2. tur: puta isabeti, +30 puan"></div><figcaption>Sallanan hedefler</figcaption></figure>
+        <figure class="wide"><div class="frame landscape"><img src="img/ok-meydani/okm-3-ucan-tabaklar.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ok Meydanı 3. tur: gece, ay ışığında uçan tabaklar"></div><figcaption>Uçan tabaklar</figcaption></figure>
+      </div>
+      <button type="button" class="shots-nav prev" aria-label="Önceki ekranlar" data-dir="-1"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="shots-nav next" aria-label="Sonraki ekranlar" data-dir="1"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     </div>
   </section>
   <section id="sss">
@@ -372,6 +393,36 @@
     document.addEventListener('click', function (e) {
       if (btn.getAttribute('aria-expanded') === 'true' && !nav.contains(e.target) && !btn.contains(e.target)) setOpen(false);
     });
+  }());
+  (function () {
+    // Ekranlar: Gündüz/Gece seçici görüntü setini değiştirir (ilk durum sitenin gökyüzüne uyar); oklar satırı bir kare kaydırır.
+    var seg = document.querySelectorAll('.seg [data-set]');
+    function show(set) {
+      seg.forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-set') === set)); });
+      document.querySelectorAll('.shots[data-set]').forEach(function (r) { r.hidden = r.getAttribute('data-set') !== set; r.scrollLeft = 0; });
+      document.querySelectorAll('.shots-row').forEach(sync);
+    }
+    seg.forEach(function (b) { b.addEventListener('click', function () { show(b.getAttribute('data-set')); }); });
+    function row(r) { return r.querySelector('.shots:not([hidden])'); }
+    function sync(r) {
+      var el = row(r); if (!el) return;
+      var max = el.scrollWidth - el.clientWidth - 2;
+      r.classList.toggle('at-start', el.scrollLeft <= 2);
+      r.classList.toggle('at-end', el.scrollLeft >= max);
+    }
+    document.querySelectorAll('.shots-row').forEach(function (r) {
+      r.querySelectorAll('.shots').forEach(function (el) { el.addEventListener('scroll', function () { sync(r); }, { passive: true }); });
+      r.querySelectorAll('.shots-nav').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var el = row(r), f = el && el.querySelector('figure');
+          if (!f) return;
+          el.scrollBy({ left: Number(b.getAttribute('data-dir')) * (f.getBoundingClientRect().width + 16), behavior: 'smooth' });
+        });
+      });
+      sync(r);
+    });
+    window.addEventListener('resize', function () { document.querySelectorAll('.shots-row').forEach(sync); });
+    if (document.documentElement.getAttribute('data-theme') === 'c') show('gece');
   }());
   (function () {
     // Shows a compact install CTA once the user has scrolled past the hero, and hides

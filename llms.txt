@@ -17,6 +17,7 @@
 - Kamera okçunun arkasında, yay gerilince yakınlaşır; nişan ok ucuyla alınır; rüzgâr yaydaki püskülden okunur.
 - Nefes: yay tam gerilince zaman kısa bir an yavaşlar, uzun tutulursa kol yorulur.
 - Vurulan testiler devrilir, kırılır ve puan getirir. İnternetsiz oynanır.
+- Fragman: https://youtu.be/zOD5yfGOJXc
 
 ## Temel bilgiler
 - Dil: sadece Türkçe.
