@@ -26,7 +26,7 @@
 - Gökyüzü teması cihaz saatine göre değişir: gündüz, gün batımı, gece.
 - Çevrimdışı oynanır; çevrimdışı skor bağlantı gelince sıralamaya gönderilir.
 - Fiyat: ücretsiz, uygulama içi satın alma yok, reklamla desteklenir. Bkz. https://bilat.app/pricing.md
-- Platform: Android (Google Play). iPhone sürümü yakında.
+- Platform: Android (Google Play) ve iPhone (App Store).
 - Gizlilik: Google AdMob (Android'de reklam kimliği ve gerekli bölgelerde Google onay penceresi; iOS'ta izleme yok, kişiselleştirilmemiş reklam), Firebase Analytics, Crashlytics, anonim Firebase kimliği, Android'de Google Play Oyunlar açıksa Play Oyunlar oyuncu kimliği (ad ve skorları cihazlar arasında korumak için) ve sıralama için takma ad + skor. Ayrıntılar gizlilik sayfasında.
 
 ## Sayfalar
@@ -34,6 +34,7 @@
 - https://bilat.app/gizlilik/ : Gizlilik politikası · Bil At!
 - https://bilat.app/pricing.md : fiyatlandırma özeti
 - Google Play: https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat
+- App Store: https://apps.apple.com/tr/app/bil-at-bilgi-yar%C4%B1%C5%9Fmas%C4%B1/id6821452285
 
 ## İletişim
 destek@bilat.app
