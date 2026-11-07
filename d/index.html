@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bil At! ile aç</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#62B0E6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#070D26" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/img/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Figtree:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script src="../tema.js"></script>
+</head>
+<body>
+<main class="doc" style="text-align:center;padding-top:15vh">
+  <a class="logo" href="/" aria-label="Bil At! ana sayfa"><span>Bil<b>At</b></span></a>
+  <h1>Bil At! ile aç</h1>
+  <p id="durum">Oyun açılıyor...</p>
+  <div id="indir" hidden>
+    <p>Oyun yüklü değil mi? Önce indir, sonra bağlantıya tekrar dokun.</p>
+    <p><strong>Oyunu indir</strong></p>
+    <p>
+      <a class="gp-badge" href="https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat&amp;referrer=utm_source%3Dbilat.app%26utm_medium%3Dinvite%26utm_campaign%3Ddavet"><img src="../img/google-play-badge-tr.png" width="162" height="63" alt="Google Play'den indirin"></a>
+      <a class="as-badge" href="https://apps.apple.com/tr/app/bil-at-bilgi-yar%C4%B1%C5%9Fmas%C4%B1/id6821452285"><img src="../img/app-store-badge-tr.svg" width="151" height="40" alt="App Store'dan indirin"></a>
+    </p>
+    <p><a class="btn" id="tekrar" href="bilat://d">Bil At! ile aç</a></p>
+  </div>
+</main>
+<script>
+(function(){
+  var u='bilat://d'+location.search;
+  document.getElementById('tekrar').href=u;
+  var t=setTimeout(show,1500);
+  function show(){document.getElementById('durum').hidden=true;document.getElementById('indir').hidden=false}
+  document.addEventListener('visibilitychange',function(){if(document.hidden)clearTimeout(t)});
+  window.addEventListener('pagehide',function(){clearTimeout(t)});
+  location.href=u;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["HT245AC6H2.com.steadylinelabs.bilat"],
+        "components": [{ "/": "/d/*" }]
+      }
+    ]
+  }
+}
