@@ -157,13 +157,38 @@ section h2{font-size:34px}
 .lb b{font-family:'Baloo 2',sans-serif}
 
 
-footer{padding:40px 0 48px;border-top:1px solid var(--line)}
-.foot{display:grid;gap:22px}
-.foot .logo{color:var(--ink);font-size:28px;padding:10px 0;margin:-10px 0}
-[data-theme="a"] .foot .logo b{color:#B4471F}
-.foot ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 18px}
-.foot ul a{display:inline-flex;align-items:center;min-height:48px;font-weight:700}
-.copy{font-size:14px;color:var(--muted)}
+footer{padding:56px 0 48px;border-top:1px solid var(--line)}
+.foot{display:flex;flex-direction:column;align-items:flex-start}
+.foot-help,.foot-nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px 24px;font-size:15px;line-height:24px}
+.foot-help>*{display:inline-flex;align-items:center}
+.foot-support{gap:.3em}
+.foot-support span{color:var(--muted)}
+.foot a:not(.logo){font-weight:700;text-decoration:none}
+.foot .foot-help a:not(.logo){text-decoration:underline;text-underline-offset:3px}
+.foot a:not(.logo):hover{text-decoration:underline}
+.foot a:focus-visible{outline:2px solid var(--primary);outline-offset:2px;border-radius:2px}
+.foot .wa-icon{width:16px;height:16px;margin-right:6px;flex:none}
+.foot-nav{margin-top:20px}
+.foot-owner{display:flex;align-items:center;gap:16px;width:100%;margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
+.foot-owner .logo{color:var(--ink);font-size:22px;line-height:1;gap:0}
+[data-theme="a"] .foot-owner .logo b{color:#B4471F}
+.copy{font-size:13px;line-height:20px;color:var(--muted)}
+.foot-owner .copy a{font-weight:700}
+@media (max-width:1023px){
+  footer{padding:48px 0 40px}
+  .foot-help,.foot-nav{column-gap:20px}
+  .foot-nav{margin-top:16px}
+  .foot-owner{margin-top:28px;padding-top:20px}
+}
+@media (max-width:639px){
+  footer{padding:40px 0 32px}
+  .foot-help{flex-direction:column;align-items:flex-start;gap:0;font-size:16px}
+  .foot-help>*{min-height:44px}
+  .foot-nav{margin-top:12px}
+  .foot-nav a{display:inline-flex;align-items:center;min-height:44px}
+  .foot-owner{flex-direction:column;align-items:flex-start;gap:12px;margin-top:24px}
+  .foot-owner .logo{font-size:20px}
+}
 
 /* Gökyüzü (tema) seçici: header'ın sağında küçük düğme, açılınca 4 seçenek */
 .sw-b{background:linear-gradient(180deg,#62B0E6,#FFF2D9)}
@@ -216,8 +241,6 @@ mark{background:var(--soft);color:var(--ink);padding:0 4px;border-radius:4px;box
 @media (min-width:640px){
   .hero h1{font-size:54px}
   .feats{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .foot{grid-template-columns:auto 1fr;align-items:center}
-  .foot ul{justify-content:flex-end}
 }
 @media (min-width:960px){
   .wrap{padding:0 32px}
