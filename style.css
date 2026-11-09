@@ -157,9 +157,13 @@ section h2{font-size:34px}
 .lb b{font-family:'Baloo 2',sans-serif}
 
 
-footer{padding:56px 0 48px;border-top:1px solid var(--line)}
-.foot{display:flex;flex-direction:column;align-items:flex-start}
-.foot-help,.foot-nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px 24px;font-size:15px;line-height:24px}
+footer{padding:40px 0;border-top:1px solid var(--line)}
+.foot{display:flex;flex-direction:column}
+.foot-row{display:flex;justify-content:space-between;align-items:center;gap:32px}
+.foot-row a,.foot-row span,.copy{white-space:nowrap}
+.foot-help,.foot-nav{display:flex;align-items:center;gap:24px}
+.foot-top{font-size:14px;line-height:20px;margin-bottom:20px}
+.foot-bottom{font-size:13px;line-height:20px;padding-top:20px;border-top:1px solid var(--line)}
 .foot-help>*{display:inline-flex;align-items:center}
 .foot-support{gap:.3em}
 .foot-support span{color:var(--muted)}
@@ -168,26 +172,29 @@ footer{padding:56px 0 48px;border-top:1px solid var(--line)}
 .foot a:not(.logo):hover{text-decoration:underline}
 .foot a:focus-visible{outline:2px solid var(--primary);outline-offset:2px;border-radius:2px}
 .foot .wa-icon{width:16px;height:16px;margin-right:6px;flex:none}
-.foot-nav{margin-top:20px}
-.foot-owner{display:flex;align-items:center;gap:16px;width:100%;margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
-.foot-owner .logo{color:var(--ink);font-size:22px;line-height:1;gap:0}
-[data-theme="a"] .foot-owner .logo b{color:#B4471F}
+.foot-top .logo{color:var(--ink);font-size:22px;line-height:1;gap:0}
+[data-theme="a"] .foot-top .logo b{color:#B4471F}
 .copy{font-size:13px;line-height:20px;color:var(--muted)}
-.foot-owner .copy a{font-weight:700}
+.foot-bottom .copy a{font-weight:700}
 @media (max-width:1023px){
-  footer{padding:48px 0 40px}
-  .foot-help,.foot-nav{column-gap:20px}
-  .foot-nav{margin-top:16px}
-  .foot-owner{margin-top:28px;padding-top:20px}
+  footer{padding:32px 0}
+  .foot-row{gap:24px}
+  .foot-top{font-size:13px;margin-bottom:16px}
+  .foot-top .logo{font-size:20px}
+  .foot-bottom{padding-top:16px}
+  .foot-help,.foot-nav{gap:16px}
+  .copy{font-size:12px;line-height:18px}
 }
-@media (max-width:639px){
-  footer{padding:40px 0 32px}
-  .foot-help{flex-direction:column;align-items:flex-start;gap:0;font-size:16px}
+@media (max-width:767px){
+  footer{padding:32px 0 28px}
+  .foot{align-items:flex-start}
+  .foot-row,.foot-bottom{display:contents}
+  .foot-top .logo{order:1;margin-bottom:12px}
+  .foot-help{order:2;flex-direction:column;align-items:flex-start;gap:0;font-size:15px;line-height:22px}
   .foot-help>*{min-height:44px}
-  .foot-nav{margin-top:12px}
+  .foot-nav{order:3;font-size:14px}
   .foot-nav a{display:inline-flex;align-items:center;min-height:44px}
-  .foot-owner{flex-direction:column;align-items:flex-start;gap:12px;margin-top:24px}
-  .foot-owner .logo{font-size:20px}
+  .copy{order:4;margin-top:20px;padding-top:20px;border-top:1px solid var(--line);width:100%;font-size:13px;line-height:20px;white-space:normal}
 }
 
 /* Gökyüzü (tema) seçici: header'ın sağında küçük düğme, açılınca 4 seçenek */
