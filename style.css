@@ -512,3 +512,8 @@ section[id]{scroll-margin-top:12px}
 .y-wx img{width:100%;max-width:200px;aspect-ratio:480/876;object-fit:cover;border-radius:18px;box-shadow:0 8px 18px rgba(0,0,0,.35)}
 @media (min-width:900px){.y-weather{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}}
 .y-band .y-tag{justify-self:start;align-self:start}
+
+.clips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:24px auto;max-width:760px}
+.clip{margin:0;border-radius:20px;overflow:hidden;background:#1c1a22}
+.clip video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover}
+@media (max-width:560px){.clips{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.clip:nth-child(3){grid-column:1/-1;max-width:50%;justify-self:center}}
