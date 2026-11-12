@@ -17,7 +17,14 @@
 - Kamera okçunun arkasında, yay gerilince yakınlaşır; nişan ok ucuyla alınır; rüzgâr yaydaki püskülden okunur.
 - Nefes: yay tam gerilince zaman kısa bir an yavaşlar, uzun tutulursa kol yorulur.
 - Vurulan testiler devrilir, kırılır ve puan getirir. İnternetsiz oynanır.
-- Fragman: https://youtu.be/DlsMeCCp97Y
+
+## 1.4.7 ile gelenler
+- Yeni Ok Meydanı herkese açık: çağlar boyunca bölüm haritası, sandıklar, usta karşılaşmaları ve yay güçlendirme.
+- Alp ve Banu: Profil'den iki okçudan birini seçersin.
+- Günlük görevler (her gün üç yeni görev, gece yarısı yenilenir) ve 7 günlük seriyle günlük hediye; ödül üzerlik, oyunun içindeki jeton.
+- Unvanlar: iki yol, her biri 12 basamak. Bilgi Yolu'nda her doğru cevap, Okçuluk Yolu'nda Ok Meydanı'ndaki her isabet 1 adım. Bazı Bilgi Yolu unvanları oyun eşyalarını açar. Rozetler toplanır.
+- Mağaza: tahta desenleri, tüy ve uç renkleri, tur içi yardımcılar; üzerlikle alınır.
+- Şehir havası: Ayarlar'dan isteğe bağlı açılır, il seçilir; yağmur, kar ve fırtına oyuna yansır. Varsayılan kapalı.
 
 ## Temel bilgiler
 - Dil: sadece Türkçe.
