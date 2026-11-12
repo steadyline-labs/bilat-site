@@ -17,7 +17,6 @@
 - Kamera okçunun arkasında, yay gerilince yakınlaşır; nişan ok ucuyla alınır; rüzgâr yaydaki püskülden okunur.
 - Nefes: yay tam gerilince zaman kısa bir an yavaşlar, uzun tutulursa kol yorulur.
 - Vurulan testiler devrilir, kırılır ve puan getirir. İnternetsiz oynanır.
-- Fragman: https://youtu.be/DlsMeCCp97Y
 
 ## 1.4.7 ile gelenler
 - Yeni Ok Meydanı herkese açık: çağlar boyunca bölüm haritası, sandıklar, usta karşılaşmaları ve yay güçlendirme.
