@@ -42,6 +42,37 @@
       }
     },
     {
+      "@type": [
+        "VideoGame",
+        "MobileApplication"
+      ],
+      "@id": "https://bilat.app/#app",
+      "name": "Bil At! Oku At, Soruyu Bil",
+      "url": "https://bilat.app/",
+      "inLanguage": "tr",
+      "operatingSystem": [
+        "Android",
+        "iOS"
+      ],
+      "applicationCategory": "GameApplication",
+      "genre": [
+        "Bilgi yarışması",
+        "Okçuluk"
+      ],
+      "playMode": "SinglePlayer",
+      "image": "https://bilat.app/img/og.jpg",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat",
+        "https://apps.apple.com/tr/app/bil-at-bilgi-yar%C4%B1%C5%9Fmas%C4%B1/id6821452285"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TRY"
+      }
+    },
+    {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
@@ -82,7 +113,7 @@
           "name": "2 kişilik bilgi oyunu var mı?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Şimdilik yok, Bil At! tek kişilik oynanır. Arkadaşlarınla haftalık sıralamada yarışırsın; sıralama pazartesi 00:00'da sıfırlanır."
+            "text": "Şimdilik yok, Bil At! tek kişilik oynanır. Haftalık sıralama pazartesi 00:00'da sıfırlanır, arkadaşlarınla puanda yarışırsın."
           }
         },
         {
@@ -99,6 +130,46 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Evet. Oyun ücretsizdir ve reklamlarla desteklenir. Uygulama içi satın alma yoktur. Reklamı yalnızca sen seçince izlersin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Üyelik ya da hesap gerekir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Ayrı hesap açmazsın. Sıralama için bir takma ad seçmen yeter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bir turda kaç soru, kaç saniye var?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Her soruda 20 saniye ve dört şık var. Oyun, 3 canın bitene kadar sürer; yanlış cevap ya da biten süre bir can götürür. Her 3 doğruda seviye atlarsın."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ok atışı nasıl çalışır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parmağını ekranda yay gibi geriye çekip bırakırsın, ok ters yöne uçar. Ne kadar çekersen o kadar güçlü atarsın. Tahta döner, biraz önden nişan alırsın. Sadağında 6 ok var; ıskalarsan bir ok gider."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Arkadaşla oynanır mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bil At! tek kişilik oynanır. Arkadaşlarınla haftalık sıralamada yarışırsın."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sorular güncelleniyor mu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. İnternet varken yeni sorular indirilir, indirdiğin sorular cihazında kalır ve internetsiz de oynanır."
           }
         },
         {
@@ -144,12 +215,12 @@
 
 <main id="icerik" class="doc">
   <h1>Türkçe bilgi yarışması ve 3D okçuluk oyunu</h1>
-  <p class="meta">Ücretsiz · Türkçe · Android ve iPhone</p>
+  <p class="meta">Ücretsiz · Türkçe · Android ve iPhone · Son güncelleme: 15 Kasım 2026</p>
   <p><strong>Bil At!</strong> bir bilgi yarışması ve okçuluk oyunu. Dönen tahtaya ok atarsın, vurduğun dilim sorunun zorluğunu seçer. Bil, puanı kap, yüksel.</p>
   <div class="badges" style="justify-content:flex-start"><a class="gp-badge" href="https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat&amp;referrer=utm_source%3Dbilat.app%26utm_medium%3Dsite%26utm_campaign=bilgi_yarismasi_sayfa"><img src="../img/google-play-badge-tr.png" width="646" height="250" alt="Google Play'den indirin" loading="lazy" decoding="async"></a><a class="as-badge" href="https://apps.apple.com/tr/app/bil-at-bilgi-yar%C4%B1%C5%9Fmas%C4%B1/id6821452285"><img src="../img/app-store-badge-tr.svg" width="151" height="40" alt="App Store'dan indirin" loading="lazy" decoding="async"></a></div>
   <img src="../img/mod-bilat-b.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="Bil At: dönen hedef tahtası ve nişan alan okçu" style="display:block;width:100%;height:auto;border-radius:16px;margin:16px 0">
 
-  <h2>Oku at, dilimi vur, soruyu bil</h2>
+  <h2>Nasıl oynanır</h2>
   <p>Parmağını yay gibi geri çek, bırak. Ok dönen tahtaya uçar. Tahtada 1'den 12'ye sayılar var.</p>
   <ul>
     <li>1-4 arası dilim kolay soru getirir.</li>
@@ -161,11 +232,10 @@
   <p>Zor dilimi vurmak cesaret ister ama puanı büyüktür. Kolay dilim güvenli, zor dilim kazançlı.</p>
   <img src="../img/aim-b.webp" width="720" height="1600" loading="lazy" decoding="async" alt="Bil At oyun ekranı: okçu dönen hedef tahtasına nişan alıyor" style="display:block;width:100%;max-width:320px;height:auto;border-radius:16px;margin:16px auto">
 
-  <h2>8 alan, 1.400'den fazla soru</h2>
-  <p>Genel Kültür, Tarih, Coğrafya, Bilim, Sinema ve Dizi, Dil ve Deyimler, Spor, Yemek ve Mutfak. Hepsi Türkçe. Alanını seç ya da karışık oyna.</p>
+  <h2>Oyun modları</h2>
+  <p><strong>Bilgi yarışı: Bil At.</strong> 8 alan, 1.400'den fazla soru. Genel Kültür, Tarih, Coğrafya, Bilim, Sinema ve Dizi, Dil ve Deyimler, Spor, Yemek ve Mutfak. Hepsi Türkçe. Alanını seç ya da karışık oyna.</p>
 
-  <h2>Ok Meydanı: 3D okçuluk</h2>
-  <p>Ana menüde ikinci bir mod daha var. Ok Meydanı'nda soru yok, sadece okçuluk. Bozkırda yayını gerersin, rüzgârı okursun, nefesini tutarsın.</p>
+  <p><strong>3D okçuluk: Ok Meydanı.</strong> Ana menüde ikinci bir mod daha var. Ok Meydanı'nda soru yok, sadece okçuluk. Bozkırda yayını gerersin, rüzgârı okursun, nefesini tutarsın.</p>
   <ul>
     <li>Üç tur: sabit hedefler, sallanan hedefler, uçan tabaklar.</li>
     <li>Testiler devrilir, kırılır, puan getirir.</li>
@@ -182,11 +252,13 @@
     <img src="../img/yeni/banu.webp" width="384" height="596" loading="lazy" decoding="async" alt="Banu: turkuaz kaftanlı, örgülü okçu yayını geriyor" style="width:44%;max-width:240px;height:auto">
   </div>
 
-  <h2>Joker ve bonus hedefler</h2>
+  <h2>Jokerler ve seri</h2>
   <ul>
     <li>%50 Joker iki yanlış şıkkı siler. İstersen kısa bir reklamla açarsın, küçük uçurtmayı vurunca da gelir.</li>
     <li>Sorular arasında tahtanın önünden bir hedef süzülür. Balon +1 ok, fener sıradaki soruya x2 puan, testi +3 üzerlik.</li>
     <li>Iskalarsan sadece okun gider, ek ceza yok.</li>
+    <li>Günlük hediye: her gün gir, hediyeni al. Seri 7 gün sürer, 7. günün sonunda rozet gelir.</li>
+    <li>Her gün üç yeni görev gelir, görevler üzerlik kazandırır.</li>
   </ul>
 
   <h2>Unvanlar</h2>
@@ -197,13 +269,18 @@
   <p>Hesap açmana gerek yok. Oyunla gelen sorular cihazında durur, uçakta ya da yolda internetsiz oynarsın. Çevrimdışı aldığın skor, bağlantı gelince haftalık sıralamaya gider.</p>
   <img src="../img/leaderboard-b.webp" width="540" height="1170" loading="lazy" decoding="async" alt="Haftalık sıralama ekranı: podyum ve liste, pazartesi sıfırlanır" style="display:block;width:100%;max-width:280px;height:auto;border-radius:16px;margin:16px auto">
 
-  <h2>Sık sorulanlar</h2>
+  <h2>Sık sorulan sorular</h2>
   <div class="faq" style="max-width:none">
     <details><summary>Bil At! nasıl bir bilgi yarışması oyunu?</summary><p>Dönen hedef tahtasına ok atarsın. Okun vurduğu sayı sorunun zorluğunu seçer: 1-4 kolay, 5-8 orta, 9-12 zor. Her soruda 20 saniye ve dört şık var.</p></details>
     <details><summary>İnternetsiz bilgi yarışması oynanır mı?</summary><p>Evet. Oyunla gelen sorular cihazında durur, internet olmadan oynarsın. Çevrimdışıyken aldığın skor, bağlantı gelince sıralamaya gönderilir.</p></details>
-    <details><summary>2 kişilik bilgi oyunu var mı?</summary><p>Şimdilik yok, Bil At! tek kişilik oynanır. Arkadaşlarınla haftalık sıralamada yarışırsın; sıralama pazartesi 00:00'da sıfırlanır.</p></details>
+    <details><summary>2 kişilik bilgi oyunu var mı?</summary><p>Şimdilik yok, Bil At! tek kişilik oynanır. Haftalık sıralama pazartesi 00:00'da sıfırlanır, arkadaşlarınla puanda yarışırsın.</p></details>
     <details><summary>Ok Meydanı'nda soru var mı?</summary><p>Hayır. Ok Meydanı 3D okçuluk modudur: soru yok, bozkırda hedefleri vurursun. İnternetsiz oynanır.</p></details>
     <details><summary>Bil At! ücretsiz mi?</summary><p>Evet. Oyun ücretsizdir ve reklamlarla desteklenir. Uygulama içi satın alma yoktur. Reklamı yalnızca sen seçince izlersin.</p></details>
+    <details><summary>Üyelik ya da hesap gerekir mi?</summary><p>Hayır. Ayrı hesap açmazsın. Sıralama için bir takma ad seçmen yeter.</p></details>
+    <details><summary>Bir turda kaç soru, kaç saniye var?</summary><p>Her soruda 20 saniye ve dört şık var. Oyun, 3 canın bitene kadar sürer; yanlış cevap ya da biten süre bir can götürür. Her 3 doğruda seviye atlarsın.</p></details>
+    <details><summary>Ok atışı nasıl çalışır?</summary><p>Parmağını ekranda yay gibi geriye çekip bırakırsın, ok ters yöne uçar. Ne kadar çekersen o kadar güçlü atarsın. Tahta döner, biraz önden nişan alırsın. Sadağında 6 ok var; ıskalarsan bir ok gider.</p></details>
+    <details><summary>Arkadaşla oynanır mı?</summary><p>Bil At! tek kişilik oynanır. Arkadaşlarınla haftalık sıralamada yarışırsın.</p></details>
+    <details><summary>Sorular güncelleniyor mu?</summary><p>Evet. İnternet varken yeni sorular indirilir, indirdiğin sorular cihazında kalır ve internetsiz de oynanır.</p></details>
     <details><summary>Hangi telefonlarda oynanır?</summary><p>Android'de Google Play'den, iPhone'da App Store'dan indirilir. Hesap açmak gerekmez.</p></details>
   </div>
   <p>Ayrıntılar için <a href="../">ana sayfaya</a> bak.</p>
@@ -212,7 +289,7 @@
 <section class="closing" style="padding-top:0">
   <div class="wrap">
     <div class="closing-card">
-      <div class="closing-text"><h2>Google Play ve App Store'dan ücretsiz indir</h2><p>Bilgi yarışması ve 3D okçuluk tek oyunda. Hesap gerekmez, internetsiz de oynanır.</p></div>
+      <div class="closing-text"><h2>Uygulamayı indir</h2><p>Bilgi yarışması ve 3D okçuluk tek oyunda. Hesap gerekmez, internetsiz de oynanır.</p></div>
       <div class="store-badges"><a class="gp-badge" href="https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat&amp;referrer=utm_source%3Dbilat.app%26utm_medium%3Dsite%26utm_campaign=bilgi_yarismasi_kapanis"><img src="../img/google-play-badge-tr.png" width="646" height="250" alt="Google Play'den indirin" loading="lazy" decoding="async"></a><a class="as-badge" href="https://apps.apple.com/tr/app/bil-at-bilgi-yar%C4%B1%C5%9Fmas%C4%B1/id6821452285"><img src="../img/app-store-badge-tr.svg" width="151" height="40" alt="App Store'dan indirin" loading="lazy" decoding="async"></a></div>
     </div>
   </div>
