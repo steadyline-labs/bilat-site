@@ -76,7 +76,7 @@
         {"@type": "Question", "name": "İnternet olmadan oynanır mı?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Oyunla gelen sorular ve indirdiğin sorular cihazında kalır. Çevrimdışıyken aldığın skor, bağlantı gelince sıralamaya gönderilir."}},
         {"@type": "Question", "name": "Hesap açmam gerekiyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır, ayrı hesap açmazsın. Sıralama için bir takma ad seçmen yeter. Telefonunda Google Play Oyunlar açıksa takma adın ve skorların ona bağlanır; telefon değişse de seninle kalır."}},
         {"@type": "Question", "name": "iPhone için var mı?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Bil At! hem App Store'da iPhone için hem Google Play'de Android için ücretsiz."}},
-        {"@type": "Question", "name": "Şehir havası konumumu kullanır mı?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Şehir havası varsayılan olarak kapalıdır. Açarsan ilini listeden sen seçersin ve yalnızca o ilin hava durumu alınır."}},
+        {"@type": "Question", "name": "Şehir havası konumumu kullanır mı?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Şehir havası varsayılan olarak kapalıdır ve konum izni istemez. Açarsan ilini listeden sen seçersin ve hava durumu için yalnızca o ilin merkezinin koordinatı kullanılır."}},
         {"@type": "Question", "name": "Bir soruda hata buldum, ne yapayım?", "acceptedAnswer": {"@type": "Answer", "text": "destek@bilat.app adresine soruyu ve doğru cevabı yaz, düzeltelim."}}
       ]
     }
@@ -244,7 +244,7 @@
           <li>Günlük görevler ve günlük hediye.</li>
           <li>İki unvan yolu: Bilgi Yolu ve Okçuluk Yolu.</li>
           <li>Mağaza ve yeni üzerlik sikkesi.</li>
-          <li>Şehrinin havası oyunda: yağmur, kar, fırtına.</li>
+          <li>Şehrinin havası oyunda: yağmur, kar, sis, fırtına.</li>
           <li>Yeniden tasarlanan ana menü; Bugün, Görevler ve Haftalık sıralama kareleri.</li>
           <li>Günün Meydanı ve Haftanın Okçusu sıralamaları, her açılışta taze.</li>
           <li>Devam et sayacı, İkiye katla düğmesi ve bir joker daha.</li>
@@ -402,9 +402,9 @@
         <div class="y-weather-text">
           <span class="y-tag">İSTEĞE BAĞLI</span>
           <h2>Şehrinin havası oyunda</h2>
-          <p>Yağmur, kar ve fırtına oyun ekranına yansır.</p>
+          <p>Ayarlar'dan Şehir havası'nı açıp ilini seçersin; Ok Meydanı'nın havası o ilin gerçek havasıyla değişir: yağmur, kar, sis, fırtına.</p>
           <ol class="y-steps3"><li>Ayarlar</li><li>Şehir havası</li><li>İlini seç</li></ol>
-          <p class="y-note">Varsayılan olarak kapalıdır. Açarsan yalnızca seçtiğin ilin hava durumu kullanılır.</p>
+          <p class="y-note">Varsayılan olarak kapalıdır, istediğin zaman kapatırsın. Konum izni istemez.</p>
         </div>
         <ul class="y-wx">
           <li><img src="img/yeni/hava-yagmur.webp" width="480" height="476" loading="lazy" decoding="async" alt="Yağmurlu hava: nişan ekranında yağmurlu 12 derece"><span>Yağmur</span></li>
@@ -601,7 +601,7 @@
         <details><summary>İnternet olmadan oynanır mı?</summary><p>Evet. Oyunla gelen sorular ve indirdiğin sorular cihazında kalır. Çevrimdışıyken aldığın skor, bağlantı gelince sıralamaya gönderilir.</p></details>
         <details><summary>Hesap açmam gerekiyor mu?</summary><p>Hayır, ayrı hesap açmazsın. Sıralama için bir takma ad seçmen yeter. Telefonunda Google Play Oyunlar açıksa takma adın ve skorların ona bağlanır; telefon değişse de seninle kalır.</p></details>
         <details><summary>iPhone için var mı?</summary><p>Evet. Bil At! hem App Store'da iPhone için hem Google Play'de Android için ücretsiz.</p></details>
-        <details><summary>Şehir havası konumumu kullanır mı?</summary><p>Hayır. Şehir havası varsayılan olarak kapalıdır. Açarsan ilini listeden sen seçersin ve yalnızca o ilin hava durumu alınır.</p></details>
+        <details><summary>Şehir havası konumumu kullanır mı?</summary><p>Hayır. Şehir havası varsayılan olarak kapalıdır ve konum izni istemez. Açarsan ilini listeden sen seçersin ve hava durumu için yalnızca o ilin merkezinin koordinatı kullanılır.</p></details>
         <details><summary>Bir soruda hata buldum, ne yapayım?</summary><p><a href="mailto:destek@bilat.app">destek@bilat.app</a> adresine ya da <a href="https://wa.me/905512507661?text=Merhaba%2C%20Bil%20At!%20hakk%C4%B1nda%20yaz%C4%B1yorum" target="_blank" rel="noopener"><svg class="wa-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" style="vertical-align:-3px;margin-right:5px;flex-shrink:0"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.3 14.96l-.3-.2-3 .87.9-2.9-.2-.3A8.1 8.1 0 0 1 12.04 3.8zm-3.3 4.1c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.2 4.9 4.4 2.4 1 2.9.8 3.4.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.400-.8-.8-1.400-1.7-1.500-2-.2-.3 0-.4.1-.6l.4-.5c.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.200c-.2-.5-.5-.5-.7-.5z"/></svg>WhatsApp</a> hattına soruyu ve doğru cevabı yaz, düzeltelim.</p></details>
       </div>
     </div>
