@@ -38,6 +38,8 @@
 
 ## Sayfalar
 - https://bilat.app/ : Bil At! Bilgi yarışması ve 3D okçuluk · Ücretsiz (iki mod: https://bilat.app/#modlar, nasıl oynanır: https://bilat.app/#nasil-bilat ve https://bilat.app/#nasil-ok-meydani)
+- https://bilat.app/bilgi-yarismasi-okculuk-oyunu/ : Türkçe bilgi yarışması ve 3D okçuluk oyunu: nasıl oynanır, Ok Meydanı, Alp ve Banu, joker, unvanlar, SSS
+- https://bilat.app/turk-okculugu-ok-meydani/ : Türk okçuluğu, kemankeşlik ve İstanbul Okmeydanı kısa tarihi (kaynaklı); Bil At!'ın Ok Meydanı modu
 - https://bilat.app/gizlilik/ : Gizlilik politikası · Bil At!
 - https://bilat.app/pricing.md : fiyatlandırma özeti
 - Google Play: https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat
