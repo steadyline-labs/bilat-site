@@ -517,3 +517,33 @@ section[id]{scroll-margin-top:12px}
 .clip{margin:0;border-radius:20px;overflow:hidden;background:#1c1a22}
 .clip video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover}
 @media (max-width:560px){.clips{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.clip:nth-child(3){grid-column:1/-1;max-width:50%;justify-self:center}}
+
+/* genel kültür mini yarışma */
+.quiz{margin:20px 0 8px;padding:20px;border-radius:20px;background:var(--card);box-shadow:0 0 0 1px var(--line) inset}
+.quiz h2{margin:0 0 10px;font-size:22px}
+.quiz-hint,.quiz-meta{color:var(--muted);font-size:15px;font-weight:700}
+.quiz-q{font-size:20px;font-weight:800;line-height:1.35;margin:8px 0 14px}
+.quiz-opts{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.quiz-opts li{margin:0}
+.quiz-opt,.quiz-btn{font:inherit;font-weight:800;font-size:17px;width:100%;text-align:left;padding:14px 16px;min-height:48px;border-radius:14px;border:2px solid var(--line);background:var(--soft);color:var(--ink);cursor:pointer}
+.quiz-btn{width:auto;text-align:center;background:var(--primary);color:var(--primary-ink);border-color:var(--edge);margin-top:14px;padding:12px 24px}
+.quiz-btn[disabled]{opacity:.5;cursor:default}
+.quiz-opt:focus-visible,.quiz-btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.quiz-opt.ok{border-color:var(--g);background:color-mix(in srgb,var(--g) 22%,var(--card))}
+.quiz-opt.bad{border-color:var(--r);background:color-mix(in srgb,var(--r) 20%,var(--card))}
+.quiz-opt[disabled]{cursor:default}
+.quiz-exp{margin-top:14px;padding:12px 14px;border-radius:12px;background:var(--soft);font-size:16px;line-height:1.55}
+.quiz-score{font-family:"Baloo 2",system-ui,sans-serif;font-size:44px;line-height:1;margin:6px 0 8px}
+.quiz-cta{margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.quiz-cta h3{font-size:20px;margin:0 0 6px}
+.quiz-cta .badges{margin-top:12px}
+.qa-cat{font-size:21px;margin:26px 0 8px}
+.qa-list{padding-left:0;margin:0;list-style:none}
+.qa-list>li.qa{margin:0 0 14px;padding:16px 18px;border-radius:16px;background:var(--card);box-shadow:0 0 0 1px var(--line) inset}
+.qa-list>li.qa::marker{content:""}
+.qa h3{font-size:18px;line-height:1.4;margin:0 0 8px}
+.qa-opts{margin:0 0 8px;padding-left:24px;list-style-type:upper-alpha}
+.qa-opts li{font-size:16px}
+.qa details summary{cursor:pointer;font-weight:800;color:var(--accent)}
+.qa details p{margin-top:8px;font-size:16px}
+.qa-src{display:block;margin-top:4px;color:var(--muted);font-size:14px}

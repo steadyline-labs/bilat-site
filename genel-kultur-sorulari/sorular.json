@@ -1,0 +1,562 @@
+[
+ {
+  "id": 1,
+  "category": "bilim",
+  "question": "Doğada bulunan en sert mineral hangisidir?",
+  "options": [
+   "Demir",
+   "Altın",
+   "Elmas",
+   "Kuvars"
+  ],
+  "answer_index": 2,
+  "explanation": "Mohs sertlik ölçeğinde 10 ile en üstte elmas yer alır.",
+  "source": "https://tr.wikipedia.org/wiki/Elmas"
+ },
+ {
+  "id": 2,
+  "category": "tarih",
+  "question": "Ayasofya'yı 537'de ibadete açtıran Bizans imparatoru kimdir?",
+  "options": [
+   "Herakleios",
+   "I. Justinianus",
+   "II. Theodosius",
+   "Konstantin"
+  ],
+  "answer_index": 1,
+  "explanation": "Ayasofya'nın bugünkü yapısı I. Justinianus döneminde 532-537 arasında inşa edildi.",
+  "source": "https://tr.wikipedia.org/wiki/Ayasofya"
+ },
+ {
+  "id": 3,
+  "category": "tarih",
+  "question": "Seyahatname adlı geniş gezi kitabını yazan Osmanlı gezgini kimdir?",
+  "options": [
+   "İbn Battuta",
+   "Evliya Çelebi",
+   "Katip Çelebi",
+   "Piri Reis"
+  ],
+  "answer_index": 1,
+  "explanation": "Evliya Çelebi, 17. yüzyılda gezdiği yerleri on ciltlik Seyahatname'de anlattı.",
+  "source": "https://tr.wikipedia.org/wiki/Evliya_Çelebi"
+ },
+ {
+  "id": 4,
+  "category": "tarih",
+  "question": "Sakarya Meydan Muharebesi'nin ardından Mustafa Kemal'e verilen unvan hangisidir?",
+  "options": [
+   "Hakan",
+   "Sultan",
+   "Paşa",
+   "Gazi"
+  ],
+  "answer_index": 3,
+  "explanation": "TBMM, 19 Eylül 1921'de Mustafa Kemal'e Gazi unvanını ve Mareşal rütbesini verdi.",
+  "source": "https://tr.wikipedia.org/wiki/Sakarya_Meydan_Muharebesi"
+ },
+ {
+  "id": 5,
+  "category": "kultur",
+  "question": "Giza'daki Büyük Piramit hangi Mısır firavunu için yapılmıştır?",
+  "options": [
+   "Kleopatra",
+   "II. Ramses",
+   "Keops (Hufu)",
+   "Tutankamon"
+  ],
+  "answer_index": 2,
+  "explanation": "Büyük Piramit, IV. Hanedan firavunu Hufu (Keops) için inşa edildi.",
+  "source": "https://tr.wikipedia.org/wiki/Keops_Piramidi"
+ },
+ {
+  "id": 6,
+  "category": "kultur",
+  "question": "Bir piyanoda kaç tuş vardır?",
+  "options": [
+   "92",
+   "76",
+   "88",
+   "100"
+  ],
+  "answer_index": 2,
+  "explanation": "Standart piyano 52 beyaz ve 36 siyah olmak üzere 88 tuşludur.",
+  "source": "https://tr.wikipedia.org/wiki/Piyano"
+ },
+ {
+  "id": 7,
+  "category": "bilim",
+  "question": "Ay'ın evreleri yaklaşık kaç günde bir tam döngü tamamlar?",
+  "options": [
+   "45",
+   "7",
+   "29,5",
+   "14"
+  ],
+  "answer_index": 2,
+  "explanation": "Yeni aydan bir sonraki yeni aya geçen süre yaklaşık 29,5 gündür.",
+  "source": "https://tr.wikipedia.org/wiki/Ay_evreleri"
+ },
+ {
+  "id": 8,
+  "category": "bilim",
+  "question": "Kütlenin korunumu yasasını ortaya koyan, \"modern kimyanın babası\" sayılan Fransız bilim insanı kimdir?",
+  "options": [
+   "Blaise Pascal",
+   "Antoine Lavoisier",
+   "Louis Pasteur",
+   "Pierre Curie"
+  ],
+  "answer_index": 1,
+  "explanation": "Lavoisier, kimyasal tepkimelerde toplam kütlenin değişmediğini gösterdi.",
+  "source": "https://tr.wikipedia.org/wiki/Antoine_Lavoisier"
+ },
+ {
+  "id": 9,
+  "category": "kultur",
+  "question": "Karagöz ve Hacivat gölge oyununun doğduğu şehir olarak anılan yer neresidir?",
+  "options": [
+   "Kütahya",
+   "Konya",
+   "Edirne",
+   "Bursa"
+  ],
+  "answer_index": 3,
+  "explanation": "Anlatıya göre Karagöz ile Hacivat Bursa'da Orhan Gazi döneminde cami inşaatında çalışan iki ustaydı.",
+  "source": "https://tr.wikipedia.org/wiki/Karagöz_ve_Hacivat"
+ },
+ {
+  "id": 10,
+  "category": "tarih",
+  "question": "İstanbul'daki Dolmabahçe Sarayı hangi padişah döneminde yapılmıştır?",
+  "options": [
+   "II. Mahmud",
+   "Kanuni Sultan Süleyman",
+   "Fatih Sultan Mehmed",
+   "Abdülmecid"
+  ],
+  "answer_index": 3,
+  "explanation": "Dolmabahçe Sarayı, Abdülmecid döneminde 19. yüzyılda inşa edildi.",
+  "source": "https://tr.wikipedia.org/wiki/Dolmabahçe_Sarayı"
+ },
+ {
+  "id": 11,
+  "category": "tarih",
+  "question": "İstanbul'daki Topkapı Sarayı'nı hangi padişah yaptırmıştır?",
+  "options": [
+   "Fatih Sultan Mehmed",
+   "I. Ahmed",
+   "III. Selim",
+   "Abdülhamid"
+  ],
+  "answer_index": 0,
+  "explanation": "Fatih Sultan Mehmed, İstanbul'un fethinden sonra Topkapı Sarayı'nı yaptırdı.",
+  "source": "https://tr.wikipedia.org/wiki/Topkapı_Sarayı"
+ },
+ {
+  "id": 12,
+  "category": "cografya",
+  "question": "Kapalıçarşı hangi şehirdedir?",
+  "options": [
+   "Ankara",
+   "İstanbul",
+   "Bursa",
+   "İzmir"
+  ],
+  "answer_index": 1,
+  "explanation": "İstanbul'daki Kapalıçarşı, Fatih döneminde temeli atılan dünyanın en eski ve büyük kapalı çarşılarındandır.",
+  "source": "https://tr.wikipedia.org/wiki/Kapalıçarşı"
+ },
+ {
+  "id": 13,
+  "category": "cografya",
+  "question": "Ani Harabeleri hangi ilimizdedir?",
+  "options": [
+   "Ağrı",
+   "Van",
+   "Kars",
+   "Erzurum"
+  ],
+  "answer_index": 2,
+  "explanation": "Ani, Kars'ta Ermenistan sınırında bir ortaçağ başkentidir ve UNESCO listesindedir.",
+  "source": "https://tr.wikipedia.org/wiki/Ani_Harabeleri"
+ },
+ {
+  "id": 14,
+  "category": "kultur",
+  "question": "Âşık Veysel hangi ilimizin Sivrialan köyünde doğmuştur?",
+  "options": [
+   "Kayseri",
+   "Sivas",
+   "Yozgat",
+   "Tokat"
+  ],
+  "answer_index": 1,
+  "explanation": "Âşık Veysel Şatıroğlu 1894'te Sivas'ın Şarkışla ilçesine bağlı Sivrialan köyünde doğdu.",
+  "source": "https://tr.wikipedia.org/wiki/Âşık_Veysel"
+ },
+ {
+  "id": 15,
+  "category": "bilim",
+  "question": "Düzlemdeki her üçgenin iç açıları toplamı kaç derecedir?",
+  "options": [
+   "180",
+   "90",
+   "270",
+   "360"
+  ],
+  "answer_index": 0,
+  "explanation": "Düz bir yüzeydeki üçgenin üç iç açısı toplamı daima 180 derecedir.",
+  "source": "https://tr.wikipedia.org/wiki/Üçgen"
+ },
+ {
+  "id": 16,
+  "category": "tarih",
+  "question": "Büyük İskender'in genç yaşında öğretmenliğini yapan Antik Yunan filozofu kimdir?",
+  "options": [
+   "Platon",
+   "Aristoteles",
+   "Epikuros",
+   "Sokrates"
+  ],
+  "answer_index": 1,
+  "explanation": "Aristoteles, Makedonya Kralı II. Filip'in daveti üzerine İskender'e dersler verdi.",
+  "source": "https://tr.wikipedia.org/wiki/Aristoteles"
+ },
+ {
+  "id": 17,
+  "category": "tarih",
+  "question": "Atina'da Akademia adlı okulu kuran ve Sokrates'in öğrencisi olan filozof kimdir?",
+  "options": [
+   "Herakleitos",
+   "Pisagor",
+   "Platon",
+   "Aristoteles"
+  ],
+  "answer_index": 2,
+  "explanation": "Platon, Atina'da Akademia'yı kurdu; Aristoteles de bu okulda yetişti.",
+  "source": "https://tr.wikipedia.org/wiki/Platon"
+ },
+ {
+  "id": 18,
+  "category": "tarih",
+  "question": "Herodot'a, Romalı hatip Cicero tarafından hangi unvan verilmiştir?",
+  "options": [
+   "Tarihin babası",
+   "Felsefenin babası",
+   "Hukukun babası",
+   "Tıbbın babası"
+  ],
+  "answer_index": 0,
+  "explanation": "Herodot, Perslerle Yunanlar arasındaki savaşları anlatan Historiai adlı eseriyle bu unvanı aldı.",
+  "source": "https://tr.wikipedia.org/wiki/Herodot"
+ },
+ {
+  "id": 19,
+  "category": "kultur",
+  "question": "İbn-i Sina'nın Avrupa'da yüzyıllarca tıp okullarında ders kitabı olarak okutulan eseri hangisidir?",
+  "options": [
+   "Seyahatname",
+   "El-Kanun fi't-Tıb",
+   "Mesnevi",
+   "Divan-ı Hikmet"
+  ],
+  "answer_index": 1,
+  "explanation": "Kanun, 11. yüzyılda yazıldı ve 17. yüzyıla kadar Avrupa üniversitelerinde okutuldu.",
+  "source": "https://tr.wikipedia.org/wiki/İbn-i_Sina"
+ },
+ {
+  "id": 20,
+  "category": "kultur",
+  "question": "El-Cezeri'nin 12. yüzyılda yazdığı Hiyel (Mekanik Düzenekler) kitabı hangi konuyu anlatır?",
+  "options": [
+   "Bitki türleri",
+   "Harita çizimi",
+   "Gök cisimlerinin hareketi",
+   "Otomatik makineler ve su saatleri"
+  ],
+  "answer_index": 3,
+  "explanation": "Cizre doğumlu mühendis Cezeri, su saatleri ve otomatik makineler gibi düzenekleri tasarlayıp çizimleriyle anlattı.",
+  "source": "https://tr.wikipedia.org/wiki/Cezerî"
+ },
+ {
+  "id": 21,
+  "category": "kultur",
+  "question": "\"Algoritma\" sözcüğü hangi bilginin adından türemiştir?",
+  "options": [
+   "el-Hârizmî",
+   "İbn-i Sina",
+   "Farabi",
+   "Ömer Hayyam"
+  ],
+  "answer_index": 0,
+  "explanation": "9. yüzyıl matematikçisi el-Hârizmî'nin adı Latinceye \"algoritmi\" olarak geçti; \"cebir\" sözcüğü de eserinden gelir.",
+  "source": "https://tr.wikipedia.org/wiki/Algoritma"
+ },
+ {
+  "id": 22,
+  "category": "kultur",
+  "question": "Floransa'daki David heykelini ve Sistina Şapeli'nin tavan freskini yapan Rönesans sanatçısı kimdir?",
+  "options": [
+   "Botticelli",
+   "Michelangelo",
+   "Donatello",
+   "Raffaello"
+  ],
+  "answer_index": 1,
+  "explanation": "Michelangelo, David heykelini yonttu ve Vatikan'daki Sistina Şapeli'nin tavan resimlerini yaptı.",
+  "source": "https://tr.wikipedia.org/wiki/Michelangelo"
+ },
+ {
+  "id": 23,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Her kuşun ... yenmez\"",
+  "options": [
+   "tüyü",
+   "yuvası",
+   "eti",
+   "sesi"
+  ],
+  "answer_index": 2,
+  "explanation": "Atasözü: \"Her kuşun eti yenmez\". Herkes zorbalığa boyun eğmez, karşı gelenler de çıkar.",
+  "source": "https://sozluk.gov.tr/gts?ara=her%20ku%C5%9Fun%20eti%20yenmez"
+ },
+ {
+  "id": 24,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Acele işe ... karışır\"",
+  "options": [
+   "şeytan",
+   "dert",
+   "hata",
+   "kader"
+  ],
+  "answer_index": 0,
+  "explanation": "Atasözü: \"Acele işe şeytan karışır\". Düşünmeden aceleyle yapılan işten iyi sonuç alınamaz.",
+  "source": "https://sozluk.gov.tr/gts?ara=acele%20i%C5%9Fe%20%C5%9Feytan%20kar%C4%B1%C5%9F%C4%B1r"
+ },
+ {
+  "id": 25,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Misafir umduğunu değil ... yer\"",
+  "options": [
+   "sevdiğini",
+   "istediğini",
+   "gördüğünü",
+   "bulduğunu"
+  ],
+  "answer_index": 3,
+  "explanation": "Atasözü: \"Misafir umduğunu değil bulduğunu yer\". Konuk çok ikram bekleyebilir ama ev sahibi evinde olanı sunar.",
+  "source": "https://sozluk.gov.tr/gts?ara=misafir%20umdu%C4%9Funu%20de%C4%9Fil%20buldu%C4%9Funu%20yer"
+ },
+ {
+  "id": 26,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Bir fincan kahvenin ... hatırı vardır\"",
+  "options": [
+   "kırk yıl",
+   "yüz yıl",
+   "bir yıl",
+   "bin yıl"
+  ],
+  "answer_index": 0,
+  "explanation": "Atasözü: \"Bir fincan kahvenin kırk yıl hatırı vardır\". İyilik küçük de olsa unutulmaz.",
+  "source": "https://sozluk.gov.tr/gts?ara=bir%20fincan%20kahvenin%20k%C4%B1rk%20y%C4%B1l%20hat%C4%B1r%C4%B1%20vard%C4%B1r"
+ },
+ {
+  "id": 27,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Yağmurdan kaçarken ... tutulmak\"",
+  "options": [
+   "fırtınaya",
+   "kara",
+   "sele",
+   "doluya"
+  ],
+  "answer_index": 3,
+  "explanation": "Atasözü: \"Yağmurdan kaçarken doluya tutulmak\". Güç bir durumdan kurtulayım derken daha kötüsüyle karşılaşmak.",
+  "source": "https://sozluk.gov.tr/gts?ara=ya%C4%9Fmurdan%20ka%C3%A7arken%20doluya%20tutulmak"
+ },
+ {
+  "id": 28,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Gün doğmadan ... doğar\"",
+  "options": [
+   "nasıl",
+   "kimler",
+   "nereler",
+   "neler"
+  ],
+  "answer_index": 3,
+  "explanation": "Atasözü: \"Gün doğmadan neler doğar\". Beklenmedik bir anda umut verici durumlarla da karşılaşılabilir.",
+  "source": "https://sozluk.gov.tr/gts?ara=g%C3%BCn%20do%C4%9Fmadan%20neler%20do%C4%9Far"
+ },
+ {
+  "id": 29,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Gülme komşuna, ... başına\"",
+  "options": [
+   "düşer",
+   "kalır",
+   "gelir",
+   "çıkar"
+  ],
+  "answer_index": 2,
+  "explanation": "Atasözü: \"Gülme komşuna, gelir başına\". Birinin başına gelen kötü durum senin de başına gelebilir.",
+  "source": "https://sozluk.gov.tr/gts?ara=g%C3%BClme%20kom%C5%9Funa%2C%20gelir%20ba%C5%9F%C4%B1na"
+ },
+ {
+  "id": 30,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Körle yatan ... kalkar\"",
+  "options": [
+   "sağır",
+   "topal",
+   "şaşı",
+   "kör"
+  ],
+  "answer_index": 2,
+  "explanation": "Atasözü: \"Körle yatan şaşı kalkar\". Kötü kimselerle ilişki kuranlar onların kötü huylarını edinir.",
+  "source": "https://sozluk.gov.tr/gts?ara=k%C3%B6rle%20yatan%20%C5%9Fa%C5%9F%C4%B1%20kalkar"
+ },
+ {
+  "id": 31,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Ağlamayan çocuğa ... vermezler\"",
+  "options": [
+   "oyuncak",
+   "şeker",
+   "meme",
+   "süt"
+  ],
+  "answer_index": 2,
+  "explanation": "Atasözü: \"Ağlamayan çocuğa meme vermezler\". Hakkını aramasını bilmeyenin işi görülmez.",
+  "source": "https://sozluk.gov.tr/gts?ara=a%C4%9Flamayan%20%C3%A7ocu%C4%9Fa%20meme%20vermezler"
+ },
+ {
+  "id": 32,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Sabreden ... muradına ermiş\"",
+  "options": [
+   "çiftçi",
+   "bilge",
+   "yolcu",
+   "derviş"
+  ],
+  "answer_index": 3,
+  "explanation": "Atasözü: \"Sabreden derviş muradına ermiş\". Beklemesini bilen sonunda amacına ulaşır.",
+  "source": "https://sozluk.gov.tr/gts?ara=sabreden%20dervi%C5%9F%20murad%C4%B1na%20ermi%C5%9F"
+ },
+ {
+  "id": 33,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Bakarsan bağ olur, bakmazsan ... olur\"",
+  "options": [
+   "taş",
+   "yol",
+   "dağ",
+   "çöl"
+  ],
+  "answer_index": 2,
+  "explanation": "Atasözü: \"Bakarsan bağ olur, bakmazsan dağ olur\". Bakılıp onarılan şeylerden yararlanılır, bakımsız bırakılandan fayda gelmez.",
+  "source": "https://sozluk.gov.tr/gts?ara=bakarsan%20ba%C4%9F%20olur%2C%20bakmazsan%20da%C4%9F%20olur"
+ },
+ {
+  "id": 34,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Yalancının evi yanmış, kimse ...\"",
+  "options": [
+   "acımamış",
+   "görmemiş",
+   "yardım etmemiş",
+   "inanmamış"
+  ],
+  "answer_index": 3,
+  "explanation": "Atasözü: \"Yalancının evi yanmış, kimse inanmamış\". Yalan huy edinen, doğruyu söylediğinde bile inandırıcı olamaz.",
+  "source": "https://sozluk.gov.tr/gts?ara=yalanc%C4%B1n%C4%B1n%20evi%20yanm%C4%B1%C5%9F%2C%20kimse%20inanmam%C4%B1%C5%9F"
+ },
+ {
+  "id": 35,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Gelen gideni ...\"",
+  "options": [
+   "bekletir",
+   "aratır",
+   "sevdirir",
+   "unutturur"
+  ],
+  "answer_index": 1,
+  "explanation": "Atasözü: \"Gelen gideni aratır\". Gelen, gidenden daha kusurlu çıkabilir.",
+  "source": "https://sozluk.gov.tr/gts?ara=gelen%20gideni%20arat%C4%B1r"
+ },
+ {
+  "id": 36,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"El elin eşeğini ... çağırarak arar\"",
+  "options": [
+   "ağıt",
+   "şarkı",
+   "türkü",
+   "ıslık"
+  ],
+  "answer_index": 2,
+  "explanation": "Atasözü: \"El elin eşeğini türkü çağırarak arar\". İnsanın kendi sıkıntısına başkaları gereken önemi vermez.",
+  "source": "https://sozluk.gov.tr/gts?ara=el%20elin%20e%C5%9Fe%C4%9Fini%20t%C3%BCrk%C3%BC%20%C3%A7a%C4%9F%C4%B1rarak%20arar"
+ },
+ {
+  "id": 37,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Her koyun kendi ... asılır\"",
+  "options": [
+   "bacağından",
+   "kuyruğundan",
+   "kulağından",
+   "boynundan"
+  ],
+  "answer_index": 0,
+  "explanation": "Atasözü: \"Her koyun kendi bacağından asılır\". Herkes kendi davranışından sorumludur, hatasının cezasını kendisi çeker.",
+  "source": "https://sozluk.gov.tr/gts?ara=her%20koyun%20kendi%20baca%C4%9F%C4%B1ndan%20as%C4%B1l%C4%B1r"
+ },
+ {
+  "id": 38,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Vakitsiz öten ... başını keserler\"",
+  "options": [
+   "kuşun",
+   "tavuğun",
+   "ördeğin",
+   "horozun"
+  ],
+  "answer_index": 3,
+  "explanation": "Atasözü: \"Vakitsiz öten horozun başını keserler\". Söz yerinde ve zamanında söylenmeli, yersiz söz zarar getirir.",
+  "source": "https://sozluk.gov.tr/gts?ara=vakitsiz%20%C3%B6ten%20horozun%20ba%C5%9F%C4%B1n%C4%B1%20keserler"
+ },
+ {
+  "id": 39,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Dost ... söyler\"",
+  "options": [
+   "gizli",
+   "tatlı",
+   "acı",
+   "yavaş"
+  ],
+  "answer_index": 2,
+  "explanation": "Atasözü: \"Dost acı söyler\". Yakınlarımız eksikliklerimizi çekinmeden söyler.",
+  "source": "https://sozluk.gov.tr/gts?ara=dost%20ac%C4%B1%20s%C3%B6yler"
+ },
+ {
+  "id": 40,
+  "category": "atasozu",
+  "question": "Atasözünü tamamlayın: \"Atın ölümü ... olsun\"",
+  "options": [
+   "otlaktan",
+   "sudan",
+   "arpadan",
+   "samandan"
+  ],
+  "answer_index": 2,
+  "explanation": "Atasözü: \"Atın ölümü arpadan olsun\". Çok sevilen bir şeyin uğruna zor ya da kötü sonuçlara katlanılır.",
+  "source": "https://sozluk.gov.tr/gts?ara=at%C4%B1n%20%C3%B6l%C3%BCm%C3%BC%20arpadan%20olsun"
+ }
+]
