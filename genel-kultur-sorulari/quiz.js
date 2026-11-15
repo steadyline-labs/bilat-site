@@ -1,56 +1,87 @@
 (function(){
   var root=document.querySelector('[data-quiz]');
+  var CAT={kultur:'Genel kültür',tarih:'Tarih',cografya:'Coğrafya',bilim:'Bilim',atasozu:'Atasözü'};
+  var L='ABCD';
+  // Kategori süzgeci
+  var fbtns=[].slice.call(document.querySelectorAll('[data-f]'));
+  var groups=[].slice.call(document.querySelectorAll('.gx-group'));
+  fbtns.forEach(function(b){
+    b.addEventListener('click',function(){
+      var f=b.getAttribute('data-f');
+      fbtns.forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});
+      groups.forEach(function(g){g.hidden=!(f==='all'||g.getAttribute('data-cat')===f)});
+    });
+  });
   if(!root)return;
-  var items=[].slice.call(document.querySelectorAll('li.qa')).map(function(li){
-    var h=li.querySelector('h3').textContent.replace(/^\d+\.\s*/,'');
-    var opts=[].slice.call(li.querySelectorAll('.qa-opts li')).map(function(o){return o.textContent});
-    var p=li.querySelector('details p');
-    var exp=p?p.textContent.replace(/Kaynak:.*$/,'').trim():'';
-    return {q:h,o:opts,a:+li.getAttribute('data-a'),e:exp};
+  var items=[].slice.call(document.querySelectorAll('li.gx-qa')).map(function(li){
+    var opts=[].slice.call(li.querySelectorAll('.gx-opts li')).map(function(o){return o.lastElementChild.textContent});
+    var p=li.querySelector('details p'),a=p&&p.querySelector('.qa-src a');
+    var st=p&&p.querySelector('strong'),sr=p&&p.querySelector('.qa-src');
+    var exp=p?p.textContent.replace(st?st.textContent:'','').replace(sr?sr.textContent:'','').trim():'';
+    return {q:li.querySelector('.gx-qt').textContent,o:opts,a:+li.getAttribute('data-a'),e:exp,c:CAT[li.getAttribute('data-cat')]||'',u:a?a.href:'',s:a?a.textContent:''};
   });
   var start=root.querySelector('[data-start]');
-  var cta=document.querySelector('main .badges');
-  var ctaHtml=cta?cta.outerHTML:'';
-  var N=10,set,i,score;
+  var tpl=document.getElementById('quiz-cta');
+  var N=10,set,i,score,res;
   function el(t,c,x){var n=document.createElement(t);if(c)n.className=c;if(x!=null)n.textContent=x;return n}
   function shuffle(a){a=a.slice();for(var k=a.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1)),t=a[k];a[k]=a[j];a[j]=t}return a}
-  function begin(){set=shuffle(items).slice(0,N);i=0;score=0;show()}
+  function narrow(){return window.innerWidth<860}
+  function toTop(){if(!narrow())return;var y=root.getBoundingClientRect().top+window.scrollY-68;window.scrollTo({top:y,behavior:'smooth'})}
+  function begin(){set=shuffle(items).slice(0,N);i=0;score=0;res=[];show();toTop()}
+  function dots(){
+    var d=el('div','gx-dots');d.setAttribute('aria-hidden','true');
+    for(var k=0;k<N;k++){d.appendChild(el('span',k<res.length?(res[k]?'ok':'bad'):(k===i?'cur':'')))}
+    return d;
+  }
   function show(){
     var q=set[i];root.textContent='';
-    root.appendChild(el('p','quiz-meta','Soru '+(i+1)+' / '+set.length+' · Puan: '+score));
-    root.appendChild(el('p','quiz-q',q.q));
-    var ul=el('ul','quiz-opts'),btns=[];
+    var m=el('div','gx-qmeta');
+    m.appendChild(el('span',null,'Soru '+(i+1)+' / '+set.length));
+    if(q.c)m.appendChild(el('span','gx-cat',q.c));
+    m.appendChild(el('span','gx-pts','Puan '+score*10));
+    root.appendChild(m);
+    root.appendChild(dots());
+    root.appendChild(el('p','gx-q',q.q));
+    var ul=el('ul','gx-qopts'),btns=[];
     q.o.forEach(function(t,k){
-      var li=el('li'),b=el('button','quiz-opt',t);b.type='button';
+      var li=el('li'),b=el('button','gx-qopt');b.type='button';
+      b.appendChild(el('span','gx-L',L[k]));b.appendChild(el('span','gx-t',t));b.appendChild(el('span','gx-tag',''));
       b.addEventListener('click',function(){answer(k,btns,q)});
       li.appendChild(b);ul.appendChild(li);btns.push(b);
     });
     root.appendChild(ul);
-    var f=btns[0];if(f)f.focus({preventScroll:true});
+    if(btns[0])btns[0].focus({preventScroll:true});
   }
   function answer(k,btns,q){
-    btns.forEach(function(b,x){b.disabled=true;if(x===q.a)b.className+=' ok';else if(x===k)b.className+=' bad'});
-    var right=k===q.a;if(right)score++;
-    var box=el('div','quiz-exp');
-    box.appendChild(el('strong',null,right?'Doğru! ':'Yanlış. Doğru cevap: '+q.o[q.a]+'. '));
-    box.appendChild(document.createTextNode(q.e));
-    root.appendChild(box);
-    var nx=el('button','quiz-btn',i+1<set.length?'Sonraki soru':'Sonucu gör');nx.type='button';
-    nx.addEventListener('click',function(){i++;if(i<set.length)show();else finish()});
+    var right=k===q.a;if(right)score++;res.push(right);
+    btns.forEach(function(b,x){
+      b.disabled=true;var tag=b.querySelector('.gx-tag');
+      if(x===q.a){b.className+=' ok';tag.textContent=right?'Doğru':'Doğru cevap'}
+      else if(x===k){b.className+=' bad';tag.textContent='Senin cevabın'}
+      else b.className+=' dim';
+    });
+    var old=root.querySelector('.gx-dots');if(old)root.replaceChild(dots(),old);
+    root.querySelector('.gx-pts').textContent='Puan '+score*10;
+    var box=el('div','gx-verdict'+(right?'':' bad'));
+    box.appendChild(el('strong',null,right?'Doğru!':'Doğrusu: '+L[q.a]+') '+q.o[q.a]));
+    var p=el('p',null,q.e+' ');
+    if(q.u){var a=el('a',null,'Kaynak: '+q.s);a.href=q.u;a.target='_blank';a.rel='noopener';p.appendChild(a)}
+    box.appendChild(p);root.appendChild(box);
+    var nx=el('button','gx-btn gx-next',i+1<set.length?'Sonraki soru':'Sonucu gör');nx.type='button';
+    nx.addEventListener('click',function(){i++;if(i<set.length)show();else finish();toTop()});
     root.appendChild(nx);nx.focus({preventScroll:true});
   }
   function finish(){
     root.textContent='';
-    var msg=score>=9?'Harika, tam bir bilgi avcısısın!':score>=6?'Güzel sonuç, biraz daha ısınırsan tamamı olur.':'Bu tur ısınma sayılır, bir tur daha dene.';
-    root.appendChild(el('p','quiz-meta','Sonuç'));
-    root.appendChild(el('p','quiz-score',score+' / '+set.length));
-    root.appendChild(el('p',null,msg));
-    var again=el('button','quiz-btn','Yeni 10 soru');again.type='button';again.addEventListener('click',begin);root.appendChild(again);
-    var c=el('div','quiz-cta');
-    c.appendChild(el('h3',null,"Bil At!'ta okla nişan alıp devam et"));
-    c.appendChild(el('p',null,'Tahtaya ok at, vurduğun dilim soruyu seçsin. Ücretsiz, hesap gerekmez.'));
-    var w=el('div');w.innerHTML=ctaHtml;c.appendChild(w);
-    root.appendChild(c);
+    var msg=score>=9?'Bilge gibisin!':score>=6?'Çok iyi, okun hedefte.':score>=3?'Fena değil, bir tur daha?':'Isınma turuydu.';
+    var r=el('div','gx-result');
+    r.appendChild(el('p','gx-muted','Sonuç'));
+    var sc=el('p','gx-score',String(score));sc.appendChild(el('span',null,'/'+set.length));r.appendChild(sc);
+    r.appendChild(el('p','gx-msg',msg));
+    root.appendChild(r);
+    var again=el('button','gx-again','Yeni 10 soru');again.type='button';again.addEventListener('click',begin);root.appendChild(again);
+    if(tpl&&tpl.content)root.appendChild(tpl.content.cloneNode(true));
+    again.focus({preventScroll:true});
   }
   start.disabled=false;
   start.addEventListener('click',begin);

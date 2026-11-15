@@ -111,15 +111,22 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Figtree:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=20261113a">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Figtree:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=20261115b">
 <script src="../tema.js?v=20261028c"></script>
+<script>document.documentElement.classList.add('js')</script>
+<script src="../sayfa.js?v=20261115b" defer></script>
 </head>
-<body>
+<body class="gx">
 <a class="skip" href="#icerik">İçeriğe geç</a>
-<header class="doc-top">
-  <div class="wrap">
-    <a class="logo" href="../" aria-label="Bil At! ana sayfa"><span>Bil<b>At</b></span></a>
+<header class="gx-top">
+  <div class="gx-top-in">
+    <a class="gx-logo" href="../" aria-label="Bil At! ana sayfa"><span>Bil<b>At</b></span></a>
+    <nav class="gx-nav" aria-label="Sayfalar">
+      <a href="../bilgi-yarismasi-okculuk-oyunu/">Oyun</a>
+      <a href="../genel-kultur-sorulari/">Genel kültür soruları</a>
+      <a href="../turk-okculugu-ok-meydani/" aria-current="page">Türk okçuluğu</a>
+    </nav>
     <div class="sky-pick">
       <button type="button" class="sky-btn" aria-expanded="false" aria-controls="gokyuzu" aria-label="Gökyüzü teması">
         <span class="sky-dot" aria-hidden="true"></span><span class="sky-name">Otomatik</span>
@@ -134,88 +141,132 @@
         <button type="button" data-tema="c"><span class="sw sw-c" aria-hidden="true"></span><b>Gece</b></button>
       </div>
     </div>
+    <a class="gx-btn" href="#indir" data-dl>Oyunu indir</a>
   </div>
 </header>
-
-<main id="icerik" class="doc">
-  <h1>Türk okçuluğu ve Ok Meydanı</h1>
-  <p class="meta">Kemankeşlerden Ok Meydanı'na kısa bir bakış · Son güncelleme: 15 Kasım 2026</p>
-  <p>Türk okçuluğu yüzyıllar boyunca hem savaşın hem sporun hem de ustalık geleneğinin parçası oldu. Bu sayfada geleneğin kısa bir özeti, İstanbul'daki Okmeydanı ve Bil At!'ın Ok Meydanı modu var.</p>
-  <img src="../img/ok-meydani/okm-1-sabit-hedefler.webp" width="1600" height="900" loading="lazy" decoding="async" alt="Ok Meydanı: yay gerilmiş, testi kulesi ve puta nişanda" style="display:block;width:100%;height:auto;border-radius:16px;margin:16px 0">
-
-  <h2>Türk okçuluğu nedir</h2>
-  <p>Türk okçuluğu, atlı okçuluktan Osmanlı'daki kemankeşliğe uzanan uzun bir gelenektir. Geleneksel yay bileşik yaydır: ahşap, hayvan boynuzu ve kirişten yapılır, katmanlar hayvansal tutkalla birleştirilir.</p>
-  <p>Geleneksel Türk okçuluğu 2019'da UNESCO'nun Somut Olmayan Kültürel Miras Temsili Listesi'ne girdi. Liste; okçuluk disiplinlerini, atış tekniklerini ve geleneksel ekipmanın ustalığını kapsıyor.</p>
-
-  <h2>Ok Meydanı'nın tarihi</h2>
-  <p>Fatih Sultan Mehmed, İstanbul'un fethinden sonra Okmeydanı'nı okçulara ayırdı. Semt adını buradan alır.</p>
-  <p>Rekor bir mesafeye ok düştüğünde, düştüğü yere menzil taşı dikilirdi. Taşın üzerindeki kitabede okçunun atışı anlatılırdı. Kaynaklar, kayıtlı 132 ok âbidesinden 55'inin bugün ayakta olduğunu yazar.</p>
-  <img src="../img/ok-meydani/okm-2-puta.webp" width="1600" height="900" loading="lazy" decoding="async" alt="Ok Meydanı 2. tur: puta isabeti, +30 puan" style="display:block;width:100%;height:auto;border-radius:16px;margin:16px 0">
-  <p>Okmeydanı'ndaki Okçular Tekkesi, II. Bayezid döneminde yaptırıldı ve 1639'da yenilendi. Tekke bugün yok, ancak minaresi ayakta. Okçuluk sezonu Hıdırellez'de açılır, Kasım'da kapanırdı.</p>
-
-  <h2>Kemankeş kimdir</h2>
-  <p>Kemankeş, Osmanlı'da okçuluk yapan kişidir. Okçular arasına kaydedilmek için hedef atışında beceri göstermek ve belirli bir mesafeye ok atmak gerekirdi.</p>
-
-  <h2>Menzil ve atış disiplinleri</h2>
-  <ul>
-    <li><strong>Puta atışı:</strong> Hedefe atış. Okçu belirli bir hedefi vurmaya çalışır.</li>
-    <li><strong>Menzil atışı:</strong> En uzağa atış. Kaynaklar bunu en itibarlı disiplin olarak anlatır. Atışlar belirli rüzgârlarda yapılır, en uzağa atanın adı menzil taşına yazılırdı.</li>
-    <li><strong>Darb atışı:</strong> Okların kalın bronz ya da demir plakaları deldiği bir güç gösterisi.</li>
-  </ul>
-
-  <h2>Okçuluk sözlüğü</h2>
-  <dl>
-    <dt style="font-weight:800;margin-top:10px">Kemankeş</dt><dd style="margin:0 0 0 0">Osmanlı'da okçuluk yapan kişi.</dd>
-    <dt style="font-weight:800;margin-top:10px">Menzil</dt><dd style="margin:0 0 0 0">En uzağa atış. Özel oklarla, belirli rüzgârlarda atılırdı.</dd>
-    <dt style="font-weight:800;margin-top:10px">Menzil taşı</dt><dd style="margin:0 0 0 0">Rekor bir mesafeye ok düşen yere dikilen, üzerinde okçunun atışını anlatan kitabe bulunan taş.</dd>
-    <dt style="font-weight:800;margin-top:10px">Puta</dt><dd style="margin:0 0 0 0">Hedefe atış; hedef için kullanılan ok türü de bu adla anılır.</dd>
-    <dt style="font-weight:800;margin-top:10px">Darb</dt><dd style="margin:0 0 0 0">Okların kalın bronz ya da demir plakaları deldiği güç gösterisi atışı.</dd>
-    <dt style="font-weight:800;margin-top:10px">Temren</dt><dd style="margin:0 0 0 0">Ok ucu. Kemikten ya da demirden yapılırdı.</dd>
-    <dt style="font-weight:800;margin-top:10px">Yelek</dt><dd style="margin:0 0 0 0">Okun tüyü. Kuğu ya da kartal tüyü kullanılırdı.</dd>
-    <dt style="font-weight:800;margin-top:10px">Zihgir</dt><dd style="margin:0 0 0 0">Okçunun germe sırasında başparmağını korumak için taktığı yüzük; genellikle kemikten yapılır.</dd>
-  </dl>
-
-  <h2>Türk okçuluğu oyunu: Bil At! Ok Meydanı</h2>
-  <p>Bil At!'ın 3D okçuluk modu bu geleneğe selam durur. Oyunda da hedefe atış var.</p>
-  <ul>
-    <li>Üç tur: sabit, sallanan ve uçan hedefler.</li>
-    <li>Testi kulesi, kabak ve puta hedefleri.</li>
-    <li>Rüzgâr yaydaki püskülden okunur.</li>
-    <li>Yay tam gerilince nefesin zamanı yavaşlatır.</li>
-    <li>Okçuluk Yolu'nda isabetlerin seni Hevesli'den Efsane'ye taşır.</li>
-  </ul>
-  <img src="../img/ok-meydani/hero-gece.webp" width="1600" height="837" loading="lazy" decoding="async" alt="Ok Meydanı gece turu: okçu ay ışığında uçan tabağa bakıyor" style="display:block;width:100%;height:auto;border-radius:16px;margin:16px 0">
-  <p>Oyun ücretsiz, Ok Meydanı internetsiz oynanır. Oyunun bilgi yarışması tarafı için <a href="../bilgi-yarismasi-okculuk-oyunu/">Türkçe bilgi yarışması ve okçuluk oyunu</a> sayfasına bak.</p>
-  <div class="badges" style="justify-content:flex-start"><a class="gp-badge" href="https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat&amp;referrer=utm_source%3Dbilat.app%26utm_medium%3Dsite%26utm_campaign=turk_okculugu_sayfa"><img src="../img/google-play-badge-tr.png" width="646" height="250" alt="Google Play'den indirin" loading="lazy" decoding="async"></a><a class="as-badge" href="https://apps.apple.com/tr/app/bil-at-bilgi-yar%C4%B1%C5%9Fmas%C4%B1/id6821452285"><img src="../img/app-store-badge-tr.svg" width="151" height="40" alt="App Store'dan indirin" loading="lazy" decoding="async"></a></div>
-
-  <h2>Sık sorulan sorular</h2>
-  <div class="faq" style="max-width:none">
-    <details><summary>Kemankeş nedir?</summary><p>Kemankeş, Osmanlı'da okçuluk yapan kişiye verilen addır. Kemankeşlik de Osmanlı'daki okçuluk geleneğinin adıdır.</p></details>
-    <details><summary>Okmeydanı nedir?</summary><p>İstanbul'da, okçuluk için ayrılmış tarihî meydan ve bugün aynı adı taşıyan semttir. Fatih Sultan Mehmed, İstanbul'un fethinden sonra burayı okçulara ayırdı.</p></details>
-    <details><summary>Puta ile menzil atışı arasındaki fark nedir?</summary><p>Puta atışı hedefe atıştır. Menzil atışı en uzağa atıştır.</p></details>
-    <details><summary>Türk okçuluğu UNESCO listesinde mi?</summary><p>Evet. Geleneksel Türk okçuluğu 2019'da UNESCO'nun Somut Olmayan Kültürel Miras Temsili Listesi'ne girdi.</p></details>
-    <details><summary>Türk okçuluğu oyunu var mı?</summary><p>Bil At!'ın Ok Meydanı modu 3D bir okçuluk oyunudur ve bu geleneğe selam durur. Tarihî bir canlandırma değil, hızlı ve eğlenceli bir oyundur. Ücretsizdir, internetsiz oynanır.</p></details>
-  </div>
-
-  <h2 id="kaynaklar">Kaynaklar</h2>
-  <ul>
-    <li><a href="https://islamansiklopedisi.org.tr/okmeydani" target="_blank" rel="noopener">TDV İslâm Ansiklopedisi, Okmeydanı</a></li>
-    <li><a href="https://islamansiklopedisi.org.tr/ok" target="_blank" rel="noopener">TDV İslâm Ansiklopedisi, Ok</a></li>
-    <li><a href="https://tr.wikipedia.org/wiki/Kemanke%C5%9Flik" target="_blank" rel="noopener">Vikipedi, Kemankeşlik</a></li>
-    <li><a href="https://tr.wikipedia.org/wiki/Okmeydan%C4%B1" target="_blank" rel="noopener">Vikipedi, Okmeydanı</a></li>
-    <li><a href="https://tr.wikipedia.org/wiki/T%C3%BCrk_ok%C3%A7ulu%C4%9Fu" target="_blank" rel="noopener">Vikipedi, Türk okçuluğu</a></li>
-    <li><a href="https://ich.unesco.org/en/RL/traditional-turkish-archery-01367" target="_blank" rel="noopener">UNESCO, Geleneksel Türk okçuluğu (Somut Olmayan Kültürel Miras Temsili Listesi, 2019)</a></li>
-  </ul>
-</main>
-
-<section class="closing" style="padding-top:0">
-  <div class="wrap">
-    <div class="closing-card">
-      <div class="closing-text"><h2>Ok Meydanı'nı sen dene</h2><p>Ücretsiz, hesap gerekmez. Google Play ve App Store'da.</p></div>
-      <div class="store-badges"><a class="gp-badge" href="https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat&amp;referrer=utm_source%3Dbilat.app%26utm_medium%3Dsite%26utm_campaign=turk_okculugu_kapanis"><img src="../img/google-play-badge-tr.png" width="646" height="250" alt="Google Play'den indirin" loading="lazy" decoding="async"></a><a class="as-badge" href="https://apps.apple.com/tr/app/bil-at-bilgi-yar%C4%B1%C5%9Fmas%C4%B1/id6821452285"><img src="../img/app-store-badge-tr.svg" width="151" height="40" alt="App Store'dan indirin" loading="lazy" decoding="async"></a></div>
+<main id="icerik" class="gx-main gx-tight">
+  <section style="display:flex;flex-direction:column;gap:24px;padding-top:clamp(28px,5vw,64px)">
+    <div style="display:flex;flex-direction:column;gap:16px;max-width:820px">
+      <p style="font-size:14px;font-weight:600" class="gx-muted">Kemankeşlerden Ok Meydanı'na kısa bir bakış</p>
+      <h1 class="gx-h1" style="font-size:clamp(38px,6.6vw,68px)">Türk okçuluğu ve Ok Meydanı</h1>
+      <p class="gx-lead" style="max-width:38em">Türk okçuluğu yüzyıllar boyunca hem savaşın hem sporun hem de ustalık geleneğinin parçası oldu. Bu sayfada geleneğin kısa bir özeti, İstanbul'daki Okmeydanı ve Bil At!'ın Ok Meydanı modu var.</p>
+      <p class="gx-meta">Son güncelleme: 15 Kasım 2026</p>
     </div>
-  </div>
-</section>
+    <img class="gx-wide" src="../img/ok-meydani/okm-1-sabit-hedefler.webp" width="1600" height="900" decoding="async" fetchpriority="high" alt="Ok Meydanı: yay gerilmiş, testi kulesi ve puta nişanda">
+  </section>
+
+  <nav class="gx-toc" aria-label="Bu sayfada">
+    <a href="#nedir">Nedir</a>
+    <a href="#tarih">Tarih</a>
+    <a href="#kemankes">Kemankeş</a>
+    <a href="#disiplinler">Disiplinler</a>
+    <a href="#sozluk">Sözlük</a>
+    <a href="#oyun">Oyun</a>
+    <a href="#sss">SSS</a>
+    <a href="#kaynaklar">Kaynaklar</a>
+  </nav>
+
+  <section class="gx-stats" aria-label="Kısaca" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))">
+    <div class="gx-stat lg gx-card"><div class="gx-b">2019</div><div>UNESCO Somut Olmayan Kültürel Miras Temsili Listesi</div></div>
+    <div class="gx-stat lg gx-card"><div class="gx-b">55 / 132</div><div>Kayıtlı ok âbidesinden bugün ayakta olan</div></div>
+    <div class="gx-stat lg gx-card"><div class="gx-b">Hıdırellez</div><div>Okçuluk sezonunun açıldığı gün; Kasım'da kapanırdı</div></div>
+  </section>
+
+  <section id="nedir" class="gx-split" style="gap:16px 56px">
+    <h2 class="gx-h2" style="flex:1 1 280px">Türk okçuluğu nedir</h2>
+    <div class="gx-text">
+      <p class="gx-pretty">Türk okçuluğu, atlı okçuluktan Osmanlı'daki kemankeşliğe uzanan uzun bir gelenektir. Geleneksel yay bileşik yaydır: ahşap, hayvan boynuzu ve kirişten yapılır, katmanlar hayvansal tutkalla birleştirilir.</p>
+      <p class="gx-pretty">Geleneksel Türk okçuluğu 2019'da UNESCO'nun Somut Olmayan Kültürel Miras Temsili Listesi'ne girdi. Liste; okçuluk disiplinlerini, atış tekniklerini ve geleneksel ekipmanın ustalığını kapsıyor.</p>
+    </div>
+  </section>
+
+  <section id="tarih" class="gx-split">
+    <div class="gx-col" style="flex:1 1 280px">
+      <h2 class="gx-h2">Ok Meydanı'nın tarihi</h2>
+      <img src="../img/ok-meydani/okm-2-puta.webp" width="1600" height="900" loading="lazy" decoding="async" alt="Ok Meydanı 2. tur: puta isabeti, +30 puan" style="display:block;width:100%;height:auto;border-radius:20px">
+    </div>
+    <ol class="gx-tl">
+      <li><span class="gx-tl-rail" aria-hidden="true"><span class="gx-tl-dot"></span><span class="gx-tl-line"></span></span><div><h3>Fetihten sonra</h3><p>Fatih Sultan Mehmed, İstanbul'un fethinden sonra Okmeydanı'nı okçulara ayırdı. Semt adını buradan alır.</p></div></li>
+      <li><span class="gx-tl-rail" aria-hidden="true"><span class="gx-tl-dot"></span><span class="gx-tl-line"></span></span><div><h3>Menzil taşları</h3><p>Rekor bir mesafeye ok düştüğünde, düştüğü yere menzil taşı dikilirdi. Taşın üzerindeki kitabede okçunun atışı anlatılırdı. Kaynaklar, kayıtlı 132 ok âbidesinden 55'inin bugün ayakta olduğunu yazar.</p></div></li>
+      <li><span class="gx-tl-rail" aria-hidden="true"><span class="gx-tl-dot"></span><span class="gx-tl-line"></span></span><div><h3>II. Bayezid · 1639</h3><p>Okmeydanı'ndaki Okçular Tekkesi, II. Bayezid döneminde yaptırıldı ve 1639'da yenilendi. Tekke bugün yok, ancak minaresi ayakta.</p></div></li>
+      <li><span class="gx-tl-rail" aria-hidden="true"><span class="gx-tl-dot"></span><span class="gx-tl-line"></span></span><div><h3>Okçuluk sezonu</h3><p>Okçuluk sezonu Hıdırellez'de açılır, Kasım'da kapanırdı.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="kemankes" class="gx-band" style="align-items:flex-start;gap:16px 56px;padding:clamp(24px,5vw,56px)">
+    <h2 class="gx-h2" style="flex:1 1 260px">Kemankeş kimdir</h2>
+    <p style="flex:2 1 480px;min-width:0;font-size:clamp(18px,2.1vw,22px);line-height:1.55;color:var(--gx-band-ink);opacity:.92" class="gx-pretty">Kemankeş, Osmanlı'da okçuluk yapan kişidir. Okçular arasına kaydedilmek için hedef atışında beceri göstermek ve belirli bir mesafeye ok atmak gerekirdi.</p>
+  </section>
+
+  <section id="disiplinler" style="display:flex;flex-direction:column;gap:20px">
+    <h2 class="gx-h2">Menzil ve atış disiplinleri</h2>
+    <div class="gx-cards">
+      <article class="gx-card"><div class="gx-eyebrow">Hedefe</div><h3>Puta atışı</h3><p>Hedefe atış. Okçu belirli bir hedefi vurmaya çalışır.</p></article>
+      <article class="gx-card"><div class="gx-eyebrow">En uzağa</div><h3>Menzil atışı</h3><p>En uzağa atış. Kaynaklar bunu en itibarlı disiplin olarak anlatır. Atışlar belirli rüzgârlarda yapılır, en uzağa atanın adı menzil taşına yazılırdı.</p></article>
+      <article class="gx-card"><div class="gx-eyebrow">Güç gösterisi</div><h3>Darb atışı</h3><p>Okların kalın bronz ya da demir plakaları deldiği bir güç gösterisi.</p></article>
+    </div>
+  </section>
+
+  <section id="sozluk" style="display:flex;flex-direction:column;gap:20px">
+    <h2 class="gx-h2">Okçuluk sözlüğü</h2>
+    <dl class="gx-terms">
+      <div><dt>Kemankeş</dt><dd>Osmanlı'da okçuluk yapan kişi.</dd></div>
+      <div><dt>Menzil</dt><dd>En uzağa atış. Özel oklarla, belirli rüzgârlarda atılırdı.</dd></div>
+      <div><dt>Menzil taşı</dt><dd>Rekor bir mesafeye ok düşen yere dikilen, üzerinde okçunun atışını anlatan kitabe bulunan taş.</dd></div>
+      <div><dt>Puta</dt><dd>Hedefe atış; hedef için kullanılan ok türü de bu adla anılır.</dd></div>
+      <div><dt>Darb</dt><dd>Okların kalın bronz ya da demir plakaları deldiği güç gösterisi atışı.</dd></div>
+      <div><dt>Temren</dt><dd>Ok ucu. Kemikten ya da demirden yapılırdı.</dd></div>
+      <div><dt>Yelek</dt><dd>Okun tüyü. Kuğu ya da kartal tüyü kullanılırdı.</dd></div>
+      <div><dt>Zihgir</dt><dd>Okçunun germe sırasında başparmağını korumak için taktığı yüzük; genellikle kemikten yapılır.</dd></div>
+    </dl>
+  </section>
+
+  <section id="oyun" class="gx-game gx-card">
+    <img src="../img/ok-meydani/hero-gece.webp" width="1600" height="837" loading="lazy" decoding="async" alt="Ok Meydanı gece turu: okçu ay ışığında uçan tabağa bakıyor">
+    <div>
+      <h2 class="gx-h2" style="font-size:clamp(28px,3.8vw,40px)">Türk okçuluğu oyunu: Bil At! Ok Meydanı</h2>
+      <p>Bil At!'ın 3D okçuluk modu bu geleneğe selam durur. Oyunda da hedefe atış var.</p>
+      <ul>
+        <li>Üç tur: sabit, sallanan ve uçan hedefler.</li>
+        <li>Testi kulesi, kabak ve puta hedefleri.</li>
+        <li>Rüzgâr yaydaki püskülden okunur.</li>
+        <li>Yay tam gerilince nefesin zamanı yavaşlatır.</li>
+        <li>Okçuluk Yolu'nda isabetlerin seni Hevesli'den Efsane'ye taşır.</li>
+      </ul>
+      <p class="gx-small gx-muted">Oyun ücretsiz, Ok Meydanı internetsiz oynanır. Oyunun bilgi yarışması tarafı için <a href="../bilgi-yarismasi-okculuk-oyunu/" style="font-weight:600">Türkçe bilgi yarışması ve okçuluk oyunu</a> sayfasına bak.</p>
+      <div style="margin-top:auto"><div class="gx-badges"><a class="gp-badge" href="https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat&amp;referrer=utm_source%3Dbilat.app%26utm_medium%3Dsite%26utm_campaign=turk_okculugu_sayfa"><img src="../img/google-play-badge-tr.png" width="646" height="250" alt="Google Play'den indirin" loading="lazy" decoding="async"></a><a class="as-badge" href="https://apps.apple.com/tr/app/bil-at-bilgi-yar%C4%B1%C5%9Fmas%C4%B1/id6821452285"><img src="../img/app-store-badge-tr.svg" width="151" height="40" alt="App Store'dan indirin" loading="lazy" decoding="async"></a></div></div>
+    </div>
+  </section>
+
+  <section id="sss" class="gx-split">
+    <div class="gx-split-h"><h2 class="gx-h2">Sık sorulan sorular</h2></div>
+    <div class="gx-split-b">
+      <div class="gx-faq gx-card">
+      <details><summary><span>Kemankeş nedir?</span><span class="gx-chev sm" aria-hidden="true"></span></summary><p>Kemankeş, Osmanlı'da okçuluk yapan kişiye verilen addır. Kemankeşlik de Osmanlı'daki okçuluk geleneğinin adıdır.</p></details>
+      <details><summary><span>Okmeydanı nedir?</span><span class="gx-chev sm" aria-hidden="true"></span></summary><p>İstanbul'da, okçuluk için ayrılmış tarihî meydan ve bugün aynı adı taşıyan semttir. Fatih Sultan Mehmed, İstanbul'un fethinden sonra burayı okçulara ayırdı.</p></details>
+      <details><summary><span>Puta ile menzil atışı arasındaki fark nedir?</span><span class="gx-chev sm" aria-hidden="true"></span></summary><p>Puta atışı hedefe atıştır. Menzil atışı en uzağa atıştır.</p></details>
+      <details><summary><span>Türk okçuluğu UNESCO listesinde mi?</span><span class="gx-chev sm" aria-hidden="true"></span></summary><p>Evet. Geleneksel Türk okçuluğu 2019'da UNESCO'nun Somut Olmayan Kültürel Miras Temsili Listesi'ne girdi.</p></details>
+      <details><summary><span>Türk okçuluğu oyunu var mı?</span><span class="gx-chev sm" aria-hidden="true"></span></summary><p>Bil At!'ın Ok Meydanı modu 3D bir okçuluk oyunudur ve bu geleneğe selam durur. Tarihî bir canlandırma değil, hızlı ve eğlenceli bir oyundur. Ücretsizdir, internetsiz oynanır.</p></details>
+      </div>
+      <details class="gx-src" id="kaynaklar">
+        <summary><h2>Kaynaklar <small>· 6 bağlantı</small></h2><span class="gx-chev sm" aria-hidden="true"></span></summary>
+        <ul>
+          <li><a href="https://islamansiklopedisi.org.tr/okmeydani" target="_blank" rel="noopener">TDV İslâm Ansiklopedisi, Okmeydanı</a></li>
+          <li><a href="https://islamansiklopedisi.org.tr/ok" target="_blank" rel="noopener">TDV İslâm Ansiklopedisi, Ok</a></li>
+          <li><a href="https://tr.wikipedia.org/wiki/Kemanke%C5%9Flik" target="_blank" rel="noopener">Vikipedi, Kemankeşlik</a></li>
+          <li><a href="https://tr.wikipedia.org/wiki/Okmeydan%C4%B1" target="_blank" rel="noopener">Vikipedi, Okmeydanı</a></li>
+          <li><a href="https://tr.wikipedia.org/wiki/T%C3%BCrk_ok%C3%A7ulu%C4%9Fu" target="_blank" rel="noopener">Vikipedi, Türk okçuluğu</a></li>
+          <li><a href="https://ich.unesco.org/en/RL/traditional-turkish-archery-01367" target="_blank" rel="noopener">UNESCO, Geleneksel Türk okçuluğu (Somut Olmayan Kültürel Miras Temsili Listesi, 2019)</a></li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <section class="gx-band gx-dlsec" id="indir" aria-labelledby="indir-baslik">
+    <div><h2 class="gx-h2" id="indir-baslik">Ok Meydanı'nı sen dene</h2><p>Ücretsiz, hesap gerekmez. Google Play ve App Store'da.</p></div>
+    <div class="gx-badges"><a class="gp-badge" href="https://play.google.com/store/apps/details?id=com.steadylinelabs.bilat&amp;referrer=utm_source%3Dbilat.app%26utm_medium%3Dsite%26utm_campaign=turk_okculugu_kapanis"><img src="../img/google-play-badge-tr.png" width="646" height="250" alt="Google Play'den indirin" loading="lazy" decoding="async"></a><a class="as-badge" href="https://apps.apple.com/tr/app/bil-at-bilgi-yar%C4%B1%C5%9Fmas%C4%B1/id6821452285"><img src="../img/app-store-badge-tr.svg" width="151" height="40" alt="App Store'dan indirin" loading="lazy" decoding="async"></a></div>
+  </section>
+</main>
 
 <footer>
   <div class="wrap foot">
@@ -237,5 +288,10 @@
     </div>
   </div>
 </footer>
+<div class="gx-bar" data-after="480">
+  <span class="gx-logo" aria-hidden="true">Bil<b>At</b></span>
+  <span class="gx-bar-t">Ok Meydanı · ücretsiz 3D okçuluk</span>
+  <a class="gx-btn" href="#indir" data-dl>Ücretsiz indir</a>
+</div>
 </body>
 </html>
