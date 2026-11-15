@@ -161,7 +161,7 @@ footer{padding:40px 0;border-top:1px solid var(--line)}
 .foot{display:flex;flex-direction:column}
 .foot-row{display:flex;justify-content:space-between;align-items:center;gap:32px}
 .foot-row a,.foot-row span,.copy{white-space:nowrap}
-.foot-help,.foot-nav{display:flex;align-items:center;gap:24px}
+.foot-help,.foot-nav{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
 .foot-top{font-size:14px;line-height:20px;margin-bottom:20px}
 .foot-bottom{font-size:13px;line-height:20px;padding-top:20px;border-top:1px solid var(--line)}
 .foot-help>*{display:inline-flex;align-items:center}
