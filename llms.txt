@@ -32,7 +32,7 @@
 - Sıralama: haftalık (pazartesi 00:00 TSİ sıfırlanır) ve tüm zamanlar; ayrı hesap açmak gerekmez, takma ad yeter; Android'de Google Play Oyunlar açıksa takma ad ve skorlar ona bağlanır, telefon değişse de kalır.
 - Gökyüzü teması cihaz saatine göre değişir: gündüz, gün batımı, gece.
 - Çevrimdışı oynanır; çevrimdışı skor bağlantı gelince sıralamaya gönderilir.
-- Fiyat: ücretsiz, uygulama içi satın alma yok, reklamla desteklenir. Bkz. https://bilat.app/pricing.md
+- Fiyat: ücretsiz, reklamla desteklenir; isteğe bağlı iki uygulama içi satın alma var (Okçu Nefesi 19,99 TL, Demirci Ateşi 29,99 TL). Bkz. https://bilat.app/pricing.md
 - Platform: Android (Google Play) ve iPhone (App Store).
 - Gizlilik: Google AdMob (Android'de reklam kimliği ve gerekli bölgelerde Google onay penceresi; iOS'ta izleme yok, kişiselleştirilmemiş reklam), Firebase Analytics, Crashlytics, anonim Firebase kimliği, Android'de Google Play Oyunlar açıksa Play Oyunlar oyuncu kimliği (ad ve skorları cihazlar arasında korumak için) ve sıralama için takma ad + skor. Ayrıntılar gizlilik sayfasında.
 

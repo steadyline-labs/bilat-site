@@ -49,7 +49,7 @@
 
 <main id="icerik" class="doc">
     <h1>Gizlilik politikası</h1>
-  <p class="meta">Son güncelleme: 14 Kasım 2026</p>
+  <p class="meta">Son güncelleme: 20 Kasım 2026</p>
 
   <div class="summary">
     <strong>Kısaca</strong>
@@ -59,7 +59,7 @@
       <li>Android telefonunda Google Play Oyunlar açıksa oyun otomatik giriş yapar ve takma adınla skorlarını Play Oyunlar hesabına bağlar; böylece yeniden kurunca ya da telefon değiştirince geri gelir. Play Oyunlar yoksa oyun aynen çalışır.</li>
       <li>Google Play Oyunlar (Android) ya da Game Center (iPhone, iCloud) hesabına giriş yaptıysan oyun ilerlemen o hesabın kendi bulut kaydına yazılır; yeniden kurunca ya da yeni telefonda geri yüklenir. Bu kayıt Google'da ya da Apple'da, senin hesabında durur; kendi sunucularımıza gelmez. Uygulamayı yeniden kurduğunda geri yüklemeyi sen seçersin. Bulut yedeğini oyunun ayarlarından kapatabilir ya da silebilirsin; silmek bu cihazdaki oyununu etkilemez.</li>
       <li>Rekorun, oyun içi ilerlemen, ayarların ve yarım kalan oyunun cihazında durur; telefonunun yedeklemesi açıksa telefonunun kendi Google ya da iCloud yedeğine de girer.</li>
-      <li>Oyun ücretsizdir ve Google AdMob reklamlarıyla desteklenir. Uygulama içi satın alma yoktur; ödüllü reklamları yalnızca sen seçince izlersin (ör. Devam et, %50 Joker).</li>
+      <li>Oyun ücretsizdir ve Google AdMob reklamlarıyla desteklenir; ödüllü reklamları yalnızca sen seçince izlersin (ör. Devam et, %50 Joker). İsteğe bağlı uygulama içi satın almalar (Okçu Nefesi, Demirci Ateşi) Google Play ya da App Store üzerinden yapılır.</li>
       <li>İstediğin zaman hesabının ve verilerinin silinmesini isteyebilirsin (<a href="#veri-silme">nasıl yapılır</a>).</li>
     </ul>
   </div>
@@ -76,6 +76,7 @@
     <li><strong>Kullanım istatistikleri.</strong> Oyunu geliştirmek için Firebase Analytics ile anonim oyun olayları (ör. bir sorunun doğru ya da yanlış cevaplanması, turun bitmesi) toplanır. Bu olaylar adını ya da iletişim bilgini içermez; Firebase bunlarla birlikte uygulama örneği kimliği, cihaz modeli, işletim sistemi sürümü ve yaklaşık ülke gibi temel bilgileri işler. Olaylar yalnızca izin verdiğinde (gerekli bölgelerde onay penceresiyle) gönderilir. Onay penceresinin gerekmediği bölgelerde (Türkiye dahil) bu istatistikler ve reklamlarla etkileşimin (ör. bir reklamı görüp oyunu kurman), reklamların ne kadar işe yaradığını ölçmek ve iyileştirmek için Google ile paylaşılır; bunlarla sana kişiselleştirilmiş reklam gösterilmez. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de analitik verisi reklam amacıyla kullanılmaz.</li>
     <li><strong>Şehir havası (isteğe bağlı).</strong> "Şehir havası" Ayarlar'da varsayılan olarak kapalıdır. Açarsan oyun yalnızca yaklaşık konum izni ister (Android'de ACCESS_COARSE_LOCATION, iPhone'da uygulamayı kullanırken ve yaklaşık doğrulukta); arka planda konum ve kesin konum kullanılmaz. Yaklaşık konumun yalnızca cihazında, sana en yakın il merkezini bulmak için kullanılır; koordinatların saklanmaz ve bize gönderilmez. Hava bilgisini almak için seçilen ilin merkez koordinatı MET Norway'e (api.met.no), en yakın havalimanının istasyon kodu (ör. LTAI) NOAA'nın aviationweather.gov servisine gönderilir; kişisel veri gönderilmez. İzin vermezsen ilini listeden seçersin. Özelliği Ayarlar'dan istediğin zaman kapatabilirsin.</li>
     <li><strong>Arkadaş daveti, düello ve "Arkadaşına sor".</strong> Bunları kullanırsan anonim oyuncu kimliğin (uid), düello skorların, seçtiğin hazır tepki ve ifadeler (yalnız numaraları, yazı değil) ve arkadaşının cevapladığı şık Firebase'de (Google, bölge eur3) saklanır ve yaklaşık 24 saat sonra silinir. Google Play Oyunlar ya da Game Center ile bağlıysan, arkadaşlarının seni bulabilmesi için platform oyuncu kimliğin anonim kimliğine eşlenir ve 24 saat tutulur. Serbest yazışma yoktur. Arkadaş listen cihazında kalır. Uygulamanın gerçek olduğunu doğrulamak için Firebase App Check (Play Integrity / App Attest) kullanılır.</li>
+    <li><strong>Satın almalar.</strong> Uygulama içi satın almanın ödemesini Google Play ya da App Store alır; kart ve ödeme bilgilerin bize hiç gelmez. Oyun, ödülü bir kez vermek için satın alınan ürünü ve mağazanın işlem kimliğini cihazında (bulut yedeği açıksa senin Play Oyunlar ya da iCloud kaydında) saklar. Firebase Analytics'e hangi ürünün hangi fiyattan alındığı anonim bir olay olarak gider; adını ya da ödeme bilgini içermez.</li>
     <li><strong>Çökme raporları.</strong> Oyun çöktüğünde ya da bir hata kaydı oluştuğunda Firebase Crashlytics çökme raporunu ve cihaz/uygulama teşhis bilgilerini (hatanın oluştuğu yer ve kısa hata kaydı, cihaz modeli, işletim sistemi ve uygulama sürümü, bellek ve disk durumu, rastgele bir kurulum kimliği) toplar. Bu bilgiler yalnızca çökmeleri bulup düzeltmek için kullanılır; adını ya da iletişim bilgini içermez, reklam amacıyla kullanılmaz ve satılmaz. Bağlantı yoksa rapor cihazında bekler ve sonra gönderilir.</li>
   </ul>
 
